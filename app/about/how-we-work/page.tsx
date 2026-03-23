@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -75,7 +76,7 @@ const GRID_ITEMS = [
   { id: "slow-fashion", label: "Slow Fashion", Icon: HeartIcon   },
 ];
 
-type SubPoint = { SubIcon: () => JSX.Element; title: string; body: string };
+type SubPoint = { SubIcon: () => React.ReactElement; title: string; body: string };
 type Pillar = {
   id: string;
   number: string;
