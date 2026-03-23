@@ -1,0 +1,317 @@
+[
+  {
+    "item": "BIZ101",
+    "title": "Bitcoin for Business",
+    "goal": "Learn the payment and treasury basics to onboard your company to Bitcoin",
+    "topic": "business",
+    "level": "beginner"
+  },
+  {
+    "item": "BIZ205",
+    "title": "Biz School Previous Edition",
+    "goal": "learn the basics of Bitcoin, with a particular focus on its economic rationale, historical context, and social, financial, and business implications.",
+    "topic": "business",
+    "level": "intermediate"
+  },
+  {
+    "item": "BTC101",
+    "title": "The Bitcoin Journey",
+    "goal": "Discover Bitcoin fundamentals, including its monetary value proposition, miners, transactions, and wallets.",
+    "topic": "bitcoin",
+    "level": "beginner"
+  },
+  {
+    "item": "BTC102",
+    "title": "Getting your first bitcoins",
+    "goal": "Learn how to buy, secure, and manage your first bitcoins independently.",
+    "topic": "bitcoin",
+    "level": "beginner"
+  },
+  {
+    "item": "BTC202",
+    "title": "Setting up your first Bitcoin node",
+    "goal": "Understanding, installing, configuring, and using a Bitcoin node",
+    "topic": "bitcoin",
+    "level": "intermediate"
+  },
+  {
+    "item": "BTC204",
+    "title": "Privacy on Bitcoin",
+    "goal": "Understand and master the principles of privacy protection when using Bitcoin",
+    "topic": "bitcoin",
+    "level": "intermediate"
+  },
+  {
+    "item": "BTC303",
+    "title": "Bitcoin Development Philosophy",
+    "goal": "Develop deep philosophical understanding of Bitcoin's design principles.",
+    "topic": "bitcoin",
+    "level": "advanced"
+  },
+  {
+    "item": "BTC304",
+    "title": "How to Create a Bitcoin Community",
+    "goal": "Easily create and organize a Bitcoin community in your local area",
+    "topic": "bitcoin",
+    "level": "advanced"
+  },
+  {
+    "item": "CSV402",
+    "title": "RGB programming",
+    "goal": "Acquire the skills needed to understand and use RGB",
+    "topic": "protocol",
+    "level": "expert"
+  },
+  {
+    "item": "CSV404",
+    "title": "Tapping into Taproot Assets",
+    "goal": "Master the Taproot Assets Protocol for multi-asset Bitcoin and Lightning",
+    "topic": "protocol",
+    "level": "expert"
+  },
+  {
+    "item": "CYP201",
+    "title": "Bitcoin Wallet Architecture",
+    "goal": "Dive into the cryptographic principles that power Bitcoin wallets.",
+    "topic": "security",
+    "level": "intermediate"
+  },
+  {
+    "item": "CYP302",
+    "title": "Modern Cryptography Fundamentals",
+    "goal": "A deep-dive introduction to the science and practice of cryptography.",
+    "topic": "security",
+    "level": "advanced"
+  },
+  {
+    "item": "DEV103",
+    "title": "JavaScript and NodeJS Fundamentals",
+    "goal": "Learn JavaScript programming fundamentals and NodeJS development to build practical applications and tools.",
+    "topic": "protocol",
+    "level": "beginner"
+  },
+  {
+    "item": "DEV301",
+    "title": "System Programming Fundamentals",
+    "goal": "Build a solid mental model of how computers work at the differents levels to reason about crashes, performance issues, and system behavior.",
+    "topic": "protocol",
+    "level": "advanced"
+  },
+  {
+    "item": "DEV303",
+    "title": "Learning Rust with Bitcoin",
+    "goal": "Advance your Rust development skills via Bitcoin coding",
+    "topic": "protocol",
+    "level": "advanced"
+  },
+  {
+    "item": "ECO104",
+    "title": "Introduction to Bitcoin & Stablecoin",
+    "goal": "An In-Depth Look at Bitcoin, Stablecoins, & the Sovereignty That Comes With Them",
+    "topic": "social studies",
+    "level": "beginner"
+  },
+  {
+    "item": "ECO201",
+    "title": "Austrian School of Economics Fundamentals",
+    "goal": "Discover Austrian economics as an alternative framework for analyzing markets and individual decision-making",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "ECO203",
+    "title": "Bastiat Economic Thought",
+    "goal": "To gain a deep understanding of the life, influences, opponents, and economic theories of Frédéric Bastiat, a 19th-century French economist and thinker.",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "ECO204",
+    "title": "Hyperinflation Case Studies",
+    "goal": "Understanding the emergence of hyperinflations in a Fiat world and their consequences",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "ECO205",
+    "title": "The Austrian school of economics",
+    "goal": "Discover the theoretical and methodological foundations of the Austrian school of economics, its key concepts and its link with Bitcoin.",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "HIS201",
+    "title": "The History of Bitcoin's Creation",
+    "goal": "Discover the history of the origins, launch, and early developments of Bitcoin.",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "HIS203",
+    "title": "Bitcoin's Pioneering Era",
+    "goal": "Discover the history of Bitcoin between 2011 and 2012, marked by the cryptocurrency's first economic successes.",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "HIS204",
+    "title": "The Origins of Laissez-Faire Economics",
+    "goal": "Explore the foundations of 18th-century liberal economic thought, with a focus on the doctrine of laissez-faire, its leading thinkers, and lasting influence.",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "HIS205",
+    "title": "History of Coinage",
+    "goal": "Explore the historical evolution of money from the Neolithic to the present day",
+    "topic": "social studies",
+    "level": "intermediate"
+  },
+  {
+    "item": "LNP201",
+    "title": "Lightning Network Theory",
+    "goal": "Discover the Lightning Network from a technical perspective",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "LNP202",
+    "title": "Set up Your First Lightning Node",
+    "goal": "Understand, install, configure, and use a Lightning node",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "LNP206",
+    "title": "Hands-on with Breez Nodeless SDK",
+    "goal": "Master the Breez Nodeless SDK to build Lightning Network applications without running a node",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "LNP404",
+    "title": "Navigating Your Node with Terminal",
+    "goal": "Take a deep dive into your lightning node with Terminal",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "MIN101",
+    "title": "Introduction to Bitcoin mining",
+    "goal": "Understanding Bitcoin mining and proof-of-work from scratch",
+    "topic": "mining",
+    "level": "beginner"
+  },
+  {
+    "item": "MIN304",
+    "title": "Heat your home while mining bitcoins",
+    "goal": "Repurpose an Antminer S9 into a DIY heater for home mining, with guided setup.",
+    "topic": "mining",
+    "level": "advanced"
+  },
+  {
+    "item": "MIN306",
+    "title": "Bitaxe Open Source Mining Mastery",
+    "goal": "Master the complete Bitaxe ecosystem, from hardware assembly to advanced customization and performance optimization",
+    "topic": "mining",
+    "level": "advanced"
+  },
+  {
+    "item": "NET302",
+    "title": "IP networks - From Theory to Practice",
+    "goal": "Master the fundamentals of IP networks to better configure and troubleshoot them.",
+    "topic": "protocol",
+    "level": "advanced"
+  },
+  {
+    "item": "PHI101",
+    "title": "A Philosophical History of Freedom",
+    "goal": "Discover the evolution of freedom through the ages, from ancient philosophers to modern challenges.",
+    "topic": "social studies",
+    "level": "beginner"
+  },
+  {
+    "item": "PHI203",
+    "title": "Freedom as a Social Project",
+    "goal": "Understand the philosophical and historical foundations of individual freedom",
+    "topic": "social studies",
+    "level": "beginner"
+  },
+  {
+    "item": "PHI305",
+    "title": "Spinoza and Bitcoin",
+    "goal": "Discover the philosophical links between Spinoza's thought and Bitcoin as tools of freedom through the centuries.",
+    "topic": "social studies",
+    "level": "advanced"
+  },
+  {
+    "item": "POS305",
+    "title": "Mastering BTC Pay Server",
+    "goal": "Configure a BTC Pay Server instance for a local business",
+    "topic": "business",
+    "level": "advanced"
+  },
+  {
+    "item": "PRO101",
+    "title": "Bitcoin Development Fundamentals",
+    "goal": "Acquire all the foundations to start developing on Bitcoin",
+    "topic": "protocol",
+    "level": "beginner"
+  },
+  {
+    "item": "PRO202",
+    "title": "Programming Bitcoin",
+    "goal": "Build a complete Bitcoin library from scratch and understand Bitcoin's cryptographic foundations",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "SCU101",
+    "title": "Update Your Online Security",
+    "goal": "Update password and personal data management. Create a backup, protect against hackers, and raise awareness about mass surveillance.",
+    "topic": "security",
+    "level": "beginner"
+  },
+  {
+    "item": "SCU202",
+    "title": "Improve Your Personal Digital Security",
+    "goal": "Set up a secure, stable and efficient personal digital environment.",
+    "topic": "security",
+    "level": "intermediate"
+  },
+  {
+    "item": "SID202",
+    "title": "Building with Elements and Liquid Network",
+    "goal": "Learn to use and develop with the Elements open-source blockchain platform and its key features",
+    "topic": "protocol",
+    "level": "intermediate"
+  },
+  {
+    "item": "SID302",
+    "title": "Liquid Bootcamp Essentials",
+    "goal": "Gain a comprehensive understanding of the Liquid Network and the Elements project, and learn how to implement advanced solutions in confidential transactions, tokenization, and decentralized network architecture.",
+    "topic": "protocol",
+    "level": "advanced"
+  },
+  {
+    "item": "SID402",
+    "title": "Mastering Liquid Engineering",
+    "goal": "Master the Liquid Network and Elements, from node operations to confidential transactions and asset issuance.",
+    "topic": "protocol",
+    "level": "expert"
+  },
+  {
+    "item": "SID406",
+    "title": "Mastering Liquid Development",
+    "goal": "Build applications on Liquid using developer tools, Liquid Script, and the Simplicity smart contract language",
+    "topic": "protocol",
+    "level": "expert"
+  },
+  {
+    "item": "SOC104",
+    "title": "What's your Political Leaning?",
+    "goal": "Understand the complexity of the modern political spectrum to identify your own tendency and situate the major ideological families beyond the left-right divide.",
+    "topic": "social studies",
+    "level": "beginner"
+  }
+]
