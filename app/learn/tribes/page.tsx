@@ -1,0 +1,130 @@
+"use client";
+
+import { useState } from "react";
+
+type MapView = "communities" | "merchants";
+
+const MAP_URLS: Record<MapView, string> = {
+  communities: "https://btcmap.org/communities/map",
+  merchants:   "https://btcmap.org/map",
+};
+
+export default function TribesPage() {
+  const [view, setView] = useState<MapView>("communities");
+
+  return (
+    <>
+      {/* ── Hero ── */}
+      <section
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
+      >
+        <div className="max-w-4xl mx-auto">
+          <p className="text-black/50 text-sm tracking-widest uppercase mb-4 font-medium">
+            Down The Rabbit Hole
+          </p>
+          <h1
+            className="text-[60px] md:text-[80px] font-bold text-[#111518] leading-tight mb-6"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            Find Your Tribe
+          </h1>
+          <p className="text-[#111518]/75 text-lg leading-relaxed max-w-2xl">
+            Bitcoin communities and merchants worldwide. Real people, real meetings.
+            No permission required.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Toggle tabs ── */}
+      <section className="bg-white border-b border-black/10 px-6 py-5">
+        <div className="max-w-6xl mx-auto flex items-center gap-3 flex-wrap">
+          <button
+            onClick={() => setView("communities")}
+            className={`flex items-center gap-2 px-6 py-2.5 text-sm font-bold rounded-sm transition-colors ${
+              view === "communities"
+                ? "bg-[#ed760a] text-black"
+                : "bg-[#f5f5f5] text-[#111518] hover:bg-[#eee]"
+            }`}
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+            Bitcoin Communities
+          </button>
+          <button
+            onClick={() => setView("merchants")}
+            className={`flex items-center gap-2 px-6 py-2.5 text-sm font-bold rounded-sm transition-colors ${
+              view === "merchants"
+                ? "bg-[#ed760a] text-black"
+                : "bg-[#f5f5f5] text-[#111518] hover:bg-[#eee]"
+            }`}
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+            </svg>
+            Merchant Map
+          </button>
+          <span className="ml-auto text-xs text-[#6b7280] hidden md:block">
+            Data by BTCMap — open source, community-run
+          </span>
+        </div>
+      </section>
+
+      {/* ── Map ── */}
+      <section className="bg-[#f8f6f3] py-8 px-6">
+        <div className="max-w-6xl mx-auto">
+          <iframe
+            key={view}
+            src={MAP_URLS[view]}
+            className="w-full border-0 rounded-sm shadow-sm"
+            style={{ height: "65vh", minHeight: "460px" }}
+            title={view === "communities" ? "Bitcoin Communities — BTCMap" : "Bitcoin Merchants — BTCMap"}
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
+      </section>
+
+      {/* ── Info ── */}
+      <section className="bg-white py-16 px-6 border-t border-black/5">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col gap-3">
+            <div className="w-8 h-8 text-[#ed760a]">
+              <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </div>
+            <h3 className="text-[#111518] font-bold text-base">Local Meetups</h3>
+            <p className="text-[#6b7280] text-sm leading-relaxed">
+              Find Bitcoin meetups near you. Share knowledge, build relationships, strengthen the network.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="w-8 h-8 text-[#ed760a]">
+              <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+              </svg>
+            </div>
+            <h3 className="text-[#111518] font-bold text-base">Bitcoin Merchants</h3>
+            <p className="text-[#6b7280] text-sm leading-relaxed">
+              Shops, restaurants, and services that accept Bitcoin. Spend sats, strengthen the circular economy.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="w-8 h-8 text-[#ed760a]">
+              <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+              </svg>
+            </div>
+            <h3 className="text-[#111518] font-bold text-base">No Permission</h3>
+            <p className="text-[#6b7280] text-sm leading-relaxed">
+              Open source, community-run. Add your location. Join the network. Bitcoin doesn&apos;t ask for approval.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
