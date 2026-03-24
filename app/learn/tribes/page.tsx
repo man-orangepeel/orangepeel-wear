@@ -66,7 +66,9 @@ export default function TribesPage() {
             Merchant Map
           </button>
           <span className="ml-auto text-xs text-[#6b7280] hidden md:block">
-            Data by BTCMap — open source, community-run
+            Data by{" "}
+            <a href="https://btcmap.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#ed760a] transition-colors">BTCMap</a>
+            {" "}— open source, community-run
           </span>
         </div>
       </section>
