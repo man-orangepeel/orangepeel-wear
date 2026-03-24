@@ -247,7 +247,6 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 | Nettoyer les références à "Bitcoin Economic Forum" | Présent dans le contenu — à identifier + supprimer |
 | Pages collection `/collections/*` — refonte UI | Corps de page idem `/products` mais pré-filtré + filtres type/genre + pagination |
 | Page Warriors — corrections contenu | Rétablir l'espace dans "The Warriors Collection isn't clothing." · Supprimer section Proof of Work |
-| Icône Bitcoin (home badges) | SVG KO — à corriger |
 | Images produits trending | Sélectionner les bonnes vignettes (300×300 → envisager 600px) |
 
 ### Priorité moyenne 🟠
@@ -257,22 +256,27 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 | Footer — revoir l'ordre des RS | Ordre actuel : Telegram, X, Nostr, Insta, GitHub, LinkedIn — à redéfinir |
 | Footer — renseigner liens manquants | X, Nostr, Instagram, GitHub (URLs à récupérer) |
 | Footer — vérifier lisibilité des icônes sur `#0d0d0d` | GitHub, LinkedIn notamment |
-| Réviser page Contact Us | Contenu + UX |
 | SEO : metadata par page | title, description, og:image |
 | Parallax home hero | Améliorer effet background fixe vs scroll text |
 
 ### Priorité basse 🔵
 | Item | Notes |
 |---|---|
-| Designs `/designs` | Sélectionner les bonnes vignettes produit (2.4) |
+| Designs `/designs` | Sélectionner les bonnes vignettes produit |
 | Logo SAT | Récupérer/créer le symbole sat pour SatPrice |
 | Vérifier conversion BTC/$ (USD) | SatPrice utilise EUR uniquement — USD à valider |
 | Logos navbar sur fond clair/foncé | Vérifier que `logo-black.png` est correct sur fond blanc |
 | Outil admin | Gérer designs, produits × variations |
 | Commerce — BTCPay Server | Quand reprise du commerce |
 | Révision "The Way We Peel" avec Mill3 | Partenariat design |
-| Mémo sous-titre home alternatif | "Bitcoin only. No moon dreams. We don't print fiat or hype. We wear convictions." |
-| Mémo sous-titre products alternatif | "Premium organic cotton. Bitcoin principles. Every piece means something." |
+
+### Fait depuis dernière mise à jour ✅
+| Item | Commit |
+|---|---|
+| Icône Bitcoin home badges | stroke, cohérent avec les autres badges | `5467f2b` |
+| OrangePeel Flow — fréquence corrigée | "daily signal" — meme + take + weekly recap | `5467f2b` |
+| Contact Us — hero structuré + fond blanc | label + 80px title + inputs clairs + 1ère personne | `5467f2b` |
+| Contact Us — 1ère personne | "I'll get back to you", "I'm all ears" | `5467f2b` |
 
 ---
 
