@@ -110,8 +110,7 @@ export default async function LibraryPage() {
               OrangePeel Flow
             </h2>
             <p className="text-white/60 text-sm max-w-lg">
-              High-signal Bitcoin news, twice a week — adoption, fundamentals, no altcoins, no noise.
-              A free Telegram channel in French.
+              A free Telegram channel dedicated to Bitcoin. Adoption signals, fundamentals, community polls — no altcoins, no price noise, no ads. Pure signal, for beginners and seasoned Bitcoiners alike. In French for now.
             </p>
           </div>
           <a

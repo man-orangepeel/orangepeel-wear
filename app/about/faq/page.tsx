@@ -9,7 +9,7 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
     items: [
       {
         q: "How long will my T-shirt last?",
-        a: "For quality and durability, we specifically chose to work with a trusted French workshop, known for its craftsmanship and over 25 years of experience in premium garment production. No mass production, no shortcuts. Our fabrics are thick, durable, and made to last. Whether embroidered or printed, each piece is designed to be worn, washed, and worn again.",
+        a: "For quality and durability, I specifically chose to work with a trusted French workshop, known for its craftsmanship and over 25 years of experience in premium garment production. No mass production, no shortcuts. The fabrics are thick, durable, and made to last. Whether embroidered or printed, each piece is designed to be worn, washed, and worn again.",
       },
       {
         q: "How should I care for my items?",
@@ -36,7 +36,7 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
       },
       {
         q: "Are your products made sustainably?",
-        a: "Bitcoin encourages thoughtful consumption — saving and investing in quality rather than fast, mass consumption. This philosophy aligns with our commitment to conscious production, creating long-lasting products made from organic and recycled materials to respect both you and the planet.",
+        a: "Bitcoin encourages thoughtful consumption — saving and investing in quality rather than fast, mass consumption. This philosophy aligns with my commitment to conscious production, creating long-lasting products made from organic and recycled materials to respect both you and the planet.",
       },
     ],
   },
@@ -47,10 +47,9 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
         q: "Do you accept Bitcoin?",
         a: (
           <>
-            <p className="mb-4">Yes, absolutely! Not only do we accept Bitcoin, but we actively encourage its use as a form of payment. During checkout, you&apos;ll find the option to pay with Bitcoin. We support both the Bitcoin network and the Lightning Network for faster, low-fee transactions.</p>
-            <p className="mb-4">To keep Bitcoin a voluntary choice, we also accept fiat payment via major credit cards, Google Pay and Apple Pay.</p>
+            <p className="mb-4">Yes! I accept Bitcoin and actively encourage its use. You&apos;ll find the payment option directly at checkout. I support both the Bitcoin network and the Lightning Network for fast, low-fee transactions.</p>
             <p>
-              New to Bitcoin? Using it builds its value — and that means acting in your own best interest. Explore our{" "}
+              New to Bitcoin? Using it builds its value — and that means acting in your own best interest. Explore the{" "}
               <Link href="/learn/library" className="text-[#ed760a] hover:underline">Bitcoin Library</Link>
               {" "}and{" "}
               <Link href="/learn/courses" className="text-[#ed760a] hover:underline">From Newbie to Maxi</Link>
@@ -61,15 +60,15 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
       },
       {
         q: "Do you accept cryptocurrencies?",
-        a: "No, we only accept Bitcoin. We are a Bitcoin-focused company, and our mission is to see Bitcoin adopted globally as a true form of money. We make a clear distinction between Bitcoin, which is a decentralized, monetary, political, and societal movement, and other cryptocurrencies, which are typically issued by companies and function more like stocks.",
+        a: "No, I only accept Bitcoin. I'm a Bitcoin-focused brand, and my mission is to see Bitcoin adopted globally as a true form of money. I make a clear distinction between Bitcoin, which is a decentralized, monetary, political, and societal movement, and other cryptocurrencies, which are typically issued by companies and function more like stocks.",
       },
       {
         q: "Do you collect my personal data?",
         a: (
           <>
-            <p className="mb-4">Only the bare minimum — and only for essential reasons like generating an invoice or sending tracking info. We don&apos;t use your data for marketing, we don&apos;t sell it, and we don&apos;t track you.</p>
-            <p className="mb-4">Once your data is no longer needed, it&apos;s automatically deleted from our system.</p>
-            <p className="font-semibold text-[#111518]">Privacy isn&apos;t a feature here — it&apos;s the default.</p>
+            <p className="mb-4">Only the bare minimum — and only for essential reasons like generating an invoice or sending tracking info. I don&apos;t use your data for marketing, I don&apos;t sell it, and I don&apos;t track you.</p>
+            <p className="mb-4">Once your data is no longer needed, it&apos;s automatically deleted.</p>
+            <p>Privacy isn&apos;t a feature here — it&apos;s the default.</p>
           </>
         ),
       },
@@ -83,17 +82,17 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
         a: (
           <>
             <p className="mb-4">You&apos;re witnessing the birth of Orange Peel: no shipping just yet. For now, pieces can be picked up at Bitcoin events in France.</p>
-            <p>Once shipping opens, we&apos;ll deliver across France and internationally, directly from our French workshop.</p>
+            <p>Once shipping opens, I&apos;ll deliver across France and internationally, directly from the French workshop.</p>
           </>
         ),
       },
       {
         q: "What are my shipping costs?",
-        a: "Shipping costs depend on the weight of your items, the service you select, and your shipping location. You can always view the shipping costs before finalizing your order. Customs fees or import taxes may apply depending on your location. These fees are the responsibility of the customer. We do not pre-pay or cover import duties or taxes.",
+        a: "Shipping costs depend on the weight of your items, the service you select, and your shipping location. You can always view the shipping costs before finalizing your order. Customs fees or import taxes may apply depending on your location — these fees are the responsibility of the customer.",
       },
       {
         q: "How long will it take to receive my order?",
-        a: "Each product is made-to-order and unique, crafted specifically for you. Our team typically ships orders within 3 to 7 business days. After that, delivery time depends on your location: 24–48 hours within France, and 3 to 5 business days for Europe and international shipping. We appreciate your patience as we create and deliver your one-of-a-kind item!",
+        a: "Each product is made-to-order, crafted specifically for you. I typically ship orders within 3 to 7 business days. After that, delivery time depends on your location: 24–48 hours within France, and 3 to 5 business days for Europe and international shipping. Thank you for your patience!",
       },
       {
         q: "Can I track my order?",
@@ -108,8 +107,8 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
         q: "What is your return and refund policy?",
         a: (
           <>
-            <p className="mb-4">Each item is specially made just for you, crafted on demand and tailored to your choice, and custom or personalized products cannot be returned or exchanged.</p>
-            <p className="mb-4">However, if you notice any printing defects, damage, or issues with your item, please contact us within 30 days of receiving your order. We&apos;ll work with you to find a solution and make things right.</p>
+            <p className="mb-4">Each item is specially made just for you, crafted on demand and tailored to your choice — custom or personalized products cannot be returned or exchanged.</p>
+            <p className="mb-4">However, if you notice any printing defects, damage, or issues with your item, please reach out within 30 days of receiving your order. I&apos;ll work with you to find a solution and make things right.</p>
             <p>Please note that return shipping costs are non-refundable.</p>
           </>
         ),
@@ -121,19 +120,19 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
     items: [
       {
         q: "Do you have retail stores or take orders by phone?",
-        a: "We are an online-only brand for the moment, and all orders must be placed through our website.",
+        a: "I sell exclusively online for the moment — all orders must be placed through the site.",
       },
       {
         q: "Do you have a newsletter?",
         a: (
           <>
             <p className="mb-4">
-              We run a free Telegram channel —{" "}
+              I run{" "}
               <a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer" className="text-[#ed760a] hover:underline font-semibold">OrangePeel Flow</a>
-              {" "}— delivering high-signal Bitcoin news: adoption, fundamentals, no altcoins, no price noise, no ads.
-              It&apos;s in French — we&apos;re frenchies, and proud of it.
+              {" "}— a free Telegram channel dedicated to Bitcoin. Several times a week: concrete adoption signals (companies, institutions, states integrating Bitcoin), educational content on fundamentals (technology, monetary sovereignty, real use cases), and a light fun fact to close. A weekly community poll — with results commented the next day. No altcoins, no price speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
             </p>
-            <p>As for email newsletters: most are built to push sales and collect data — we don&apos;t want to do either. No spam, no pressure.</p>
+            <p className="mb-4 text-sm italic">In French for now — yes, I&apos;m French.</p>
+            <p>As for email newsletters: I don&apos;t want to push sales or harvest data. No spam, no pressure.</p>
           </>
         ),
       },

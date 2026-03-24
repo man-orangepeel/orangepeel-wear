@@ -139,12 +139,12 @@ const PILLARS: Pillar[] = [
     label: "Ethics",
     title: "Ethic First.",
     subtitle: "Integrity and Independence.",
-    intro: "We don't play by the usual marketing rules. No tricks. No pressure. No masters.",
+    intro: "I don't play by the usual marketing rules. No tricks. No pressure. No masters.",
     points: [
-      { SubIcon: CheckIcon,  title: "No fake drops. No hurry.",  body: "You buy when it's right for you. We reject scarcity games and artificial urgency — no FOMO. Where manipulation ends, trust thrives." },
-      { SubIcon: ShieldIcon, title: "Fully independent.",        body: "From the first sketch to the last click — no Big Tech, no investors, no platforms. We only answer to our community." },
+      { SubIcon: CheckIcon,  title: "No fake drops. No hurry.",  body: "You buy when it's right for you. I reject scarcity games and artificial urgency — no FOMO. Where manipulation ends, trust thrives." },
+      { SubIcon: ShieldIcon, title: "Fully independent.",        body: "From the first sketch to the last click — no Big Tech, no investors, no platforms. I only answer to my community." },
     ],
-    punchline: "Ethics are the soul of our creations. Earning your trust is an honor we strive to deserve.",
+    punchline: "Ethics are the soul of what I create. Earning your trust is an honor I strive to deserve.",
     dark: false, gray: false, reverse: false,
     image: "/images/products/5-1-1024x1024.png",
     imageAlt: "Orange Peel — Ethics",
@@ -154,10 +154,10 @@ const PILLARS: Pillar[] = [
     label: "Premium",
     title: "Premium Quality only.",
     subtitle: "Inside and Out.",
-    intro: "Because your values live longer than one season, every piece we create is crafted with the utmost care.",
+    intro: "Because your values live longer than one season, every piece I create is crafted with the utmost care.",
     points: [
       { SubIcon: LayersIcon, title: "High GSM fabrics.",       body: "Thick, durable, and made to last." },
-      { SubIcon: PenIcon,    title: "Expert customization.",   body: "We choose embroidery whenever the style allows it, and when the fabric can support its thickness and weight." },
+      { SubIcon: PenIcon,    title: "Expert customization.",   body: "I choose embroidery whenever the style allows it, and when the fabric can support its thickness and weight." },
     ],
     punchline: "Whether embroidered or printed, each piece is crafted to be worn, washed, and worn again — not to fade away like trends.",
     dark: true, gray: false, reverse: true,
@@ -169,7 +169,7 @@ const PILLARS: Pillar[] = [
     label: "Privacy",
     title: "Privacy by Default.",
     subtitle: "Respect by Design.",
-    intro: "Your personal data is not a product. We built Orange Peel to respect your privacy.",
+    intro: "Your personal data is not a product. I built Orange Peel to respect your privacy.",
     points: [
       { SubIcon: ShieldIcon, title: "No tracking, no targeted ads.",       body: "No centralized platforms pulling the strings. No third-party scripts, no surveillance. Less noise, more clarity." },
       { SubIcon: LockIcon,   title: "No account, no email traps.",        body: "Order freely — no account, no newsletter, no bait for your inbox. Your attention is yours." },
@@ -185,12 +185,12 @@ const PILLARS: Pillar[] = [
     label: "Sustainable",
     title: "Better for Earth.",
     subtitle: "Better for Us.",
-    intro: "We choose products and techniques that respect the environment.",
+    intro: "I choose products and techniques that respect the environment.",
     points: [
-      { SubIcon: LeafSmallIcon, title: "Sustainable fabrics.",          body: "Made from organic and recycled materials that reduce our environmental footprint." },
-      { SubIcon: RecycleIcon,   title: "Eco-friendly personalization.", body: "We use processes that minimize waste and environmental impact, while ensuring long-lasting durability." },
+      { SubIcon: LeafSmallIcon, title: "Sustainable fabrics.",          body: "Made from organic and recycled materials that reduce the environmental footprint." },
+      { SubIcon: RecycleIcon,   title: "Eco-friendly personalization.", body: "I use processes that minimize waste and environmental impact, while ensuring long-lasting durability." },
     ],
-    punchline: "We believe conscious production is the future — and doing good feels even better when you wear it.",
+    punchline: "I believe conscious production is the future — and doing good feels even better when you wear it.",
     dark: true, gray: false, reverse: true,
     image: "/images/products/6-1-1024x1024.png",
     imageAlt: "Orange Peel — Sustainable",
@@ -200,10 +200,10 @@ const PILLARS: Pillar[] = [
     label: "Slow Fashion",
     title: "No Guesswork. No Waste.",
     subtitle: "Slow is Strong.",
-    intro: "We don't follow the market's tempo. We follow our rules, and your needs.",
+    intro: "I don't follow the market's tempo. I follow my rules, and your needs.",
     points: [
       { SubIcon: CheckIcon, title: "No mass production. No stock. No waste.", body: "Your piece exists because you chose it. Made just for you — with care, personal, and never designed for the masses." },
-      { SubIcon: ClockIcon, title: "Time is a virtue.",                       body: "Made-to-order takes a few days — but that time reflects care and craftsmanship. We reclaim a slower rhythm rooted in meaning." },
+      { SubIcon: ClockIcon, title: "Time is a virtue.",                       body: "Made-to-order takes a few days — but that time reflects care and craftsmanship. I reclaim a slower rhythm rooted in meaning." },
     ],
     punchline: "Bitcoin teaches the value of real backing and patience. We won't print clothes like they print money.",
     dark: false, gray: false, reverse: false,
@@ -217,10 +217,10 @@ const PILLARS: Pillar[] = [
     subtitle: "Your Payment, Your Rules.",
     intro: "Financial freedom isn't just wealth; it's the freedom to choose how you finance your life.",
     points: [
-      { SubIcon: ZapIcon,  title: "Bitcoin as a choice.",    body: "We chose Bitcoin as our native payment method — not to impose, but to empower. Unlike fiat, you're free to opt in." },
-      { SubIcon: BookIcon, title: "Resources for learning.", body: "New to Bitcoin? Our free resources in \"The Liberation Toolkit\" give you everything you need to get started — easily and safely." },
+      { SubIcon: ZapIcon,  title: "Bitcoin as a choice.",    body: "I chose Bitcoin as my native payment method — not to impose, but to empower. Unlike fiat, you're free to opt in." },
+      { SubIcon: BookIcon, title: "Resources for learning.", body: "New to Bitcoin? My free resources in \"The Liberation Toolkit\" give you everything you need to get started — easily and safely." },
     ],
-    punchline: "Bitcoin gives you the freedom to manage your money. We give you the freedom to choose how you pay.",
+    punchline: "Bitcoin gives you the freedom to manage your money. I give you the freedom to choose how you pay.",
     dark: true, gray: false, reverse: true,
     image: "/images/products/9-1-1024x1024.png",
     imageAlt: "Orange Peel — Bitcoin",
@@ -246,7 +246,7 @@ export default function HowWeWorkPage() {
             The Way We Peel
           </h1>
           <p className="text-white/85 text-lg max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
-            This page reveals how we work. Welcome behind the scenes.
+            This page reveals how I work. Welcome behind the scenes.
           </p>
         </div>
       </section>
@@ -257,29 +257,31 @@ export default function HowWeWorkPage() {
           className="text-[28px] md:text-[36px] font-bold text-[#111518]"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          Your principles shape how we create.
+          Your principles shape how I create.
         </h2>
       </section>
 
       {/* ── Clickable 3×2 grid ── */}
-      <div className="grid grid-cols-3 divide-x divide-y divide-white/20 border-t border-b border-white/20">
-        {GRID_ITEMS.map(({ id, label, Icon }) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            className="group bg-[#0a0a0a] py-16 px-10 flex flex-col items-center gap-6 hover:bg-[#111] transition-colors duration-200"
-          >
-            <div className="w-20 h-20 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
-              <Icon />
-            </div>
-            <span
-              className="text-white text-lg font-medium group-hover:text-[#ed760a] transition-colors duration-200"
-              style={{ fontFamily: "var(--font-heading)" }}
+      <div className="bg-white py-6 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-3 gap-1">
+          {GRID_ITEMS.map(({ id, label, Icon }) => (
+            <a
+              key={id}
+              href={`#${id}`}
+              className="group bg-[#0a0a0a] py-[43px] px-6 flex flex-col items-center gap-6 hover:bg-[#111] transition-colors duration-200"
             >
-              {label}
-            </span>
-          </a>
-        ))}
+              <div className="w-20 h-20 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
+                <Icon />
+              </div>
+              <span
+                className="text-white text-lg font-medium group-hover:text-[#ed760a] transition-colors duration-200"
+                style={{ fontFamily: "var(--font-heading)" }}
+              >
+                {label}
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* ── Pillar sections ── */}

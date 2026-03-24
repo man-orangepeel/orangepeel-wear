@@ -361,9 +361,9 @@ export default function AboutPage() {
                 OrangePeel Flow
               </h3>
               <p className="text-white/60 text-sm leading-relaxed">
-                A free channel delivering high-signal Bitcoin news twice a week: concrete adoption stories, fundamentals, community polls. No altcoins, no price speculation, no ads.
+                Several times a week: concrete adoption signals, Bitcoin fundamentals, a fun fact, and a community poll with results commented the next day. No altcoins, no price speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
               </p>
-              <p className="text-white/35 text-xs">In French — because we are.</p>
+              <p className="text-white/35 text-xs">In French for now — yes, I&apos;m French.</p>
               <a
                 href="https://t.me/OrangePeel_Flow"
                 target="_blank"
@@ -389,32 +389,29 @@ export default function AboutPage() {
                 MeetUp Bitcoin Nantes
               </h3>
               <p className="text-[#687279] text-sm leading-relaxed">
-                Free meetups open to all — novices, experts, merchants. Talks, workshops, and good company at{" "}
-                <strong className="text-[#111518]">Le Startijenn, île de Nantes</strong>.
+                Free meetups open to all — novices, experts, merchants. Talks, workshops, and good company in{" "}
+                <strong className="text-[#111518]">Nantes, France</strong>.
               </p>
               <p className="text-[#687279] text-xs italic">I run this meetup — see you there.</p>
               <div className="flex gap-3 mt-auto flex-wrap">
                 <a
-                  href="https://t.me/meetupbitcoinnantes"
+                  href="https://meetupbitcoinnantes.notion.site/Le-MeetUp-Bitcoin-Nantes-21d4c9884c20802c8a94fd2357024bf1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-[#111518] text-white font-bold px-5 py-2.5 text-sm hover:bg-[#222] transition-colors rounded-sm"
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                  </svg>
-                  Telegram
+                  Learn More
                 </a>
                 <a
-                  href="https://x.com/NantesBitcoin"
+                  href="https://t.me/meetupbitcoinnantes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 border border-black/20 text-[#111518] font-medium px-5 py-2.5 text-sm hover:border-[#ed760a] hover:text-[#ed760a] transition-colors rounded-sm"
                 >
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.23H2.744l7.737-8.845L2.034 2.25H8.05l4.262 5.636 5.932-5.636Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
                   </svg>
-                  @NantesBitcoin
+                  Telegram
                 </a>
               </div>
             </div>
