@@ -20,7 +20,7 @@
 /learn/tribes                  ← Find Your Tribe        ✅ done (BTCMap, toggle communautés/marchands)
 /about                         ← The Orange We Are      ✅ done (contenu réel)
 /about/how-we-work             ← The Way We Peel        ✅ done (contenu réel, piliers)
-/about/faq                     ← Find Your Answers      ✅ done (accordion client)
+/about/faq                     ← Find Your Answer       ✅ done (contenu réel, 5 sections)
 /contact                       ← Contact Us             ✅ done (Resend, form validé)
 /cart                          ← Mon Panier             ✅ done (placeholder informatif)
 ```
@@ -48,10 +48,12 @@ About Us ▾
 ```
 
 **Comportement navbar :**
-- Fixed, `h-[70px]`, fond `#0d0d0d/95` + backdrop-blur
+- Fixed, `h-[70px]`, fond blanc `bg-white border-b border-black/8`
+- Logo gauche, cart icône droite, menus centrés — bottom-alignment via `items-stretch` + `flex-col justify-end pb-[14px]`
+- Active route : `usePathname()`, indicateur orange sur le groupe actif
 - Masquée au scroll down, réapparaît au scroll up (useState + scroll listener)
-- Dropdowns : `group-hover` CSS, alignés sur le bas exact de la navbar (`self-stretch flex items-center`)
-- Police menus : `text-[15px]`, gap : `gap-10`
+- Dropdowns : `group-hover` CSS, `top-full` = bas exact de la navbar
+- `logo-black.png` (fond clair), `logo-white.png` (footer fond sombre)
 
 ---
 
@@ -73,12 +75,11 @@ About Us ▾
 
 ### Gradient hero standard (pages intérieures)
 ```css
-linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)
+radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)
 ```
-- Texte h1 : `text-[#111518]` (RGAA AA ~7:1 sur orange)
-- Texte description : `text-[#111518]/75`
-- Label uppercase : `text-black/50`
+- Texte h1, label, description : **blanc** (`text-white`, `text-white/85`, `text-white/60`)
 - Positionnement : `-mt-[70px]` + `paddingTop: calc(70px + 2rem)` → collé sous la navbar
+- Exception Warriors/Wizards/Cyphers : gradient identité propre (pas le gradient solaire)
 
 ### Typographie
 
@@ -137,7 +138,11 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 
 - Fond `#0d0d0d`, `border-t border-white/10`
 - "What We Stand For" : manifeste de la marque, `text-[26px] md:text-[32px]`
-- Icônes sociales : X/Twitter, Nostr (éclair), Instagram — SVG inline, `text-white/40 hover:text-white`
+- Icônes sociales (dans l'ordre actuel) : Telegram, X/Twitter, Nostr, Instagram, GitHub, LinkedIn
+  - Telegram → `https://t.me/OrangePeel_Flow` ✅
+  - LinkedIn → `https://www.orangepeel.fr` ✅
+  - X, Nostr, Instagram, GitHub → `href="#"` (liens à renseigner)
+  - **À faire** : revoir l'ordre des RS + renseigner les liens manquants
 - Logo centré `480px` large, copyright `text-white/25 text-xs`
 - Padding : `pt-16 pb-4`
 
@@ -195,28 +200,31 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 - `AddToCart.tsx` client component
 
 ### A Bitcoin Library `/learn/library`
-- Header : hero orange gradient
+- Header : hero solaire gradient + texte blanc
+- Bandeau OrangePeel Flow (`bg-[#111518]`) avant la grille
 - Fetch GitHub API PlanB Network (`revalidate: 86400`)
 - 6 catégories : Books, Podcasts, Youtube, Movies, Newsletters, Glossary
 - 2 lignes × 3 colonnes
 
 ### From Newbie to Maxi `/learn/courses`
-- Header : hero orange gradient
+- Header : hero solaire gradient + texte blanc
+- Bandeau OrangePeel Flow (`bg-[#111518]`) avant les sections
 - Source : `public/courses.json` (données locales PlanB)
-- Featured "Start Here" : fond sombre `#111518` + bouton orange
+- Featured "Start Here" : fond sombre `#111518` + bouton orange (BTC101)
 - Groupé par topic : Bitcoin / Security / Business / Social Studies / Mining
-- Ordre explicite par section, goal affiché sur chaque carte
+- Section "Social Studies" → label "The Bigr Picture" (intentionnel)
 
 ### Find Your Tribe `/learn/tribes`
-- Header : hero orange gradient
-- Toggle tabs (hors hero) : Bitcoin Communities / Merchant Map
-- Carte BTCMap : `max-w-6xl`, `65vh`, rechargée via `key={view}`
+- Header : hero solaire gradient + texte blanc
+- Toggle tabs : Bitcoin Communities / Merchant Map
+- Carte BTCMap (lien sur "BTCMap") : `w-full`, `65vh`, rechargée via `key={view}`
+- Bandeau **MeetUp Bitcoin Nantes** : admin = fondateur de la marque, liens Telegram + X
 - 3 cartes info en bas
 
 ### About pages
-- `about/page.tsx` : hero orange (déjà natif), grid de navigation interne
-- `about/how-we-work/page.tsx` : hero orange (natif), piliers de la marque
-- `about/faq/page.tsx` : hero orange gradient, accordion client
+- `about/page.tsx` : hero solaire, grid 2×4 (A Bitcoiner / A Brand / A Name / **In the Wild**), section "In the Wild" = OrangePeel Flow + MeetUp Nantes
+- `about/how-we-work/page.tsx` : hero solaire, piliers de la marque
+- `about/faq/page.tsx` : hero solaire, accordion client — **contenu réel** (5 sections : Product Info / Payment & Privacy / Shipping / Returns / Misc)
 
 ### Contact `/contact`
 - Header : hero orange gradient (sans label)
@@ -232,20 +240,39 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 
 ## À faire / Backlog
 
-| Priorité | Item |
+### Priorité haute 🟡
+| Item | Notes |
 |---|---|
-| 🟡 | Responsive mobile — vérifier toutes les pages |
-| 🟡 | Images produits trending — sélectionner les bonnes vignettes (300×300 → envisager 600px) |
-| 🟡 | Icône BTC Standard (home badges) — SVG à réviser |
-| 🟡 | FAQ — contenu réel (en attente utilisateur) |
-| 🟠 | Parallax home hero — effet background fixe vs scroll text |
-| 🟠 | SEO : metadata par page (title, description, og:image) |
-| 🔵 | Footer — liens réels : X, Nostr, Instagram, GitHub, LinkedIn (URLs à renseigner) |
-| 🔵 | Footer — vérifier que les logos GitHub/LinkedIn sont bien lisibles sur fond `#0d0d0d` |
-| 🔵 | Designs `/designs` — sélectionner les bonnes vignettes produits (2.4) |
-| 🔵 | Home "Bitcoin only. No moon dreams. We don't print fiat or hype. We wear convictions." — mémo sous-titre alternatif (non utilisé home, réservé pour autre usage) |
-| 🔵 | Products "Premium organic cotton. Bitcoin principles. Every piece means something." — mémo sous-titre alternatif réservé |
-| 🔵 | Commerce : BTCPay Server (quand reprise) |
+| Responsive mobile | Vérifier toutes les pages |
+| Nettoyer les références à "Bitcoin Economic Forum" | Présent dans le contenu — à identifier + supprimer |
+| Pages collection `/collections/*` — refonte UI | Corps de page idem `/products` mais pré-filtré + filtres type/genre + pagination |
+| Page Warriors — corrections contenu | Rétablir l'espace dans "The Warriors Collection isn't clothing." · Supprimer section Proof of Work |
+| Icône Bitcoin (home badges) | SVG KO — à corriger |
+| Images produits trending | Sélectionner les bonnes vignettes (300×300 → envisager 600px) |
+
+### Priorité moyenne 🟠
+| Item | Notes |
+|---|---|
+| Page Legal / CGU / Mentions légales | À créer |
+| Footer — revoir l'ordre des RS | Ordre actuel : Telegram, X, Nostr, Insta, GitHub, LinkedIn — à redéfinir |
+| Footer — renseigner liens manquants | X, Nostr, Instagram, GitHub (URLs à récupérer) |
+| Footer — vérifier lisibilité des icônes sur `#0d0d0d` | GitHub, LinkedIn notamment |
+| Réviser page Contact Us | Contenu + UX |
+| SEO : metadata par page | title, description, og:image |
+| Parallax home hero | Améliorer effet background fixe vs scroll text |
+
+### Priorité basse 🔵
+| Item | Notes |
+|---|---|
+| Designs `/designs` | Sélectionner les bonnes vignettes produit (2.4) |
+| Logo SAT | Récupérer/créer le symbole sat pour SatPrice |
+| Vérifier conversion BTC/$ (USD) | SatPrice utilise EUR uniquement — USD à valider |
+| Logos navbar sur fond clair/foncé | Vérifier que `logo-black.png` est correct sur fond blanc |
+| Outil admin | Gérer designs, produits × variations |
+| Commerce — BTCPay Server | Quand reprise du commerce |
+| Révision "The Way We Peel" avec Mill3 | Partenariat design |
+| Mémo sous-titre home alternatif | "Bitcoin only. No moon dreams. We don't print fiat or hype. We wear convictions." |
+| Mémo sous-titre products alternatif | "Premium organic cotton. Bitcoin principles. Every piece means something." |
 
 ---
 
