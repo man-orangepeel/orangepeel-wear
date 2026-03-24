@@ -129,7 +129,7 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
             <p className="mb-4">
               I run{" "}
               <a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer" className="text-[#ed760a] hover:underline font-semibold">OrangePeel Flow</a>
-              {" "}— a free Telegram channel dedicated to Bitcoin. Several times a week: concrete adoption signals (companies, institutions, states integrating Bitcoin), educational content on fundamentals (technology, monetary sovereignty, real use cases), and a light fun fact to close. A weekly community poll — with results commented the next day. No altcoins, no price speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
+              {" "}— a free Telegram channel dedicated to Bitcoin. Every day: a sharp meme, an incisive take on adoption news, a look at the fundamentals that matter. A weekly community poll and a recap to close the loop. No altcoins, no speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
             </p>
             <p className="mb-4 text-sm italic">In French for now — yes, I&apos;m French.</p>
             <p>As for email newsletters: I don&apos;t want to push sales or harvest data. No spam, no pressure.</p>

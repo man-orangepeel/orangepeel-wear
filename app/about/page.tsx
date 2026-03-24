@@ -361,7 +361,7 @@ export default function AboutPage() {
                 OrangePeel Flow
               </h3>
               <p className="text-white/60 text-sm leading-relaxed">
-                Several times a week: concrete adoption signals, Bitcoin fundamentals, a fun fact, and a community poll with results commented the next day. No altcoins, no price speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
+                Every day: a sharp meme, an incisive take on adoption news, key fundamentals. A weekly community poll and a recap to close the loop. No altcoins, no speculation, no ads — pure signal, for beginners and seasoned Bitcoiners alike.
               </p>
               <p className="text-white/35 text-xs">In French for now — yes, I&apos;m French.</p>
               <a

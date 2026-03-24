@@ -58,8 +58,8 @@ const BADGES = [
     desc: "Onchain & Lightning payments",
     href: "/about/how-we-work#our-standards",
     icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1.5 14.5h-4v-1h.5v-7H9v-1h.5V6h1v1.5h1V6h1v1.5c1.1 0 2 .9 2 2 0 .55-.22 1.05-.58 1.41.61.43 1.08 1.12 1.08 1.84 0 1.38-1.12 2.25-2.5 2.25zM10.5 9v2h1.5c.55 0 1-.45 1-1s-.45-1-1-1h-1.5zm0 3.5v2.5H12c.83 0 1.5-.67 1.5-1.25S12.83 12.5 12 12.5h-1.5z" />
+      <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h4a2 2 0 0 1 0 4H9m0 0h4.5a2 2 0 0 1 0 4H9m0-8v8m0-8V6m0 9v1m3-9V6" />
       </svg>
     ),
   },
