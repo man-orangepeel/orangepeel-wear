@@ -43,17 +43,17 @@ export default function ContactPage() {
     <>
       {/* ── Hero ── */}
       <section
-        className="-mt-[70px] pb-8 px-6"
-        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)", paddingTop: "calc(70px + 2rem)" }}
       >
         <div className="max-w-3xl mx-auto">
           <h1
-            className="text-[60px] font-bold text-[#111518] mb-3 leading-tight"
+            className="text-[60px] font-bold text-white mb-3 leading-tight"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             Contact Us
           </h1>
-          <p className="text-[#111518]/75 text-base mb-12">
+          <p className="text-white/85 text-base mb-12" style={{ fontFamily: "var(--font-heading)" }}>
             Human answers only, no bots — even orange ones.
           </p>
         </div>

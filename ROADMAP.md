@@ -234,16 +234,18 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 
 | Priorité | Item |
 |---|---|
-| 🔴 | `npm run build` — vérifier 0 erreurs TypeScript |
 | 🟡 | Responsive mobile — vérifier toutes les pages |
-| 🟡 | Images produits trending (qualité 300px) → envisager 600px |
+| 🟡 | Images produits trending — sélectionner les bonnes vignettes (300×300 → envisager 600px) |
 | 🟡 | Icône BTC Standard (home badges) — SVG à réviser |
 | 🟡 | FAQ — contenu réel (en attente utilisateur) |
 | 🟠 | Parallax home hero — effet background fixe vs scroll text |
-| 🟠 | Miniatures produit page `/products/[slug]` — cliquables → grande image |
 | 🟠 | SEO : metadata par page (title, description, og:image) |
+| 🔵 | Footer — liens réels : X, Nostr, Instagram, GitHub, LinkedIn (URLs à renseigner) |
+| 🔵 | Footer — vérifier que les logos GitHub/LinkedIn sont bien lisibles sur fond `#0d0d0d` |
+| 🔵 | Designs `/designs` — sélectionner les bonnes vignettes produits (2.4) |
+| 🔵 | Home "Bitcoin only. No moon dreams. We don't print fiat or hype. We wear convictions." — mémo sous-titre alternatif (non utilisé home, réservé pour autre usage) |
+| 🔵 | Products "Premium organic cotton. Bitcoin principles. Every piece means something." — mémo sous-titre alternatif réservé |
 | 🔵 | Commerce : BTCPay Server (quand reprise) |
-| 🔵 | Liens réseaux sociaux (X, Nostr, Instagram) — URLs réelles à renseigner |
 
 ---
 

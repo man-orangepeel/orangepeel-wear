@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ParallaxHero from "@/components/ParallaxHero";
+import SatPrice from "@/components/SatPrice";
 
 /* ── Données statiques ── */
 const DESIGNS = [
@@ -13,12 +14,12 @@ const DESIGNS = [
 ];
 
 const TRENDING = [
-  { src: "1bis-4-300x300.png", name: "Meme Chad — Warrior", price: "€50", slug: "meme-chad-warrior-tshirt" },
-  { src: "1bis-3-300x300.png", name: "Meme Chad — Big",     price: "€50", slug: "meme-chad-big-tshirt" },
-  { src: "9-7-300x300.png",    name: "Meme Chad — Cypher",  price: "€50", slug: "meme-chad-cypher-tshirt" },
-  { src: "1-3-300x300.png",    name: "The Whisper",         price: "€50", slug: "the-whisper-tshirt" },
-  { src: "2-1-300x300.png",    name: "The Cypher I",        price: "€50", slug: "cypher-i-tshirt" },
-  { src: "1-1-300x300.png",    name: "Warrior I",           price: "€50", slug: "warrior-i-tshirt" },
+  { src: "1bis-4-300x300.png", name: "Meme Chad — Warrior", price: 50, slug: "meme-chad-warrior-tshirt" },
+  { src: "1bis-3-300x300.png", name: "Meme Chad — Big",     price: 50, slug: "meme-chad-big-tshirt" },
+  { src: "9-7-300x300.png",    name: "Meme Chad — Cypher",  price: 50, slug: "meme-chad-cypher-tshirt" },
+  { src: "1-3-300x300.png",    name: "The Whisper",         price: 50, slug: "the-whisper-tshirt" },
+  { src: "2-1-300x300.png",    name: "The Cypher I",        price: 50, slug: "cypher-i-tshirt" },
+  { src: "1-1-300x300.png",    name: "Warrior I",           price: 50, slug: "warrior-i-tshirt" },
 ];
 
 const BADGES = [
@@ -98,7 +99,7 @@ export default function Home() {
       {/* ──────────────────────────────────────────
           3. OUR COLLECTIONS
       ────────────────────────────────────────── */}
-      <section id="home-our-collections" className="bg-white pt-20 pb-6 px-6">
+      <section id="home-our-collections" className="bg-white pt-10 pb-6 px-6">
         <div className="max-w-7xl mx-auto text-center mb-6">
           <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium">
             The Range
@@ -124,7 +125,7 @@ export default function Home() {
           className="flex-1 flex flex-col justify-between px-10 py-16 rounded-sm"
           style={{
             background: "radial-gradient(at top center, #efa813 0%, #ed760a 100%)",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <h3
@@ -155,7 +156,7 @@ export default function Home() {
           className="flex-1 flex flex-col justify-between px-10 py-16 rounded-sm"
           style={{
             background: "radial-gradient(at top center, #482B5F 0%, #1D1D63 100%)",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <h3
@@ -188,7 +189,7 @@ export default function Home() {
           className="flex-1 flex flex-col justify-between px-10 py-16 rounded-sm"
           style={{
             background: "radial-gradient(at top center, #4A4A4A 0%, #000000 100%)",
-            minHeight: "80vh",
+            minHeight: "100vh",
           }}
         >
           <h3
@@ -220,7 +221,7 @@ export default function Home() {
       {/* ──────────────────────────────────────────
           4. OUR DESIGNS
       ────────────────────────────────────────── */}
-      <section className="bg-white pt-20 pb-0 px-6">
+      <section className="bg-white pt-10 pb-0 px-6">
         <div className="max-w-7xl mx-auto text-center mb-10">
           <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium">
             The Art
@@ -297,7 +298,7 @@ export default function Home() {
                 <p className="text-[#111518] text-sm font-semibold mt-1 group-hover:text-[#ed760a] transition-colors">
                   {p.name}
                 </p>
-                <p className="text-[#6b7280] text-sm">{p.price}</p>
+                <SatPrice priceEur={p.price} />
               </Link>
             ))}
           </div>

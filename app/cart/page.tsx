@@ -5,20 +5,20 @@ export default function CartPage() {
     <>
       {/* ── Hero ── */}
       <section
-        className="-mt-[70px] pb-8 px-6"
-        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)", paddingTop: "calc(70px + 2rem)" }}
       >
         <div className="max-w-4xl mx-auto">
-          <p className="text-black/50 text-sm tracking-widest uppercase mb-4 font-medium">
+          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">
             Your Cart
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-[#111518] leading-tight mb-6"
+            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             We&apos;ll Be Back
           </h1>
-          <p className="text-[#111518]/75 text-lg leading-relaxed max-w-2xl">
+          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
             Our store is temporarily paused. We&apos;ve been active before and we&apos;re coming back —
             with full Bitcoin payments via BTCPay Server, onchain &amp; Lightning.
           </p>

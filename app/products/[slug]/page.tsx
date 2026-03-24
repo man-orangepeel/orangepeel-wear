@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PRODUCTS, COLLECTION_LABELS, COLLECTION_COLORS } from "@/lib/products";
 import AddToCart from "./AddToCart";
 import ProductGallery from "./ProductGallery";
+import SatPrice from "@/components/SatPrice";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -65,7 +66,7 @@ export default async function ProductPage({
             </h1>
 
             {/* Price */}
-            <p className="text-[32px] font-bold text-[#111518]">€{product.price}</p>
+            <SatPrice priceEur={product.price} large />
 
             {/* Description */}
             <p className="text-[#6b7280] text-base leading-relaxed">{product.description}</p>
