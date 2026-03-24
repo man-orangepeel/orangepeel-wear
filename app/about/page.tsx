@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
 
-/* ── Inline SVG icons ───────────────────────────────────────────── */
+/* ── Grid icons (large) ─────────────────────────────────────────── */
 const BitcoinIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M9 7h4a2 2 0 0 1 0 4H9m0 0h4.5a2 2 0 0 1 0 4H9m0-8v8m0-8V6m0 9v1m3-9V6" />
   </svg>
 );
 const BrandIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <polygon points="12,2 22,8.5 12,15 2,8.5" />
     <polyline points="2,15.5 12,22 22,15.5" />
     <polyline points="2,12 12,18.5 22,12" />
   </svg>
 );
 const NameIcon = () => (
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <line x1="4" y1="9" x2="20" y2="9" />
     <line x1="4" y1="15" x2="20" y2="15" />
     <line x1="10" y1="3" x2="8" y2="21" />
@@ -23,23 +23,46 @@ const NameIcon = () => (
   </svg>
 );
 
-/* ── Small section sub-icons ─────────────────────────────────────── */
-const FlameIcon = () => (
+/* ── Section sub-icons ───────────────────────────────────────────── */
+// Why I build Orange
+const CompassIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 3z" />
+    <circle cx="12" cy="12" r="10" />
+    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
   </svg>
 );
-const SwordIcon = () => (
+const GlobeIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
-    <line x1="13" y1="19" x2="19" y2="13" />
-    <line x1="16" y1="16" x2="20" y2="20" />
-    <line x1="19" y1="21" x2="21" y2="19" />
+    <circle cx="12" cy="12" r="10" />
+    <line x1="2" y1="12" x2="22" y2="12" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
   </svg>
 );
-const StarIcon = () => (
+const TagIcon = () => (
   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+    <line x1="7" y1="7" x2="7.01" y2="7" />
+  </svg>
+);
+// You mean Pill?
+const EyeOffIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94" />
+    <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19" />
+    <line x1="1" y1="1" x2="23" y2="23" />
+  </svg>
+);
+const LayersIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </svg>
+);
+const SparkleIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 3v1M12 20v1M4.22 4.22l.71.71M19.07 4.22l-.71.71M1 12h1M22 12h-1M4.93 19.07l.71-.71M18.36 19.07l-.71-.71" />
+    <circle cx="12" cy="12" r="4" />
   </svg>
 );
 
@@ -54,25 +77,27 @@ export default function AboutPage() {
     <>
       {/* ── Hero ── */}
       <section
-        className="min-h-[55vh] flex flex-col justify-end px-8 pb-16 -mt-[70px]"
-        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 3rem)" }}
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)", paddingTop: "calc(70px + 2rem)" }}
       >
-        <p className="text-black/40 text-sm mb-3 tracking-widest uppercase">
-          — Who We Are
-        </p>
-        <h1
-          className="text-[72px] md:text-[110px] font-bold text-[#111518] leading-none mb-5"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          The Orange We Are
-        </h1>
-        <p className="text-[#111518]/80 text-lg max-w-xl">
-          A glimpse into our vision and story.
-        </p>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">
+            About Us
+          </p>
+          <h1
+            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
+            style={{ fontFamily: "var(--font-heading)" }}
+          >
+            The Orange We Are
+          </h1>
+          <p className="text-white/85 text-lg max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
+            A glimpse into our vision and story.
+          </p>
+        </div>
       </section>
 
       {/* ── Intro heading ── */}
-      <section className="bg-white pt-16 pb-6 px-6 text-center">
+      <section className="bg-white pt-14 pb-4 px-6 text-center">
         <h2
           className="text-[28px] md:text-[36px] font-bold text-[#111518]"
           style={{ fontFamily: "var(--font-heading)" }}
@@ -82,18 +107,18 @@ export default function AboutPage() {
       </section>
 
       {/* ── Clickable grid ── */}
-      <div className="grid grid-cols-3 divide-x divide-white/10 border-t border-b border-white/10">
+      <div className="grid grid-cols-3 divide-x divide-white/20 border-t border-b border-white/20">
         {GRID_ITEMS.map(({ id, label, Icon }) => (
           <a
             key={id}
             href={`#${id}`}
-            className="group bg-[#0a0a0a] py-14 px-6 flex flex-col items-center gap-5 hover:bg-[#111] transition-colors duration-200"
+            className="group bg-[#0a0a0a] py-16 px-10 flex flex-col items-center gap-6 hover:bg-[#111] transition-colors duration-200"
           >
-            <div className="w-16 h-16 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
+            <div className="w-20 h-20 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
               <Icon />
             </div>
             <span
-              className="text-white text-base font-medium group-hover:text-[#ed760a] transition-colors duration-200"
+              className="text-white text-lg font-medium group-hover:text-[#ed760a] transition-colors duration-200"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               {label}
@@ -105,7 +130,6 @@ export default function AboutPage() {
       {/* ── Why I build Orange ── text left / image right */}
       <section id="why-i-build" className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-          {/* Text */}
           <div className="flex-1 flex flex-col gap-6">
             <div>
               <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-3">Origin</p>
@@ -127,21 +151,20 @@ export default function AboutPage() {
               with justice, sovereignty, and respect for life.
             </p>
 
-            {/* Sub-points */}
             <div className="flex flex-col gap-5 pt-2 border-t border-black/10">
               {[
                 {
-                  Icon: FlameIcon,
+                  Icon: CompassIcon,
                   title: "A path of character",
                   body: "Like a warrior or a wizard walking his own path with humility, the Bitcoin hodler sharpens his mind, tempers his emotions, and defends his world with unwavering conviction.",
                 },
                 {
-                  Icon: SwordIcon,
+                  Icon: GlobeIcon,
                   title: "A new kind of society",
                   body: "Bitcoin demands integrity — and rewards it by entrusting power, responsibility and freedom to those who choose to embody them.",
                 },
                 {
-                  Icon: StarIcon,
+                  Icon: TagIcon,
                   title: "Values made wearable",
                   body: "I make values, vision, and action wearable. It's one of the ways I choose to contribute to the world I want to see.",
                 },
@@ -165,15 +188,9 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image */}
           <div className="md:w-[420px] w-full shrink-0">
             <div className="relative aspect-square overflow-hidden bg-[#f0f0f0]">
-              <Image
-                src="/images/products/1-1-1024x1024.png"
-                alt="Orange Peel — A Bitcoiner"
-                fill
-                className="object-cover"
-              />
+              <Image src="/images/products/1-1-1024x1024.png" alt="Orange Peel — A Bitcoiner" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -182,7 +199,6 @@ export default function AboutPage() {
       {/* ── The Genesis ── image left / text right */}
       <section id="genesis" className="bg-[#0a0a0a] py-20 px-6 border-t border-white/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse gap-12 md:gap-16 items-center">
-          {/* Text */}
           <div className="flex-1 flex flex-col gap-6">
             <div>
               <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-3">The Story</p>
@@ -203,7 +219,6 @@ export default function AboutPage() {
               <span className="text-white font-medium">Bitcoin-only. Principles-first. No hype. No noise.</span>
             </p>
 
-            {/* Collections */}
             <div className="flex flex-col gap-4 pt-2 border-t border-white/10">
               {[
                 { name: "The Wizards", desc: "For those who prefer to signal quietly.", href: "/collections/wizards" },
@@ -231,15 +246,9 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image */}
           <div className="md:w-[420px] w-full shrink-0">
             <div className="relative aspect-square overflow-hidden bg-[#111]">
-              <Image
-                src="/images/products/10-1024x1024.png"
-                alt="Orange Peel — The Genesis"
-                fill
-                className="object-cover"
-              />
+              <Image src="/images/products/10-1024x1024.png" alt="Orange Peel — The Genesis" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -248,7 +257,6 @@ export default function AboutPage() {
       {/* ── You mean 'Pill'? ── text left / image right */}
       <section id="pill-name" className="bg-[#f9f9f9] py-20 px-6 border-t border-black/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-          {/* Text */}
           <div className="flex-1 flex flex-col gap-6">
             <div>
               <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-3">The Name</p>
@@ -266,28 +274,27 @@ export default function AboutPage() {
               <strong>&ldquo;Orange Peel.&rdquo;</strong>
             </p>
 
-            {/* Sub-points */}
             <div className="flex flex-col gap-5 pt-2 border-t border-black/10">
               {[
                 {
-                  symbol: "①",
+                  Icon: EyeOffIcon,
                   title: "No direct Bitcoin reference",
                   body: "There is no direct reference to Bitcoin, not even the famous \"orange pill\" — it can be worn anywhere, by anyone.",
                 },
                 {
-                  symbol: "②",
+                  Icon: LayersIcon,
                   title: "Peeling as awakening",
                   body: "The concept of peeling resonates deeply with Bitcoin's core philosophy: shedding layers of conditioning to regain clarity about how the world really works.",
                 },
                 {
-                  symbol: "③",
+                  Icon: SparkleIcon,
                   title: "Happy accidents",
                   body: "Peel/pill echoes hold/hodl. And what are the odds that Bitcoin's color also happens to be a fruit? Without that coincidence, Orange Peel wouldn't hold the same metaphorical power.",
                 },
-              ].map(({ symbol, title, body }) => (
+              ].map(({ Icon, title, body }) => (
                 <div key={title} className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-[#ed760a] flex items-center justify-center shrink-0 mt-0.5">
-                    <span className="text-white text-xs font-bold">{symbol}</span>
+                  <div className="w-7 h-7 rounded-full bg-[#ed760a]/10 flex items-center justify-center shrink-0 mt-0.5 text-[#ed760a]">
+                    <Icon />
                   </div>
                   <div>
                     <h3 className="font-bold text-sm uppercase tracking-widest text-[#111518] mb-1">
@@ -305,50 +312,16 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image */}
           <div className="md:w-[420px] w-full shrink-0">
             <div className="relative aspect-square overflow-hidden bg-[#f0f0f0]">
-              <Image
-                src="/images/products/2-1024x1024.png"
-                alt="Orange Peel — The Name"
-                fill
-                className="object-cover"
-              />
+              <Image src="/images/products/2-1024x1024.png" alt="Orange Peel — The Name" fill className="object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="bg-[#0a0a0a] py-16 px-6">
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-          <h2
-            className="text-[36px] font-bold text-white"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Ready to go deeper?
-          </h2>
-          <p className="text-white/60 text-base">
-            Explore how we work, discover the collections, or start your Bitcoin education.
-          </p>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <Link
-              href="/collections"
-              className="inline-block bg-[#ed760a] text-black font-bold px-8 py-3 text-sm hover:bg-[#efa813] transition-colors duration-200"
-              style={{ borderRadius: "5px" }}
-            >
-              Explore Collections
-            </Link>
-            <Link
-              href="/about/how-we-work"
-              className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200"
-              style={{ borderRadius: "5px" }}
-            >
-              The Way We Peel
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* ── Brand separator ── */}
+      <div className="h-[3px] bg-[#ed760a]" />
     </>
   );
 }

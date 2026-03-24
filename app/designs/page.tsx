@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 type Collection = "all" | "warriors" | "wizards" | "cyphers";
 
@@ -166,6 +166,8 @@ export default function DesignsPage() {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const [page, setPage] = useState(0);
+  const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+  const lightboxRef = useRef<HTMLDivElement>(null);
 
   const total = CAROUSEL_FILES.length;
 
@@ -185,6 +187,20 @@ export default function DesignsPage() {
       ? DESIGN_DATA
       : DESIGN_DATA.filter((d) => d.collection === active);
 
+  // Keyboard navigation for lightbox (après la déclaration de filtered)
+  useEffect(() => {
+    if (lightboxIdx === null) return;
+    const total = filtered.length;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxIdx(null);
+      if (e.key === "ArrowLeft")  setLightboxIdx((i) => i !== null ? (i - 1 + total) % total : null);
+      if (e.key === "ArrowRight") setLightboxIdx((i) => i !== null ? (i + 1) % total : null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lightboxIdx, filtered.length]);
+
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const pageItems = filtered.slice(page * PER_PAGE, (page + 1) * PER_PAGE);
 
@@ -192,40 +208,45 @@ export default function DesignsPage() {
     <>
       {/* ── Header ── */}
       <section
-        className="-mt-[70px] pb-8 px-6"
-        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)", paddingTop: "calc(70px + 2rem)" }}
       >
         <div className="max-w-4xl mx-auto">
-          <p className="text-black/50 text-sm tracking-widest uppercase mb-4 font-medium">
+          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">
             Suit Up For Freedom
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-[#111518] leading-tight mb-6"
+            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             All Our Designs
           </h1>
-          <p className="text-[#111518]/75 text-lg leading-relaxed max-w-2xl">
-            Bitcoin only. No moon dreams. No fiat. Just convictions worn on cotton.
+          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
+            One design — One statement.
           </p>
         </div>
       </section>
 
-      {/* ── Carousel luxe — 1 image à la fois ── */}
+      {/* ── Carousel — fond blanc, frame brand identity ── */}
       <section
-        className="relative bg-black flex items-center justify-center overflow-hidden"
-        style={{ height: "85vh", minHeight: "500px" }}
+        className="relative bg-white flex items-center justify-center py-12 overflow-hidden"
+        style={{ minHeight: "520px" }}
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
-        {/* Image */}
-        <div className="relative w-full h-full">
+        {/* Frame brand + image */}
+        <div className="relative" style={{ width: "min(480px, 80vw)", aspectRatio: "1" }}>
+          {/* Corner brackets orange */}
+          <span className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-[#ed760a]" />
+          <span className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-[#ed760a]" />
+          <span className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-[#ed760a]" />
+          <span className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-[#ed760a]" />
           <Image
             src={`/images/designs/${CAROUSEL_FILES[current]}`}
             alt={`Design ${current + 1}`}
             fill
-            className="object-contain p-6 md:p-10 transition-opacity duration-500"
-            sizes="100vw"
+            className="object-contain p-8 transition-opacity duration-500"
+            sizes="480px"
             priority={current === 0}
           />
         </div>
@@ -233,10 +254,10 @@ export default function DesignsPage() {
         {/* Flèche gauche */}
         <button
           onClick={prev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/8 flex items-center justify-center hover:bg-[#ed760a]/15 transition-colors"
           aria-label="Previous"
         >
-          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+          <svg className="w-5 h-5 text-[#111518]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg>
         </button>
@@ -244,22 +265,22 @@ export default function DesignsPage() {
         {/* Flèche droite */}
         <button
           onClick={next}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/30 transition-colors"
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/8 flex items-center justify-center hover:bg-[#ed760a]/15 transition-colors"
           aria-label="Next"
         >
-          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+          <svg className="w-5 h-5 text-[#111518]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
           </svg>
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-5 flex gap-2">
+        <div className="absolute bottom-4 flex gap-2">
           {CAROUSEL_FILES.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-1.5 h-1.5 rounded-full transition-all duration-200 ${
-                i === current ? "bg-[#ed760a] w-4" : "bg-white/30 hover:bg-white/60"
+              className={`h-1.5 rounded-full transition-all duration-200 ${
+                i === current ? "bg-[#ed760a] w-5" : "bg-black/20 w-1.5 hover:bg-black/40"
               }`}
               aria-label={`Slide ${i + 1}`}
             />
@@ -297,20 +318,26 @@ export default function DesignsPage() {
       <section className="bg-white py-10 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {pageItems.map((d, i) => (
-              <div
-                key={`${d.file}-${i}`}
-                className="relative aspect-square overflow-hidden bg-[#f5f5f5]"
-              >
-                <Image
-                  src={`/images/designs/${d.file}`}
-                  alt={`Design ${page * PER_PAGE + i + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                />
-              </div>
-            ))}
+            {pageItems.map((d, i) => {
+              const globalIdx = page * PER_PAGE + i;
+              return (
+                <button
+                  key={`${d.file}-${i}`}
+                  onClick={() => setLightboxIdx(globalIdx)}
+                  className="relative aspect-square overflow-hidden bg-[#f5f5f5] group block cursor-pointer"
+                  aria-label={`Voir design ${globalIdx + 1}`}
+                >
+                  <Image
+                    src={`/images/designs/${d.file}`}
+                    alt={`Design ${globalIdx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                  />
+                  <span className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
+                </button>
+              );
+            })}
           </div>
 
           {/* ── Pagination ── */}
@@ -368,6 +395,69 @@ export default function DesignsPage() {
           Browse Products →
         </a>
       </section>
+
+      {/* ── Lightbox ── */}
+      {lightboxIdx !== null && (
+        <div
+          className="fixed inset-0 bg-black/92 z-50 flex items-center justify-center"
+          onClick={() => setLightboxIdx(null)}
+          ref={lightboxRef}
+        >
+          {/* Contenu — stoppe la propagation */}
+          <div
+            className="relative flex items-center justify-center"
+            style={{ width: "min(700px, 90vw)", height: "min(700px, 85vh)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={`/images/designs/${filtered[lightboxIdx].file}`}
+              alt={`Design ${lightboxIdx + 1}`}
+              fill
+              className="object-contain"
+              sizes="700px"
+              priority
+            />
+          </div>
+
+          {/* Fermer */}
+          <button
+            onClick={() => setLightboxIdx(null)}
+            className="absolute top-5 right-5 w-10 h-10 flex items-center justify-center text-white/60 hover:text-white transition-colors"
+            aria-label="Fermer"
+          >
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          {/* Précédent */}
+          <button
+            onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null); }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+            aria-label="Précédent"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+
+          {/* Suivant */}
+          <button
+            onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+            aria-label="Suivant"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+
+          {/* Compteur */}
+          <p className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/40 text-xs tracking-widest">
+            {lightboxIdx + 1} / {filtered.length}
+          </p>
+        </div>
+      )}
     </>
   );
 }

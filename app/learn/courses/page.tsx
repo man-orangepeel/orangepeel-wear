@@ -19,6 +19,7 @@ const SOCIAL_ALLOWED = new Set([
 
 // Ordre explicite des items par section
 const SECTION_ORDER: Record<string, string[]> = {
+  "bitcoin": ["BTC101"],  // BTC101 en premier, les autres suivent dans leur ordre naturel
   "security": ["SCU101", "SCU202", "CYP201", "CYP302"],
   "social studies": ["HIS205", "ECO201", "PHI203", "PHI101", "ECO204", "ECO203", "HIS201"],
 };
@@ -45,7 +46,7 @@ const TOPIC_META: Record<string, { label: string; tagline: string }> = {
   "bitcoin":        { label: "Understand Bitcoin",    tagline: "From first principles to full sovereignty." },
   "security":       { label: "Secure Your Stack",     tagline: "Self-custody, privacy, and digital hygiene." },
   "business":       { label: "Bitcoin for Business",  tagline: "Payments, treasury, and business strategy." },
-  "social studies": { label: "The Bigger Picture",    tagline: "History, economics, and the ideas that matter." },
+  "social studies": { label: "The Bigr Picture",    tagline: "History, economics, and the ideas that matter." },
   "mining":         { label: "Mining",                tagline: "How the network sustains itself." },
 };
 
@@ -66,7 +67,8 @@ const allCourses = (coursesData as CourseEntry[]).filter((c) => {
 
 export default function CoursesPage() {
   const featured = allCourses.find((c) => c.item === FEATURED_ITEM);
-  const rest = allCourses.filter((c) => c.item !== FEATURED_ITEM);
+  // BTC101 reste dans la section "Understand Bitcoin" (en première position)
+  const rest = allCourses;
 
   const grouped: Record<string, CourseEntry[]> = {};
   for (const course of rest) {
@@ -81,21 +83,21 @@ export default function CoursesPage() {
     <>
       {/* ── Header ── */}
       <section
-        className="-mt-[70px] pb-8 px-6"
-        style={{ background: "linear-gradient(160deg, #ffbe2e 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
+        className="-mt-[70px] pb-10 px-6"
+        style={{ background: "radial-gradient(ellipse at 50% 0%, #ffbe2e 0%, #ed760a 50%, #c05800 100%)", paddingTop: "calc(70px + 2rem)" }}
       >
         <div className="max-w-4xl mx-auto">
-          <p className="text-black/50 text-sm tracking-widest uppercase mb-4 font-medium">
+          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">
             Down The Rabbit Hole
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-[#111518] leading-tight mb-6"
+            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             From Newbie to Maxi
           </h1>
-          <p className="text-[#111518]/75 text-lg leading-relaxed max-w-2xl">
-            Open-source Bitcoin courses from the PlanB Network.
+          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
+            Open-source Bitcoin courses from PlanB Network.
             From zero to self-sovereign — at your pace, on your terms.
           </p>
         </div>

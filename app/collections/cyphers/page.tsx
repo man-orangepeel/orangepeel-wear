@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import SatPrice from "@/components/SatPrice";
 
 const PRODUCTS = [
   { src: "0006.0-Satoshi-I-dont-have-time-300x300.png", name: "Satoshi — No Time",  slug: "satoshi-no-time-tshirt" },
@@ -98,7 +101,7 @@ export default function CyphersPage() {
                   />
                 </div>
                 <p className="text-[#111518] text-sm font-semibold group-hover:text-[#4A4A4A] transition-colors">{p.name}</p>
-                <p className="text-[#687279] text-xs">€25 – €50</p>
+                <SatPrice priceEur={25} priceEur2={50} />
               </Link>
             ))}
           </div>

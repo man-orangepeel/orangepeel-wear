@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import SatPrice from "@/components/SatPrice";
 
 const PRODUCTS = [
   { src: "1bis-4-300x300.png",                              name: "Meme Chad — Warrior",      slug: "meme-chad-warrior-tshirt" },
@@ -99,7 +102,7 @@ export default function WarriorsPage() {
                   />
                 </div>
                 <p className="text-[#111518] text-sm font-semibold group-hover:text-[#ed760a] transition-colors">{p.name}</p>
-                <p className="text-[#687279] text-xs">€25 – €50</p>
+                <SatPrice priceEur={25} priceEur2={50} />
               </Link>
             ))}
           </div>
