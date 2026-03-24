@@ -88,6 +88,53 @@ export default function TribesPage() {
         </div>
       </section>
 
+      {/* ── Meetup Bitcoin Nantes ── */}
+      <section className="bg-[#111518] py-10 px-6 border-t border-white/10">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-6 justify-between">
+          <div className="flex flex-col gap-3 flex-1">
+            <div className="flex items-center gap-3">
+              <span className="text-[#ed760a] text-xs uppercase tracking-widest font-semibold">Nantes, France</span>
+              <span className="text-white/20 text-xs">— 2nd Thursday of each month</span>
+            </div>
+            <h2 className="text-[22px] font-bold text-white" style={{ fontFamily: "var(--font-heading)" }}>
+              MeetUp Bitcoin Nantes
+            </h2>
+            <p className="text-white/60 text-sm leading-relaxed max-w-lg">
+              Free, open to all, no level required. Bitcoin talks, workshops and good company at{" "}
+              <strong className="text-white/80">Le Startijenn, île de Nantes</strong>.
+              Beginners, professionals, merchants — everyone&apos;s welcome.
+            </p>
+            <p className="text-white/40 text-xs italic">
+              I&apos;m one of the organisers — come say hi.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 shrink-0">
+            <a
+              href="https://t.me/meetupbitcoinnantes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#ed760a] text-black font-bold px-6 py-3 text-sm hover:bg-[#efa813] transition-colors rounded-sm"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+              </svg>
+              Join the Group
+            </a>
+            <a
+              href="https://x.com/NantesBitcoin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border border-white/20 text-white/60 font-medium px-6 py-2.5 text-sm hover:border-white/50 hover:text-white transition-colors rounded-sm"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.23H2.744l7.737-8.845L2.034 2.25H8.05l4.262 5.636 5.932-5.636Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              @NantesBitcoin
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── Info ── */}
       <section className="bg-white py-16 px-6 border-t border-black/5">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -66,10 +66,18 @@ const SparkleIcon = () => (
   </svg>
 );
 
+const CommunityIcon = () => (
+  <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2v4l-4-4H9a2 2 0 0 1-2-2v-1" />
+    <path d="M15 1H3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2v4l4-4h4a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2z" />
+  </svg>
+);
+
 const GRID_ITEMS = [
-  { id: "why-i-build", label: "A Bitcoiner", Icon: BitcoinIcon },
-  { id: "genesis",     label: "A Brand",     Icon: BrandIcon  },
-  { id: "pill-name",   label: "A Name",      Icon: NameIcon   },
+  { id: "why-i-build",  label: "A Bitcoiner",  Icon: BitcoinIcon   },
+  { id: "genesis",      label: "A Brand",      Icon: BrandIcon     },
+  { id: "pill-name",    label: "A Name",       Icon: NameIcon      },
+  { id: "in-the-wild",  label: "In the Wild",  Icon: CommunityIcon },
 ];
 
 export default function AboutPage() {
@@ -107,12 +115,13 @@ export default function AboutPage() {
       </section>
 
       {/* ── Clickable grid ── */}
-      <div className="grid grid-cols-3 divide-x divide-white/20 border-t border-b border-white/20">
+      <div className="bg-white py-6 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-1">
         {GRID_ITEMS.map(({ id, label, Icon }) => (
           <a
             key={id}
             href={`#${id}`}
-            className="group bg-[#0a0a0a] py-16 px-10 flex flex-col items-center gap-6 hover:bg-[#111] transition-colors duration-200"
+            className="group bg-[#0a0a0a] py-[43px] px-6 flex flex-col items-center gap-6 hover:bg-[#111] transition-colors duration-200"
           >
             <div className="w-20 h-20 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
               <Icon />
@@ -125,6 +134,7 @@ export default function AboutPage() {
             </span>
           </a>
         ))}
+        </div>
       </div>
 
       {/* ── Why I build Orange ── text left / image right */}
@@ -315,6 +325,98 @@ export default function AboutPage() {
           <div className="md:w-[420px] w-full shrink-0">
             <div className="relative aspect-square overflow-hidden bg-[#f0f0f0]">
               <Image src="/images/products/2-1024x1024.png" alt="Orange Peel — The Name" fill className="object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── In the Wild ── */}
+      <section id="in-the-wild" className="bg-white py-20 px-6 border-t border-black/10">
+        <div className="max-w-6xl mx-auto flex flex-col gap-12">
+          <div>
+            <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-3">Beyond the Clothes</p>
+            <h2
+              className="text-[38px] md:text-[50px] font-bold text-[#111518] leading-tight"
+              style={{ fontFamily: "var(--font-heading)" }}
+            >
+              In the Wild
+            </h2>
+            <p className="text-[#687279] text-base mt-4 max-w-xl">
+              Orange Peel isn&apos;t just a brand. It&apos;s a posture — and it shows up in the world.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* OrangePeel Flow */}
+            <div className="flex flex-col gap-5 bg-[#0a0a0a] p-8 rounded-sm">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-[#ed760a]/15 flex items-center justify-center shrink-0 text-[#ed760a]">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                  </svg>
+                </div>
+                <span className="text-[#ed760a] text-xs uppercase tracking-widest font-semibold">Telegram Channel</span>
+              </div>
+              <h3 className="text-white text-[22px] font-bold" style={{ fontFamily: "var(--font-heading)" }}>
+                OrangePeel Flow
+              </h3>
+              <p className="text-white/60 text-sm leading-relaxed">
+                A free channel delivering high-signal Bitcoin news twice a week: concrete adoption stories, fundamentals, community polls. No altcoins, no price speculation, no ads.
+              </p>
+              <p className="text-white/35 text-xs">In French — because we are.</p>
+              <a
+                href="https://t.me/OrangePeel_Flow"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start flex items-center gap-2 bg-[#ed760a] text-black font-bold px-6 py-2.5 text-sm hover:bg-[#efa813] transition-colors rounded-sm mt-auto"
+              >
+                Join the Channel
+              </a>
+            </div>
+
+            {/* Meetup Bitcoin Nantes */}
+            <div className="flex flex-col gap-5 bg-[#f8f6f3] p-8 rounded-sm border border-black/8">
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-[#ed760a]/10 flex items-center justify-center shrink-0 text-[#ed760a]">
+                  <svg width="18" height="18" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                </div>
+                <span className="text-[#ed760a] text-xs uppercase tracking-widest font-semibold">Nantes · Every 2nd Thursday</span>
+              </div>
+              <h3 className="text-[#111518] text-[22px] font-bold" style={{ fontFamily: "var(--font-heading)" }}>
+                MeetUp Bitcoin Nantes
+              </h3>
+              <p className="text-[#687279] text-sm leading-relaxed">
+                Free meetups open to all — novices, experts, merchants. Talks, workshops, and good company at{" "}
+                <strong className="text-[#111518]">Le Startijenn, île de Nantes</strong>.
+              </p>
+              <p className="text-[#687279] text-xs italic">I run this meetup — see you there.</p>
+              <div className="flex gap-3 mt-auto flex-wrap">
+                <a
+                  href="https://t.me/meetupbitcoinnantes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-[#111518] text-white font-bold px-5 py-2.5 text-sm hover:bg-[#222] transition-colors rounded-sm"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                  </svg>
+                  Telegram
+                </a>
+                <a
+                  href="https://x.com/NantesBitcoin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 border border-black/20 text-[#111518] font-medium px-5 py-2.5 text-sm hover:border-[#ed760a] hover:text-[#ed760a] transition-colors rounded-sm"
+                >
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.23H2.744l7.737-8.845L2.034 2.25H8.05l4.262 5.636 5.932-5.636Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  @NantesBitcoin
+                </a>
+              </div>
             </div>
           </div>
         </div>

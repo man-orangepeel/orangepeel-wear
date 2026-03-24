@@ -50,9 +50,11 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
             <p className="mb-4">Yes, absolutely! Not only do we accept Bitcoin, but we actively encourage its use as a form of payment. During checkout, you&apos;ll find the option to pay with Bitcoin. We support both the Bitcoin network and the Lightning Network for faster, low-fee transactions.</p>
             <p className="mb-4">To keep Bitcoin a voluntary choice, we also accept fiat payment via major credit cards, Google Pay and Apple Pay.</p>
             <p>
-              New to Bitcoin? Using it builds its value — and that means acting in your own best interest.{" "}
-              <Link href="/learn" className="text-[#ed760a] hover:underline">Explore the resources we&apos;ve put together</Link>{" "}
-              to guide you on how to buy, secure, and spend Bitcoin with confidence.
+              New to Bitcoin? Using it builds its value — and that means acting in your own best interest. Explore our{" "}
+              <Link href="/learn/library" className="text-[#ed760a] hover:underline">Bitcoin Library</Link>
+              {" "}and{" "}
+              <Link href="/learn/courses" className="text-[#ed760a] hover:underline">From Newbie to Maxi</Link>
+              {" "}to guide you on how to buy, secure, and spend Bitcoin with confidence.
             </p>
           </>
         ),
@@ -125,8 +127,13 @@ const FAQS: { category: string; items: { q: string; a: React.ReactNode }[] }[] =
         q: "Do you have a newsletter?",
         a: (
           <>
-            <p className="mb-4">Most newsletters are built to push sales and collect data — we don&apos;t want to do either. We&apos;d rather earn your trust through the quality of our products, the strength of our brand, and the care we put into service. No spam, no pressure.</p>
-            <p>We might make fewer sales this way — but we&apos;ll be prouder of what we&apos;ve built with you.</p>
+            <p className="mb-4">
+              We run a free Telegram channel —{" "}
+              <a href="https://t.me/OrangePeel_Flow" target="_blank" rel="noopener noreferrer" className="text-[#ed760a] hover:underline font-semibold">OrangePeel Flow</a>
+              {" "}— delivering high-signal Bitcoin news: adoption, fundamentals, no altcoins, no price noise, no ads.
+              It&apos;s in French — we&apos;re frenchies, and proud of it.
+            </p>
+            <p>As for email newsletters: most are built to push sales and collect data — we don&apos;t want to do either. No spam, no pressure.</p>
           </>
         ),
       },
