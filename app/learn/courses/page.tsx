@@ -135,7 +135,7 @@ export default function CoursesPage() {
               OrangePeel Flow
             </h2>
             <p className="text-white/60 text-sm max-w-lg">
-              Between two courses, keep your knowledge fresh. Our free Telegram channel delivers high-signal Bitcoin news twice a week — adoption, fundamentals, no altcoins, no noise. In French.
+              Between two courses, keep your knowledge fresh. A free Telegram channel dedicated to Bitcoin — adoption signals, fundamentals, weekly community poll. No altcoins, no noise. In French for now.
             </p>
           </div>
           <a
