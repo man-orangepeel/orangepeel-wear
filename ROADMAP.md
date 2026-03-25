@@ -243,7 +243,7 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 ### Priorité haute 🟡
 | Item | Notes |
 |---|---|
-| Responsive mobile | Vérifier toutes les pages |
+| Responsive mobile | Navbar ✅ — reste : heroes, grilles, cartes, textes sur toutes les pages |
 | Nettoyer les références à "Bitcoin Economic Forum" | Présent dans le contenu — à identifier + supprimer |
 | Pages collection `/collections/*` — refonte UI | Corps de page idem `/products` mais pré-filtré + filtres type/genre + pagination |
 | Images produits trending | Sélectionner les bonnes vignettes (300×300 → envisager 600px) |
@@ -280,7 +280,11 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 | SatPrice — USD au lieu d'EUR | `$XX` calculé via taux USD/EUR mempool.space |
 | SatPrice — symbole sat image | `public/images/sat-symbol.png` (depuis Assets) |
 | useBtcPrice — cache USD + EUR | Hook retourne `{ eur, usd }` |
-| The Way We Peel — Mill3sime intégré | Premium pillar : nom Mill3sime + lien bitcoinstore.fr |
+| The Way We Peel — Mill3sim3 intégré | Premium : nom + lien x.com/Mill3sim3 + bitcoinstore.fr + phrase écosystème |
+| The Way We Peel — liens Learn | Bitcoin pillar : liens vers /learn/courses et /learn/library |
+| The Way We Peel — Eco-friendly supprimé | Sub-point "Eco-friendly personalization" retiré (Sustainable) |
+| Navbar mobile | Menu hamburger + drawer accordéon, fermeture auto au changement de route |
+| Ligne orange footer | Déplacée dans layout.tsx — présente sur toutes les pages |
 
 ---
 
