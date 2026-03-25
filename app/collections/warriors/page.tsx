@@ -128,8 +128,7 @@ export default function WarriorsPage() {
           </h2>
           <div className="text-[#111518] text-base leading-relaxed flex flex-col gap-4">
             <p>
-              <strong>The Warriors Collection</strong> isn&apos;t clothing.
-              It&apos;s a flag that you wear <strong>proudly</strong>, and the
+              <strong>The Warriors Collection</strong> isn&apos;t clothing. It&apos;s a flag that you wear <strong>proudly</strong>, and the
               reactions are an opportunity to raise <strong>awareness</strong>.
             </p>
             <p>
@@ -145,30 +144,6 @@ export default function WarriorsPage() {
         </div>
       </section>
 
-      {/* ── CTA — identité Warriors ── */}
-      <section
-        className="py-16 px-6"
-        style={{ background: "radial-gradient(at top center, #efa813 0%, #ed760a 100%)" }}
-      >
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-          <h2
-            className="text-[36px] font-normal text-white"
-            style={{ fontFamily: "var(--font-anton)", letterSpacing: "4px" }}
-          >
-            Proof Of Work
-          </h2>
-          <p className="text-white/90 text-base leading-relaxed">
-            Bitcoin writes history. Your story is part of it — share it and
-            inspire the next block.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm hover:bg-white hover:text-[#ed760a] transition-colors duration-200 rounded-sm"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </section>
     </>
   );
 }

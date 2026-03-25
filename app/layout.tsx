@@ -46,6 +46,7 @@ export default function RootLayout({
       <body className="bg-white text-[#111518]">
         <Navbar />
         <main className="pt-[70px]">{children}</main>
+        <div className="h-[3px] bg-[#ed760a]" />
         <Footer />
       </body>
     </html>
