@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 /* ── Grid icons (large) ─────────────────────────────────────────── */
 const ScaleIcon = () => (
@@ -86,13 +87,6 @@ const LeafSmallIcon = () => (
     <path d="M9.5 12C9.5 12 12 14 15 12c3-2 4-5 2-7-2-2-6-2-9 0-3 2-5 6-4 10" />
   </svg>
 );
-const RecycleIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="1 4 1 10 7 10" />
-    <polyline points="23 20 23 14 17 14" />
-    <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
-  </svg>
-);
 // Slow Fashion
 const ClockIcon = () => (
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -117,13 +111,13 @@ const GRID_ITEMS = [
   { id: "slow-fashion", label: "Slow Fashion", Icon: HeartIcon    },
 ];
 
-type SubPoint = { SubIcon: () => React.ReactElement; title: string; body: string };
+type SubPoint = { SubIcon: () => React.ReactElement; title: string; body: React.ReactNode };
 type Pillar = {
   id: string;
   label: string;
   title: string;
   subtitle: string;
-  intro: string;
+  intro: React.ReactNode;
   points: SubPoint[];
   punchline: string;
   dark: boolean;
@@ -154,9 +148,9 @@ const PILLARS: Pillar[] = [
     label: "Premium",
     title: "Premium Quality only.",
     subtitle: "Inside and Out.",
-    intro: "Because your values live longer than one season, every piece I create is crafted with the utmost care.",
+    intro: <>Because your values live longer than one season, every piece I create is crafted with the utmost care — in partnership with <Link href="https://x.com/Mill3sim3" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#ed760a] transition-colors">Mill3sim3</Link>, the Bitcoin-native production workshop behind <Link href="https://bitcoinstore.fr" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[#ed760a] transition-colors">bitcoinstore.fr</Link>. A builder, a Bitcoiner, and one of the rare people putting skin in the game to make Bitcoin commerce real for him and other bitcoiners.</>,
     points: [
-      { SubIcon: LayersIcon, title: "High GSM fabrics.",       body: "Thick, durable, and made to last." },
+      { SubIcon: LayersIcon, title: "High GSM fabrics.",       body: "Thick, durable, and made to last. Sourced and produced by Mill3sim3 — a builder-run, Bitcoin-only supply chain based in Toulouse." },
       { SubIcon: PenIcon,    title: "Expert customization.",   body: "I choose embroidery whenever the style allows it, and when the fabric can support its thickness and weight." },
     ],
     punchline: "Whether embroidered or printed, each piece is crafted to be worn, washed, and worn again — not to fade away like trends.",
@@ -187,8 +181,7 @@ const PILLARS: Pillar[] = [
     subtitle: "Better for Us.",
     intro: "I choose products and techniques that respect the environment.",
     points: [
-      { SubIcon: LeafSmallIcon, title: "Sustainable fabrics.",          body: "Made from organic and recycled materials that reduce the environmental footprint." },
-      { SubIcon: RecycleIcon,   title: "Eco-friendly personalization.", body: "I use processes that minimize waste and environmental impact, while ensuring long-lasting durability." },
+      { SubIcon: LeafSmallIcon, title: "Sustainable fabrics.", body: "Made from organic and recycled materials that reduce the environmental footprint." },
     ],
     punchline: "I believe conscious production is the future — and doing good feels even better when you wear it.",
     dark: true, gray: false, reverse: true,
@@ -218,7 +211,7 @@ const PILLARS: Pillar[] = [
     intro: "Financial freedom isn't just wealth; it's the freedom to choose how you finance your life.",
     points: [
       { SubIcon: ZapIcon,  title: "Bitcoin as a choice.",    body: "I chose Bitcoin as my native payment method — not to impose, but to empower. Unlike fiat, you're free to opt in." },
-      { SubIcon: BookIcon, title: "Resources for learning.", body: "New to Bitcoin? My free resources in \"The Liberation Toolkit\" give you everything you need to get started — easily and safely." },
+      { SubIcon: BookIcon, title: "Resources for learning.", body: <>New to Bitcoin? Explore <Link href="/learn/courses" className="underline underline-offset-2 hover:text-[#ed760a] transition-colors">From Newbie to Maxi</Link> and the <Link href="/learn/library" className="underline underline-offset-2 hover:text-[#ed760a] transition-colors">Bitcoin Library</Link> — everything you need to get started, easily and safely.</> },
     ],
     punchline: "Bitcoin gives you the freedom to manage your money. I give you the freedom to choose how you pay.",
     dark: true, gray: false, reverse: true,
@@ -359,8 +352,6 @@ export default function HowWeWorkPage() {
         );
       })}
 
-      {/* ── Brand separator ── */}
-      <div className="h-[3px] bg-[#ed760a]" />
     </>
   );
 }

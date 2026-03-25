@@ -419,8 +419,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Brand separator ── */}
-      <div className="h-[3px] bg-[#ed760a]" />
     </>
   );
 }

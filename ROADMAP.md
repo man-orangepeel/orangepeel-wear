@@ -246,37 +246,41 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 | Responsive mobile | Vérifier toutes les pages |
 | Nettoyer les références à "Bitcoin Economic Forum" | Présent dans le contenu — à identifier + supprimer |
 | Pages collection `/collections/*` — refonte UI | Corps de page idem `/products` mais pré-filtré + filtres type/genre + pagination |
-| Page Warriors — corrections contenu | Rétablir l'espace dans "The Warriors Collection isn't clothing." · Supprimer section Proof of Work |
 | Images produits trending | Sélectionner les bonnes vignettes (300×300 → envisager 600px) |
+| Home — icônes badges cohérentes | Même style (cercle, couleur, hover) que About/HowWeWork |
+| Navbar — taille police menus/sous-menus | Augmenter légèrement le font-size des menus et dropdowns |
 
 ### Priorité moyenne 🟠
 | Item | Notes |
 |---|---|
 | Page Legal / CGU / Mentions légales | À créer |
-| Footer — revoir l'ordre des RS | Ordre actuel : Telegram, X, Nostr, Insta, GitHub, LinkedIn — à redéfinir |
-| Footer — renseigner liens manquants | X, Nostr, Instagram, GitHub (URLs à récupérer) |
-| Footer — vérifier lisibilité des icônes sur `#0d0d0d` | GitHub, LinkedIn notamment |
 | SEO : metadata par page | title, description, og:image |
 | Parallax home hero | Améliorer effet background fixe vs scroll text |
+| Git — nettoyage repo public | Préparer le repo pour ouverture publique |
+| Audit sécurité avancé | Revue complète avant mise en ligne publique |
 
 ### Priorité basse 🔵
 | Item | Notes |
 |---|---|
 | Designs `/designs` | Sélectionner les bonnes vignettes produit |
-| Logo SAT | Récupérer/créer le symbole sat pour SatPrice |
-| Vérifier conversion BTC/$ (USD) | SatPrice utilise EUR uniquement — USD à valider |
-| Logos navbar sur fond clair/foncé | Vérifier que `logo-black.png` est correct sur fond blanc |
 | Outil admin | Gérer designs, produits × variations |
 | Commerce — BTCPay Server | Quand reprise du commerce |
-| Révision "The Way We Peel" avec Mill3 | Partenariat design |
 
 ### Fait depuis dernière mise à jour ✅
-| Item | Commit |
+| Item | Notes |
 |---|---|
-| Icône Bitcoin home badges | stroke, cohérent avec les autres badges | `5467f2b` |
-| OrangePeel Flow — fréquence corrigée | "daily signal" — meme + take + weekly recap | `5467f2b` |
-| Contact Us — hero structuré + fond blanc | label + 80px title + inputs clairs + 1ère personne | `5467f2b` |
-| Contact Us — 1ère personne | "I'll get back to you", "I'm all ears" | `5467f2b` |
+| Icône Bitcoin home badges | stroke, cohérent avec les autres badges |
+| OrangePeel Flow — fréquence corrigée | "daily signal" — meme + take + weekly recap |
+| Contact Us — hero structuré + fond blanc | label + 80px title + inputs clairs + 1ère personne |
+| Page Warriors — Proof of Work supprimé | Section CTA gradient retirée |
+| Footer — RS : GitHub + Telegram + LinkedIn uniquement | X, Nostr, Instagram retirés |
+| Footer — lien GitHub | `https://github.com/man-orangepeel/orangepeel-sappes` |
+| Footer — logo → `logo-fond-noir.png` | Logo haute résolution (3000×1000) depuis Assets |
+| Navbar — logo → `logo-fond-blanc.png` | Logo haute résolution depuis Assets |
+| SatPrice — USD au lieu d'EUR | `$XX` calculé via taux USD/EUR mempool.space |
+| SatPrice — symbole sat image | `public/images/sat-symbol.png` (depuis Assets) |
+| useBtcPrice — cache USD + EUR | Hook retourne `{ eur, usd }` |
+| The Way We Peel — Mill3sime intégré | Premium pillar : nom Mill3sime + lien bitcoinstore.fr |
 
 ---
 
@@ -284,8 +288,11 @@ text-[#ed760a] text-sm tracking-widest uppercase font-medium
 
 - `public/images/designs/` — 129 designs 1024×1024
 - `public/images/products/` — 141 produits 300×300
-- `public/images/logo-white.png` — logo fond sombre
-- `public/images/logo-black.png` — logo fond clair
+- `public/images/logo-fond-noir.png` — logo fond sombre (footer) — 3000×1000
+- `public/images/logo-fond-blanc.png` — logo fond clair (navbar) — 3000×1000
+- `public/images/logo-white.png` — logo fond sombre (legacy)
+- `public/images/logo-black.png` — logo fond clair (legacy)
+- `public/images/sat-symbol.png` — symbole satoshi (1423×1958) pour SatPrice
 - `public/images/hero-bg.jpg` — photo hero home
 - `public/courses.json` — données cours PlanB (local, hors GitHub API)
 
