@@ -74,7 +74,7 @@ export default function DesignsPage() {
             Suit Up For Freedom
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
+            className="text-[44px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             All Our Designs
@@ -148,12 +148,12 @@ export default function DesignsPage() {
 
       {/* ── Filter Tabs ── */}
       <section className="bg-white pt-12 pb-0 px-6 border-b border-black/10">
-        <div className="max-w-6xl mx-auto flex gap-0">
+        <div className="max-w-6xl mx-auto flex gap-0 overflow-x-auto">
           {FILTERS.map((f) => (
             <button
               key={f.value}
               onClick={() => setActive(f.value)}
-              className={`px-6 py-3 text-sm font-semibold border-b-2 transition-colors ${
+              className={`px-5 py-3 text-sm font-semibold border-b-2 transition-colors whitespace-nowrap ${
                 active === f.value
                   ? "border-[#ed760a] text-[#111518]"
                   : "border-transparent text-[#6b7280] hover:text-[#111518]"

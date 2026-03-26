@@ -83,6 +83,7 @@ export default function Footer() {
             alt="Orange Peel"
             width={480}
             height={160}
+            className="w-full max-w-[380px] md:max-w-[480px]"
           />
           <p className="text-white/25 text-xs">
             © 2026 Orange Peel — Built on conviction. Paid in sats.

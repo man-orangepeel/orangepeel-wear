@@ -1,12 +1,18 @@
 {
   "carousel": [
-    "13-7-1024x1024.png",
-    "1bis-3-1024x1024.png",
-    "9-7-1024x1024.png"
+    "1bis-4-1024x1024.png",
+    "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png",
+    "1bis-3-1024x1024.png"
   ],
   "designs": [
-    { "file": "13-7-1024x1024.png",  "collection": "warriors" },
-    { "file": "1bis-3-1024x1024.png", "collection": "wizards"  },
-    { "file": "9-7-1024x1024.png",    "collection": "cyphers"  }
+    { "file": "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png", "collection": "warriors" },
+    { "file": "0004.0-Percept-vs.-Real-1-1024x1024.png",                "collection": "warriors" },
+    { "file": "0006.0-Satoshi-I-dont-have-time-1024x1024.png",          "collection": "wizards"  },
+    { "file": "3bis-1-1024x1024.png",                                   "collection": "wizards"  },
+    { "file": "3bis-1024x1024.png",                                     "collection": "wizards"  },
+    { "file": "1bis-1-1024x1024.png",                                   "collection": "wizards"  },
+    { "file": "1bis-2-1024x1024.png",                                   "collection": "wizards"  },
+    { "file": "1bis-3-1024x1024.png",                                   "collection": "wizards"  },
+    { "file": "1bis-4-1024x1024.png",                                   "collection": "warriors" }
   ]
 }
