@@ -57,6 +57,7 @@ async function fetchResources(): Promise<GitHubItem[]> {
       {
         next: { revalidate: 86400 },
         headers: { Accept: "application/vnd.github+json" },
+        signal: AbortSignal.timeout(5000),
       }
     );
     if (!res.ok) return [];
@@ -96,7 +97,8 @@ export default async function LibraryPage() {
             A Bitcoin Library
           </h1>
           <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
-            Sharpen your mind. Fuel your sovereignty. Open-source Bitcoin resources from PlanB Network — curated by the community, for the community.
+            Open-source Bitcoin resources from PlanB Network.<br />
+            Sharpen your mind. Fuel your sovereignty.
           </p>
         </div>
       </section>
@@ -110,7 +112,8 @@ export default async function LibraryPage() {
               OrangePeel Flow
             </h2>
             <p className="text-white/60 text-sm max-w-lg">
-              A free Telegram channel dedicated to Bitcoin. Adoption signals, fundamentals, community polls — no altcoins, no price noise, no ads. Pure signal, for beginners and seasoned Bitcoiners alike. In French for now.
+              A free Telegram channel dedicated to Bitcoin — no altcoins, no price noise, no ads.<br />
+              Pure signal, for beginners and seasoned Bitcoiners alike. In French for now.
             </p>
           </div>
           <a
@@ -159,7 +162,7 @@ export default async function LibraryPage() {
                   </a>
                 </p>
               </div>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {display.map((cat) => (
                   <a
                     key={cat.key}

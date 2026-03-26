@@ -399,14 +399,13 @@ export default function DesignsPage() {
       {/* ── Lightbox ── */}
       {lightboxIdx !== null && (
         <div
-          className="fixed inset-0 bg-black/92 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-black/92 z-50 flex flex-col items-center justify-center"
           onClick={() => setLightboxIdx(null)}
           ref={lightboxRef}
         >
-          {/* Contenu — stoppe la propagation */}
+          {/* Image — full width on mobile, fixed size on desktop */}
           <div
-            className="relative flex items-center justify-center"
-            style={{ width: "min(700px, 90vw)", height: "min(700px, 85vh)" }}
+            className="relative w-full aspect-square md:aspect-auto md:w-[min(700px,90vw)] md:h-[min(700px,85vh)]"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
@@ -414,10 +413,40 @@ export default function DesignsPage() {
               alt={`Design ${lightboxIdx + 1}`}
               fill
               className="object-contain"
-              sizes="700px"
+              sizes="(max-width: 768px) 100vw, 700px"
               priority
             />
           </div>
+
+          {/* Flèches mobile — en dessous de l'image */}
+          <div
+            className="flex md:hidden justify-between w-full px-6 mt-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null)}
+              className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+              aria-label="Précédent"
+            >
+              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+            <button
+              onClick={() => setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null)}
+              className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+              aria-label="Suivant"
+            >
+              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Compteur */}
+          <p className="mt-3 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-1/2 text-white/40 text-xs tracking-widest" onClick={(e) => e.stopPropagation()}>
+            {lightboxIdx + 1} / {filtered.length}
+          </p>
 
           {/* Fermer */}
           <button
@@ -430,10 +459,10 @@ export default function DesignsPage() {
             </svg>
           </button>
 
-          {/* Précédent */}
+          {/* Précédent — desktop uniquement */}
           <button
             onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null); }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+            className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
             aria-label="Précédent"
           >
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -441,21 +470,16 @@ export default function DesignsPage() {
             </svg>
           </button>
 
-          {/* Suivant */}
+          {/* Suivant — desktop uniquement */}
           <button
             onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null); }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+            className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
             aria-label="Suivant"
           >
             <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </button>
-
-          {/* Compteur */}
-          <p className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/40 text-xs tracking-widest">
-            {lightboxIdx + 1} / {filtered.length}
-          </p>
         </div>
       )}
     </>

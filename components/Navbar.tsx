@@ -50,8 +50,8 @@ export default function Navbar() {
 
   const base      = "text-[#111518]/65 hover:text-[#ed760a] transition-colors duration-150";
   const active    = "text-[#ed760a]";
-  const subBase   = "block px-5 py-2.5 text-[#111518]/70 hover:text-[#ed760a] hover:bg-[#f8f6f3] transition-colors text-[12px] tracking-wide uppercase";
-  const subActive = "block px-5 py-2.5 text-[#ed760a] bg-[#fff8f2] text-[12px] tracking-wide uppercase font-semibold";
+  const subBase   = "block px-5 py-2.5 text-[#111518]/70 hover:text-[#ed760a] hover:bg-[#f8f6f3] transition-colors text-[13px] tracking-wide uppercase";
+  const subActive = "block px-5 py-2.5 text-[#ed760a] bg-[#fff8f2] text-[13px] tracking-wide uppercase font-semibold";
 
   const toggleSection = (s: string) => setOpenSection((prev) => (prev === s ? null : s));
 
@@ -102,14 +102,14 @@ export default function Navbar() {
             <Image
               src="/images/logo-fond-blanc.png"
               alt="Orange Peel"
-              width={130}
-              height={43}
+              width={160}
+              height={53}
               priority
             />
           </Link>
 
           {/* ── Nav desktop ── */}
-          <nav className="hidden md:flex items-stretch flex-1 justify-center gap-8 text-[11px] font-semibold uppercase tracking-[0.12em]">
+          <nav className="hidden md:flex items-stretch flex-1 justify-center gap-8 text-[13px] font-semibold uppercase tracking-[0.12em]">
 
             <Link href="/" className={`flex flex-col justify-end pb-[14px] ${isHome ? active : base}`}>
               Home
@@ -194,7 +194,7 @@ export default function Navbar() {
                       <Link
                         key={l.href}
                         href={l.href}
-                        className={`px-8 py-3.5 text-xs uppercase tracking-widest font-medium ${pathname === l.href ? "text-[#ed760a]" : "text-[#111518]/70"}`}
+                        className={`px-8 py-3.5 text-sm uppercase tracking-widest font-medium ${pathname === l.href ? "text-[#ed760a]" : "text-[#111518]/70"}`}
                       >
                         {l.label}
                       </Link>

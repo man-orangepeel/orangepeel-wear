@@ -127,15 +127,15 @@ export default function CoursesPage() {
       )}
 
       {/* ── OrangePeel Flow ── */}
-      <section className="bg-[#111518] py-10 px-6">
+      <section className="bg-[#111518] py-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
           <div className="flex flex-col gap-2">
             <p className="text-[#ed760a] text-xs uppercase tracking-widest font-semibold">Stay in the Signal</p>
-            <h2 className="text-[22px] font-bold text-white" style={{ fontFamily: "var(--font-heading)" }}>
+            <h2 className="text-[28px] font-bold text-white" style={{ fontFamily: "var(--font-heading)" }}>
               OrangePeel Flow
             </h2>
             <p className="text-white/60 text-sm max-w-lg">
-              Between two courses, keep your knowledge fresh. A free Telegram channel dedicated to Bitcoin — adoption signals, fundamentals, weekly community poll. No altcoins, no noise. In French for now.
+              Between two courses, keep your knowledge fresh. A free Telegram channel dedicated to Bitcoin — adoption signals, fundamentals, weekly community poll. In French for now.
             </p>
           </div>
           <a

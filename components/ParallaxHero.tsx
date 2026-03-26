@@ -50,7 +50,7 @@ export default function ParallaxHero() {
         <p className="max-w-lg text-white/90 text-base mb-3 font-medium" style={{ lineHeight: "28px" }}>
           Orange Peel embodies the spirit of Bitcoin through premium, purpose-driven apparel.
         </p>
-        <p className="max-w-lg text-white/70 text-sm italic mb-10" style={{ lineHeight: "28px" }}>
+        <p className="max-w-lg text-white/95 text-base mb-10" style={{ lineHeight: "28px" }}>
           Provocative, Subtle, Cryptic — your style is yours.
         </p>
         <Link

@@ -125,15 +125,13 @@ export default function ContactPage() {
                   className="bg-white border border-black/15 text-[#6b7280] px-4 py-3 text-sm focus:outline-none focus:border-[#ed760a] transition-colors rounded-sm"
                 >
                   <option value="">Select a subject</option>
-                  <option>Order Inquiry</option>
-                  <option>Product Information</option>
-                  <option>Payment &amp; Privacy</option>
-                  <option>Shipping &amp; Delivery</option>
+                  <option>Order &amp; Shipping</option>
                   <option>Returns &amp; Refunds</option>
-                  <option>Feedback &amp; Suggestions</option>
+                  <option>Payment &amp; Privacy</option>
                   <option>Custom Design Request</option>
-                  <option>Share Your Story!</option>
+                  <option>Notify Me at Relaunch</option>
                   <option>Partnerships &amp; Collaborations</option>
+                  <option>Feedback &amp; Suggestions</option>
                   <option>Other</option>
                 </select>
               </div>

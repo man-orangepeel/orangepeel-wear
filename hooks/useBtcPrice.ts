@@ -14,13 +14,17 @@ function fetchPrice() {
   if (_fetching) return;
   _fetching = true;
   fetch("https://mempool.space/api/v1/prices")
-    .then((r) => r.json())
+    .then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
     .then((d) => {
       _cache = { eur: d.EUR as number, usd: d.USD as number };
       _listeners.forEach((fn) => fn(_cache!));
       _listeners.length = 0;
     })
-    .catch(() => {
+    .catch(() => {})
+    .finally(() => {
       _fetching = false;
     });
 }

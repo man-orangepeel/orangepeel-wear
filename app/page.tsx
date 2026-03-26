@@ -82,13 +82,15 @@ export default function Home() {
             <Link
               key={badge.label}
               href={badge.href}
-              className="flex flex-col items-center gap-4 py-10 px-8 hover:bg-white/5 transition-colors"
+              className="group flex flex-col items-center gap-5 py-8 px-8 hover:bg-white/5 transition-colors"
             >
-              <div className="w-11 h-11 text-[#ed760a] mx-auto">
-                {badge.icon}
+              <div className="w-14 h-14 rounded-full border-2 border-white/50 group-hover:border-[#ed760a] flex items-center justify-center transition-colors duration-200">
+                <div className="w-7 h-7 text-[#ed760a]">
+                  {badge.icon}
+                </div>
               </div>
               <div>
-                <p className="text-white font-bold text-base mb-1">{badge.label}</p>
+                <p className="text-white font-bold text-base mb-1 group-hover:text-[#ed760a] transition-colors duration-200">{badge.label}</p>
                 <p className="text-white/50 text-sm">{badge.desc}</p>
               </div>
             </Link>
