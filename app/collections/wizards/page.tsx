@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { PRODUCTS, type ProductType, type ProductGenre } from "@/lib/products";
 import SatPrice from "@/components/SatPrice";
+import CollectionHero from "@/components/CollectionHero";
 
 const BADGES = [
   {
@@ -50,23 +51,18 @@ export default function WizardsPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section
-        className="-mt-[70px] pb-16 px-6"
-        style={{ background: "radial-gradient(at top center, #482B5F 0%, #1D1D63 100%)", paddingTop: "calc(70px + 2rem)" }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">— The Whispered Collection</p>
-          <h1
-            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-caudex)", letterSpacing: "2.3px" }}
-          >
-            The Wizards
-          </h1>
-          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
-            The message is in the Wearer.
-          </p>
-        </div>
-      </section>
+      <CollectionHero
+        label="— The Whispered Collection"
+        title="The Wizards"
+        titleFont="var(--font-caudex)"
+        titleSizeMobile="60px"
+        titleSizeDesktop="80px"
+        titleLetterSpacing="2.3px"
+        gradient="radial-gradient(at top center, #482B5F 0%, #1D1D63 100%)"
+        accentColor="#c4b5fd"
+        tagline="Spread Bitcoin without ever saying its name."
+        body="Hidden in plain sight, your designs spark conversations even among skeptics. They fall down the rabbit hole without realizing it. Yes, you are a Wizard."
+      />
 
       {/* ── Badges ── */}
       <section className="bg-[#111] py-0 px-0">
@@ -143,33 +139,6 @@ export default function WizardsPage() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* ── Why The Wizards? ── */}
-      <section className="bg-[#111518] py-16 px-6 border-t border-white/10">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#8b5cf6] text-xs uppercase tracking-widest font-semibold mb-4">The Wizards Collection</p>
-          <h2 className="text-[36px] font-bold text-white mb-8" style={{ fontFamily: "var(--font-heading)" }}>
-            Why The Wizards?
-          </h2>
-          <div className="text-white/70 text-base leading-relaxed flex flex-col gap-4">
-            <p>The Wizards Collection allows you to <strong className="text-white">powerfully spread the principles of Bitcoin without ever mentioning it</strong>. It&apos;s perfect for:</p>
-            <p>Those seeking discreet designs, suitable for <strong className="text-white">everyday wear in any environment</strong>.</p>
-            <p>Those who wish to <strong className="text-white">avoid drawing attention</strong>, due to the associations that link Bitcoin to wealth or criminality.</p>
-            <p><strong className="text-white">This subtle approach sparks conversations about our society</strong>, even among Bitcoin skeptics. They fall down the rabbit hole without even realizing it. Yes, you are a Wizard.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <section className="py-16 px-6" style={{ background: "radial-gradient(at top center, #482B5F 0%, #1D1D63 100%)" }}>
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-          <h2 className="text-[36px] font-bold text-white" style={{ fontFamily: "var(--font-caudex)" }}>Proof Of Work</h2>
-          <p className="text-white/80 text-base leading-relaxed">Bitcoin writes history. Your story is part of it — share it and inspire the next block.</p>
-          <Link href="/contact" className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm hover:bg-white hover:text-[#1D1D63] transition-colors duration-200 rounded-sm">
-            Contact Us
-          </Link>
         </div>
       </section>
     </>

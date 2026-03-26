@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { PRODUCTS, type ProductType, type ProductGenre } from "@/lib/products";
 import SatPrice from "@/components/SatPrice";
+import CollectionHero from "@/components/CollectionHero";
 
 const BADGES = [
   {
@@ -51,23 +52,19 @@ export default function WarriorsPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section
-        className="-mt-[70px] pb-16 px-6"
-        style={{ background: "radial-gradient(at top center, #efa813 0%, #ed760a 100%)", paddingTop: "calc(70px + 2rem)" }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">— The Explicit Collection</p>
-          <h1
-            className="text-[60px] md:text-[80px] font-normal text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-anton)", letterSpacing: "4.9px" }}
-          >
-            The Warriors
-          </h1>
-          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
-            Wear your truth. Let them ask.
-          </p>
-        </div>
-      </section>
+      <CollectionHero
+        label="— The Explicit Collection"
+        title="The Warriors"
+        titleFont="var(--font-anton)"
+        titleSizeMobile="60px"
+        titleSizeDesktop="80px"
+        titleLetterSpacing="4.9px"
+        fontNormal
+        gradient="radial-gradient(at top center, #efa813 0%, #ed760a 100%)"
+        accentColor="#ffbe2e"
+        tagline="Not clothing. A flag."
+        body="Wear your truth, provoke the conversation — every reaction is a chance to raise awareness. Explicit. Uncompromising. On-brand for the Bitcoin standard."
+      />
 
       {/* ── Badges ── */}
       <section className="bg-[#111] py-0 px-0">
@@ -144,21 +141,6 @@ export default function WarriorsPage() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* ── Why The Warriors? ── */}
-      <section className="bg-[#111518] py-16 px-6 border-t border-white/10">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#ed760a] text-xs uppercase tracking-widest font-semibold mb-4">The Warriors Collection</p>
-          <h2 className="text-[36px] font-bold text-white mb-8" style={{ fontFamily: "var(--font-heading)" }}>
-            Why The Warriors?
-          </h2>
-          <div className="text-white/70 text-base leading-relaxed flex flex-col gap-4">
-            <p><strong className="text-white">The Warriors Collection</strong> isn&apos;t clothing. It&apos;s a flag that you wear <strong className="text-white">proudly</strong>, and the reactions are an opportunity to raise <strong className="text-white">awareness</strong>.</p>
-            <p>It explicitly denounces the shortcomings of the current system and stands tall for the <strong className="text-white">Bitcoin standard</strong>.</p>
-            <p>It embodies the desire to represent Bitcoin with an <strong className="text-white">uncompromising message</strong>… and a <strong className="text-white">touch of provocation</strong>.</p>
-          </div>
         </div>
       </section>
     </>

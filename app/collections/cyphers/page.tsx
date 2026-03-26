@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { PRODUCTS, type ProductType, type ProductGenre } from "@/lib/products";
 import SatPrice from "@/components/SatPrice";
+import CollectionHero from "@/components/CollectionHero";
 
 const BADGES = [
   {
@@ -50,23 +51,17 @@ export default function CyphersPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section
-        className="-mt-[70px] pb-16 px-6"
-        style={{ background: "radial-gradient(at top center, #4A4A4A 0%, #000000 100%)", paddingTop: "calc(70px + 2rem)" }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <p className="text-white/60 text-sm tracking-widest uppercase mb-4 font-medium">— The Technical Collection</p>
-          <h1
-            className="text-[46px] md:text-[62px] text-white leading-tight mb-6"
-            style={{ fontFamily: "var(--font-orbitron)", lineHeight: "1.15em" }}
-          >
-            The Cyphers
-          </h1>
-          <p className="text-white/85 text-lg leading-relaxed max-w-2xl" style={{ fontFamily: "var(--font-heading)" }}>
-            Those who know, know.
-          </p>
-        </div>
-      </section>
+      <CollectionHero
+        label="— The Technical Collection"
+        title="The Cyphers"
+        titleFont="var(--font-orbitron)"
+        titleSizeMobile="46px"
+        titleSizeDesktop="76px"
+        gradient="radial-gradient(at top center, #4A4A4A 0%, #000000 100%)"
+        accentColor="#9ca3af"
+        tagline="You don't just wear Bitcoin. You code it."
+        body="Technical references, protocol nods, community in-jokes — encoded in every thread. For those who know, know."
+      />
 
       {/* ── Badges ── */}
       <section className="bg-[#111] py-0 px-0">
@@ -74,7 +69,7 @@ export default function CyphersPage() {
           {BADGES.map((b) => (
             <div key={b.label} className="flex flex-col items-center gap-5 py-8 px-8">
               <div className="w-14 h-14 rounded-full border-2 border-white/50 flex items-center justify-center">
-                <div className="w-7 h-7 text-[#6b7280]">{b.icon}</div>
+                <div className="w-7 h-7 text-white/80">{b.icon}</div>
               </div>
               <div>
                 <p className="text-white font-bold text-base mb-1">{b.label}</p>
@@ -143,32 +138,6 @@ export default function CyphersPage() {
               ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* ── Why The Cyphers? ── */}
-      <section className="bg-[#111518] py-16 px-6 border-t border-white/10">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#6b7280] text-xs uppercase tracking-widest font-semibold mb-4">The Cyphers Collection</p>
-          <h2 className="text-[36px] font-bold text-white mb-8" style={{ fontFamily: "var(--font-heading)" }}>
-            Why The Cyphers?
-          </h2>
-          <div className="text-white/70 text-base leading-relaxed flex flex-col gap-4">
-            <p>You know Bitcoin inside out. You don&apos;t just wear Bitcoin — you <strong className="text-white">code it</strong>.</p>
-            <p>The Cyphers Collection is built for those who communicate in layers: technical references, protocol nods, and community in-jokes that only the initiated can decode.</p>
-            <p><strong className="text-white">You diffuse the code in the chaos. One design at a time.</strong></p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <section className="py-16 px-6" style={{ background: "radial-gradient(at top center, #4A4A4A 0%, #000000 100%)" }}>
-        <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-          <h2 className="text-[30px] text-white" style={{ fontFamily: "var(--font-orbitron)" }}>Proof Of Work</h2>
-          <p className="text-white/70 text-base leading-relaxed">Bitcoin writes history. Your story is part of it — share it and inspire the next block.</p>
-          <Link href="/contact" className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200 rounded-sm">
-            Contact Us
-          </Link>
         </div>
       </section>
     </>
