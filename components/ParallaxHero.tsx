@@ -36,16 +36,18 @@ export default function ParallaxHero() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center">
         <h2
-          className="text-[40px] md:text-[78px] font-bold text-white leading-[1.1] tracking-[-2.7px] mb-0"
-          style={{ fontFamily: "var(--font-heading)", wordSpacing: "19px" }}
+          className="text-[34px] md:text-[78px] font-bold text-white leading-[1.1] tracking-[-1.5px] md:tracking-[-2.7px] mb-0"
+          style={{ fontFamily: "var(--font-heading)" }}
         >
-          Wear your Values.
+          <span className="hidden md:inline" style={{ wordSpacing: "19px" }}>Wear your Values.</span>
+          <span className="md:hidden">Wear your Values.</span>
         </h2>
         <h2
-          className="text-[40px] md:text-[78px] font-bold text-white leading-[1.1] tracking-[-2.7px] mb-8"
-          style={{ fontFamily: "var(--font-heading)", wordSpacing: "19px" }}
+          className="text-[34px] md:text-[78px] font-bold text-white leading-[1.1] tracking-[-1.5px] md:tracking-[-2.7px] mb-8"
+          style={{ fontFamily: "var(--font-heading)" }}
         >
-          Spread your World.
+          <span className="hidden md:inline" style={{ wordSpacing: "19px" }}>Spread your World.</span>
+          <span className="md:hidden">Spread your World.</span>
         </h2>
         <p className="max-w-lg text-white/90 text-base mb-3 font-medium" style={{ lineHeight: "28px" }}>
           Orange Peel embodies the spirit of Bitcoin through premium, purpose-driven apparel.

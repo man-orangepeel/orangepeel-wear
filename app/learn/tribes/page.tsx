@@ -24,7 +24,7 @@ export default function TribesPage() {
             Down The Rabbit Hole
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
+            className="text-[44px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             Find Your Tribe

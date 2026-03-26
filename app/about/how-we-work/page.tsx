@@ -233,7 +233,7 @@ export default function HowWeWorkPage() {
             Our Process
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
+            className="text-[44px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             The Way We Peel

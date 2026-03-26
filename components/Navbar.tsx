@@ -50,8 +50,8 @@ export default function Navbar() {
 
   const base      = "text-[#111518]/65 hover:text-[#ed760a] transition-colors duration-150";
   const active    = "text-[#ed760a]";
-  const subBase   = "block px-5 py-2.5 text-[#111518]/70 hover:text-[#ed760a] hover:bg-[#f8f6f3] transition-colors text-[13px] tracking-wide uppercase";
-  const subActive = "block px-5 py-2.5 text-[#ed760a] bg-[#fff8f2] text-[13px] tracking-wide uppercase font-semibold";
+  const subBase   = "block px-5 py-2.5 text-[#111518]/70 hover:text-[#ed760a] hover:bg-[#f8f6f3] transition-colors text-[13.5px] tracking-wide uppercase";
+  const subActive = "block px-5 py-2.5 text-[#ed760a] bg-[#fff8f2] text-[13.5px] tracking-wide uppercase font-semibold";
 
   const toggleSection = (s: string) => setOpenSection((prev) => (prev === s ? null : s));
 
@@ -109,7 +109,7 @@ export default function Navbar() {
           </Link>
 
           {/* ── Nav desktop ── */}
-          <nav className="hidden md:flex items-stretch flex-1 justify-center gap-8 text-[13px] font-semibold uppercase tracking-[0.12em]">
+          <nav className="hidden md:flex items-stretch flex-1 justify-center gap-8 text-[14px] font-semibold uppercase tracking-[0.12em]">
 
             <Link href="/" className={`flex flex-col justify-end pb-[14px] ${isHome ? active : base}`}>
               Home

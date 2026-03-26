@@ -94,7 +94,7 @@ export default function Home() {
             The Range
           </p>
           <h2
-            className="text-[60px] font-bold text-[#111518] leading-tight mb-4"
+            className="text-[40px] md:text-[60px] font-bold text-[#111518] leading-tight mb-4"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             Our Collections
@@ -118,7 +118,7 @@ export default function Home() {
           }}
         >
           <h3
-            className="text-[81px] md:text-[101px] font-normal text-white"
+            className="text-[60px] md:text-[101px] font-normal text-white"
             style={{ fontFamily: "var(--font-anton)", lineHeight: "0.96em", letterSpacing: "4.9px" }}
           >
             The
@@ -149,7 +149,7 @@ export default function Home() {
           }}
         >
           <h3
-            className="text-[81px] md:text-[98px] font-bold text-white"
+            className="text-[60px] md:text-[98px] font-bold text-white"
             style={{ fontFamily: "var(--font-caudex)", lineHeight: "0.94em", letterSpacing: "2.3px" }}
           >
             The
@@ -182,7 +182,7 @@ export default function Home() {
           }}
         >
           <h3
-            className="text-[65px] md:text-[81px] text-white"
+            className="text-[46px] md:text-[81px] text-white"
             style={{ fontFamily: "var(--font-orbitron)", lineHeight: "0.97em" }}
           >
             The
@@ -217,7 +217,7 @@ export default function Home() {
                 The Art
               </p>
               <h2
-                className="text-[60px] font-bold text-[#111518] leading-tight mb-4"
+                className="text-[40px] md:text-[60px] font-bold text-[#111518] leading-tight mb-4"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Our Designs
@@ -270,7 +270,7 @@ export default function Home() {
               Most Wanted
             </p>
             <h2
-              className="text-[60px] font-bold text-[#111518] text-center mb-12"
+              className="text-[40px] md:text-[60px] font-bold text-[#111518] text-center mb-12"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               Trending

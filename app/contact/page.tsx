@@ -51,7 +51,7 @@ export default function ContactPage() {
             Let&apos;s Talk
           </p>
           <h1
-            className="text-[60px] md:text-[80px] font-bold text-white leading-tight mb-6"
+            className="text-[44px] md:text-[80px] font-bold text-white leading-tight mb-6"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             Contact Us
