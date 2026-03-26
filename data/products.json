@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "warrior-i-tshirt",
+    "name": "Warrior I",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "unisex",
+    "price": 50,
+    "src": "1-1-300x300.png",
+    "designSrc": "1-1-1024x1024.png",
+    "description": "The first warrior. The one who asked questions when everyone else was certain. Keep asking.",
+    "longDescription": "There's a moment — you've done the reading. You understand the protocol. You can't unsee what you've seen.\n\nThis is not a t-shirt about Bitcoin. It's a t-shirt about that moment.\n\nThe Warrior I is for those who asked the uncomfortable question first, who sat with the cognitive dissonance long enough to let it resolve. Not the loudest in the room. The most convicted.\n\n100% GOTS-certified organic cotton. Wear the beginning.",
+    "published": true,
+    "colors": [
+      { "name": "Black",  "hex": "#111518", "src": "1-1-300x300.png" },
+      { "name": "White",  "hex": "#f5f5f5", "src": "1-1-300x300.png" },
+      { "name": "Orange", "hex": "#ed760a", "src": "1-1-300x300.png" }
+    ]
+  },
+  {
+    "slug": "warrior-hoodie",
+    "name": "Warrior — Hoodie",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 75,
+    "src": "13-7-300x300.png",
+    "designSrc": "13-7-1024x1024.png",
+    "description": "The warrior's armor. Premium organic cotton hoodie. Stay sovereign, stay warm.",
+    "longDescription": "Sovereignty is not a summer vibe.\n\nIt takes discipline, it takes cold days and long reads. It takes showing up when the price is down and the noise is loud.\n\nThe Warrior Hoodie is your armor for all of that. Heavy-weight organic cotton, premium print, cut for real comfort — not fast fashion comfort.\n\nWear it to the meetup. Wear it in the cold. Wear it when you need a reminder of why you're here.\n\nGOTS certified. OEKO-TEX® approved. Orange stays orange after 100 washes.",
+    "published": true,
+    "colors": [
+      { "name": "Black",  "hex": "#111518", "src": "13-7-300x300.png" },
+      { "name": "White",  "hex": "#f5f5f5", "src": "13-7-300x300.png" },
+      { "name": "Orange", "hex": "#ed760a", "src": "13-7-300x300.png" }
+    ]
+  },
+  {
+    "slug": "hidden-signal-tshirt",
+    "name": "Hidden Signal",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "women",
+    "price": 50,
+    "src": "1-5-300x300.png",
+    "designSrc": "1-5-1024x1024.png",
+    "description": "The signal was always there. Hidden in plain sight. For those who learned to look.",
+    "longDescription": "The Wizard doesn't shout. The Wizard encodes.\n\nHidden Signal is for the woman who has done the work — who understands what's happening at the protocol level, who carries that knowledge quietly and powerfully.\n\nThe design is subtle enough that most people won't see it. Those who do will know exactly who they're looking at.\n\nA signal to the community. An enigma to everyone else.\n\nFitted cut in 100% GOTS-certified organic cotton. Designed for women who know.",
+    "published": true,
+    "colors": [
+      { "name": "Black",  "hex": "#111518", "src": "1-5-300x300.png" },
+      { "name": "White",  "hex": "#f5f5f5", "src": "1-5-300x300.png" },
+      { "name": "Orange", "hex": "#ed760a", "src": "1-5-300x300.png" }
+    ]
+  },
+  {
+    "slug": "cypher-i-tshirt",
+    "name": "The Cypher I",
+    "collection": "cyphers",
+    "type": "tshirt",
+    "genre": "unisex",
+    "price": 50,
+    "src": "2-1-300x300.png",
+    "designSrc": "2-1-1024x1024.png",
+    "description": "Encrypted. Sovereign. Private. The first cypher in the series.",
+    "longDescription": "Bitcoin is cypherpunk technology. Not a get-rich scheme. Not a brand. A protocol built on mathematics, cryptography and the radical idea that individuals can transact without asking permission.\n\nThe Cypher I is the beginning of that story, encoded on cotton.\n\nFor those who understand why privacy matters. For those who run their own node. For those who know the difference between custodial and sovereign.\n\nMinimalist design. Maximum signal. Unisex fit, 100% organic cotton, GOTS certified.",
+    "published": true,
+    "colors": [
+      { "name": "Black",  "hex": "#111518", "src": "2-1-300x300.png" },
+      { "name": "White",  "hex": "#f5f5f5", "src": "2-1-300x300.png" },
+      { "name": "Orange", "hex": "#ed760a", "src": "2-1-300x300.png" }
+    ]
+  },
+  {
+    "slug": "cypher-hoodie",
+    "name": "Cypher — Hoodie",
+    "collection": "cyphers",
+    "type": "hoodie",
+    "genre": "men",
+    "price": 75,
+    "src": "10-1-300x300.png",
+    "designSrc": "10-1-1024x1024.png",
+    "description": "Disappear into the code. Reappear in sats. The cypher hoodie for the anonymous sovereign.",
+    "longDescription": "Some people wear their beliefs loudly. The Cypher doesn't need to.\n\nThe Cypher Hoodie is built for the builder — the one who contributes to the protocol, who verifies rather than trusts, who knows that the real work happens quietly, in terminals and cold storage and multi-sig setups.\n\nDark colorway. Technical aesthetic. Heavy-weight organic cotton that keeps you warm during the long sessions.\n\nFor men who operate in the shadows and hold the keys. GOTS certified. OEKO-TEX® approved.",
+    "published": true,
+    "colors": [
+      { "name": "Black",  "hex": "#111518", "src": "10-1-300x300.png" },
+      { "name": "White",  "hex": "#f5f5f5", "src": "10-1-300x300.png" },
+      { "name": "Orange", "hex": "#ed760a", "src": "10-1-300x300.png" }
+    ]
+  }
+]

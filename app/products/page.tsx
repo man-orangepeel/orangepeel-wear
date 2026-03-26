@@ -21,6 +21,7 @@ export default function ProductsPage() {
   const [genre, setGenre] = useState<FilterGenre>("all");
 
   const filtered = PRODUCTS.filter((p) => {
+    if (!p.published) return false;
     if (collection !== "all" && p.collection !== collection) return false;
     if (type !== "all" && p.type !== type) return false;
     if (genre !== "all" && p.genre !== genre) return false;

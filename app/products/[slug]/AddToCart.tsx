@@ -9,14 +9,25 @@ const SIZES = ["XS", "S", "M", "L", "XL", "XXL"];
 export default function AddToCart({
   colors,
   productName,
+  selectedColor,
+  onColorChange,
 }: {
   colors: ProductColor[];
   productName: string;
+  selectedColor?: ProductColor;
+  onColorChange?: (color: ProductColor) => void;
 }) {
   const router = useRouter();
+  const [internalColor, setInternalColor] = useState<ProductColor>(colors[0]);
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
-  const [selectedColor, setSelectedColor] = useState<ProductColor>(colors[0]);
   const [added, setAdded] = useState(false);
+
+  const activeColor = selectedColor ?? internalColor;
+
+  const handleColorChange = (color: ProductColor) => {
+    setInternalColor(color);
+    onColorChange?.(color);
+  };
 
   const handleAdd = () => {
     setAdded(true);
@@ -39,17 +50,17 @@ export default function AddToCart({
       <div className="flex flex-col gap-2">
         <p className="text-sm font-semibold text-[#111518]">
           Color{" "}
-          <span className="font-normal text-[#6b7280]">— {selectedColor.name}</span>
+          <span className="font-normal text-[#6b7280]">— {activeColor.name}</span>
         </p>
         <div className="flex gap-2">
           {colors.map((color) => (
             <button
               key={color.name}
-              onClick={() => setSelectedColor(color)}
+              onClick={() => handleColorChange(color)}
               title={color.name}
               aria-label={color.name}
               className={`w-9 h-9 rounded-full border-2 transition-all duration-150 ${
-                selectedColor.name === color.name
+                activeColor.name === color.name
                   ? "border-[#ed760a] scale-110 shadow-md"
                   : "border-black/15 hover:border-black/40"
               }`}
