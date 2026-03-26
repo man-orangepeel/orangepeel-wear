@@ -3,6 +3,7 @@ import { Playfair_Display, Inter_Tight, Anton, Caudex, Orbitron } from "next/fon
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ThemeSeparator from "@/components/ThemeSeparator";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export default function RootLayout({
       <body className="bg-white text-[#111518]">
         <Navbar />
         <main className="pt-[70px]">{children}</main>
-        <div className="h-[3px] bg-[#ed760a]" />
+        <ThemeSeparator />
         <Footer />
       </body>
     </html>
