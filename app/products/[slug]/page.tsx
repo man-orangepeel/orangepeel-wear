@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PRODUCTS, COLLECTION_LABELS, COLLECTION_COLORS } from "@/lib/products";
-import AddToCart from "./AddToCart";
-import ProductGallery from "./ProductGallery";
-import SatPrice from "@/components/SatPrice";
+import ProductLayout from "./ProductLayout";
 
 export function generateStaticParams() {
-  return PRODUCTS.map((p) => ({ slug: p.slug }));
+  return PRODUCTS.filter((p) => p.published).map((p) => ({ slug: p.slug }));
 }
 
 export default async function ProductPage({
@@ -17,7 +15,7 @@ export default async function ProductPage({
   const { slug } = await params;
   const product = PRODUCTS.find((p) => p.slug === slug);
 
-  if (!product) notFound();
+  if (!product || !product.published) notFound();
 
   return (
     <>
@@ -40,59 +38,7 @@ export default async function ProductPage({
 
       {/* ── Product Layout ── */}
       <section className="bg-white py-12 px-6 pb-24">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          {/* Left — Images */}
-          <ProductGallery
-            designSrc={product.designSrc}
-            productSrc={product.src}
-            name={product.name}
-          />
-
-          {/* Right — Info */}
-          <div className="flex flex-col gap-6 py-2">
-            {/* Collection badge */}
-            <span
-              className={`self-start text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-sm ${COLLECTION_COLORS[product.collection]}`}
-            >
-              {COLLECTION_LABELS[product.collection]}
-            </span>
-
-            {/* Name */}
-            <h1
-              className="text-[36px] md:text-[48px] font-bold text-[#111518] leading-tight"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              {product.name}
-            </h1>
-
-            {/* Price */}
-            <SatPrice priceEur={product.price} large />
-
-            {/* Description */}
-            <p className="text-[#6b7280] text-base leading-relaxed">{product.description}</p>
-
-            <div className="border-t border-black/10 pt-6 flex flex-col gap-5">
-              {/* Type info */}
-              <div className="flex gap-4 text-sm text-[#6b7280]">
-                <span className="capitalize">{product.type === "tshirt" ? "T-Shirt" : "Hoodie"}</span>
-                <span>·</span>
-                <span className="capitalize">{product.genre}</span>
-                <span>·</span>
-                <span>GOTS Certified</span>
-              </div>
-
-              <AddToCart colors={product.colors} productName={product.name} />
-
-              {/* Back link */}
-              <Link
-                href="/products"
-                className="text-[#6b7280] text-sm hover:text-[#ed760a] transition-colors text-center"
-              >
-                ← Back to all products
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ProductLayout product={product} />
       </section>
 
       {/* ── Certifications ── */}

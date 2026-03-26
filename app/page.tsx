@@ -2,25 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import ParallaxHero from "@/components/ParallaxHero";
 import SatPrice from "@/components/SatPrice";
+import { PRODUCTS } from "@/lib/products";
+import designsData from "@/data/designs.json";
 
-/* ── Données statiques ── */
-const DESIGNS = [
-  "13-7-1024x1024.png",
-  "13-1024x1024.png",
-  "14-8-1024x1024.png",
-  "12-4-1024x1024.png",
-  "14-9-1024x1024.png",
-  "11-1-1024x1024.png",
-];
-
-const TRENDING = [
-  { src: "1bis-4-300x300.png", name: "Meme Chad — Warrior", price: 50, slug: "meme-chad-warrior-tshirt" },
-  { src: "1bis-3-300x300.png", name: "Meme Chad — Big",     price: 50, slug: "meme-chad-big-tshirt" },
-  { src: "9-7-300x300.png",    name: "Meme Chad — Cypher",  price: 50, slug: "meme-chad-cypher-tshirt" },
-  { src: "1-3-300x300.png",    name: "The Whisper",         price: 50, slug: "the-whisper-tshirt" },
-  { src: "2-1-300x300.png",    name: "The Cypher I",        price: 50, slug: "cypher-i-tshirt" },
-  { src: "1-1-300x300.png",    name: "Warrior I",           price: 50, slug: "warrior-i-tshirt" },
-];
+/* ── Données dynamiques — filtrées par published ── */
+const TRENDING = PRODUCTS.filter((p) => p.published).slice(0, 6);
+const DESIGNS = designsData.designs.slice(0, 6);
 
 const BADGES = [
   {
@@ -223,97 +210,102 @@ export default function Home() {
       {/* ──────────────────────────────────────────
           4. OUR DESIGNS
       ────────────────────────────────────────── */}
-      <section className="bg-white pt-10 pb-0 px-6">
-        <div className="max-w-7xl mx-auto text-center mb-10">
-          <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium">
-            The Art
-          </p>
-          <h2
-            className="text-[60px] font-bold text-[#111518] leading-tight mb-4"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Our Designs
-          </h2>
-          <p className="text-[#6b7280] text-base max-w-2xl mx-auto">
-            Bitcoin only. No moon dreams. We don&apos;t print fiat or hype. We wear convictions.
-          </p>
-        </div>
-      </section>
-
-      <section className="pt-3 pb-10 px-6" style={{ background: "#ed760a" }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-3 gap-3 mb-8">
-            {DESIGNS.map((file, i) => (
-              <Link
-                key={i}
-                href="/designs"
-                className="relative aspect-square overflow-hidden block group"
+      {DESIGNS.length > 0 && <>
+          <section className="bg-white pt-10 pb-0 px-6">
+            <div className="max-w-7xl mx-auto text-center mb-10">
+              <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium">
+                The Art
+              </p>
+              <h2
+                className="text-[60px] font-bold text-[#111518] leading-tight mb-4"
+                style={{ fontFamily: "var(--font-heading)" }}
               >
-                <Image
-                  src={`/images/designs/${file}`}
-                  alt={`Design ${i + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                  sizes="(max-width: 768px) 33vw, 25vw"
-                />
-              </Link>
-            ))}
-          </div>
-          <div className="flex justify-center">
-            <Link
-              href="/designs"
-              className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm tracking-wide hover:bg-white hover:text-[#ed760a] transition-colors duration-200 rounded-sm"
-            >
-              View All Designs
-            </Link>
-          </div>
-        </div>
-      </section>
+                Our Designs
+              </h2>
+              <p className="text-[#6b7280] text-base max-w-2xl mx-auto">
+                Bitcoin only. No moon dreams. We don&apos;t print fiat or hype. We wear convictions.
+              </p>
+            </div>
+          </section>
+
+          <section className="pt-3 pb-10 px-6" style={{ background: "#ed760a" }}>
+            <div className="max-w-7xl mx-auto">
+              <div className="grid grid-cols-3 gap-3 mb-8">
+                {DESIGNS.map((d, i) => (
+                  <Link
+                    key={i}
+                    href="/designs"
+                    className="relative aspect-square overflow-hidden block group"
+                  >
+                    <Image
+                      src={`/images/designs/${d.file}`}
+                      alt={`Design ${i + 1}`}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                      sizes="(max-width: 768px) 33vw, 25vw"
+                    />
+                  </Link>
+                ))}
+              </div>
+              <div className="flex justify-center">
+                <Link
+                  href="/designs"
+                  className="inline-block border border-white text-white font-semibold px-8 py-3 text-sm tracking-wide hover:bg-white hover:text-[#ed760a] transition-colors duration-200 rounded-sm"
+                >
+                  View All Designs
+                </Link>
+              </div>
+            </div>
+          </section>
+        </>
+      }
 
       {/* ──────────────────────────────────────────
           5. TRENDING
       ────────────────────────────────────────── */}
-      <section className="bg-white py-20 px-6">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium text-center">
-            Most Wanted
-          </p>
-          <h2
-            className="text-[60px] font-bold text-[#111518] text-center mb-12"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Trending
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {TRENDING.map((p, i) => (
-              <Link key={i} href={`/products/${p.slug}`} className="group flex flex-col gap-3">
-                <div className="relative aspect-square overflow-hidden bg-[#f5f5f5] max-w-[300px] w-full mx-auto">
-                  <Image
-                    src={`/images/products/${p.src}`}
-                    alt={p.name}
-                    fill
-                    quality={90}
-                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
-                    sizes="300px"
-                  />
-                </div>
-                <p className="text-[#111518] text-sm font-semibold mt-1 group-hover:text-[#ed760a] transition-colors">
-                  {p.name}
-                </p>
-                <SatPrice priceEur={p.price} />
-              </Link>
-            ))}
-          </div>
-          <div className="flex justify-center mt-12">
-            <Link
-              href="/products"
-              className="inline-block border border-[#111518] text-[#111518] font-semibold px-8 py-3 text-sm hover:bg-[#111518] hover:text-white transition-colors duration-200 rounded-sm"
+      {TRENDING.length > 0 && (
+        <section className="bg-white py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-[#ed760a] text-sm tracking-widest uppercase mb-4 font-medium text-center">
+              Most Wanted
+            </p>
+            <h2
+              className="text-[60px] font-bold text-[#111518] text-center mb-12"
+              style={{ fontFamily: "var(--font-heading)" }}
             >
-              View All Products
-            </Link>
+              Trending
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {TRENDING.map((p, i) => (
+                <Link key={i} href={`/products/${p.slug}`} className="group flex flex-col gap-3">
+                  <div className="relative aspect-square overflow-hidden bg-[#f5f5f5] max-w-[300px] w-full mx-auto">
+                    <Image
+                      src={`/images/products/${p.src}`}
+                      alt={p.name}
+                      fill
+                      quality={90}
+                      className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
+                      sizes="300px"
+                    />
+                  </div>
+                  <p className="text-[#111518] text-sm font-semibold mt-1 group-hover:text-[#ed760a] transition-colors">
+                    {p.name}
+                  </p>
+                  <SatPrice priceEur={p.price} />
+                </Link>
+              ))}
+            </div>
+            <div className="flex justify-center mt-12">
+              <Link
+                href="/products"
+                className="inline-block border border-[#111518] text-[#111518] font-semibold px-8 py-3 text-sm hover:bg-[#111518] hover:text-white transition-colors duration-200 rounded-sm"
+              >
+                View All Products
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 }

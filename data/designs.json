@@ -1,0 +1,12 @@
+{
+  "carousel": [
+    "13-7-1024x1024.png",
+    "1bis-3-1024x1024.png",
+    "9-7-1024x1024.png"
+  ],
+  "designs": [
+    { "file": "13-7-1024x1024.png",  "collection": "warriors" },
+    { "file": "1bis-3-1024x1024.png", "collection": "wizards"  },
+    { "file": "9-7-1024x1024.png",    "collection": "cyphers"  }
+  ]
+}

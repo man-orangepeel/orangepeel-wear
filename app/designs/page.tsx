@@ -2,155 +2,13 @@
 
 import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
+import designsData from "../../data/designs.json";
 
 type Collection = "all" | "warriors" | "wizards" | "cyphers";
 
-const DESIGN_DATA: { file: string; collection: Omit<Collection, "all"> }[] = [
-  // Warriors — bold, statement, orange energy
-  { file: "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png", collection: "warriors" },
-  { file: "0004.0-Percept-vs.-Real-1-1024x1024.png",                collection: "warriors" },
-  { file: "1-1-1024x1024.png",                                       collection: "warriors" },
-  { file: "1-2-1024x1024.png",                                       collection: "warriors" },
-  { file: "1-3-1024x1024.png",                                       collection: "warriors" },
-  { file: "1-4-1024x1024.png",                                       collection: "warriors" },
-  { file: "1-5-1024x1024.png",                                       collection: "warriors" },
-  { file: "1-6-1024x1024.png",                                       collection: "warriors" },
-  { file: "13-1-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-2-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-3-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-4-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-5-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-6-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-7-1024x1024.png",                                      collection: "warriors" },
-  { file: "13-1024x1024.png",                                        collection: "warriors" },
-  { file: "13bis-1024x1024.png",                                     collection: "warriors" },
-  { file: "14-1-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-2-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-3-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-4-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-5-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-6-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-7-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-8-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-9-1024x1024.png",                                      collection: "warriors" },
-  { file: "14-10-1024x1024.png",                                     collection: "warriors" },
-  { file: "14-1024x1024.png",                                        collection: "warriors" },
-  { file: "14bis-1024x1024.png",                                     collection: "warriors" },
-  { file: "17-1024x1024.png",                                        collection: "warriors" },
-  { file: "19-1024x1024.png",                                        collection: "warriors" },
+const DESIGN_DATA = designsData.designs as { file: string; collection: Omit<Collection, "all"> }[];
 
-  // Wizards — subtle, mystical, purple depth
-  { file: "1bis-1-1024x1024.png",  collection: "wizards" },
-  { file: "1bis-2-1024x1024.png",  collection: "wizards" },
-  { file: "1bis-3-1024x1024.png",  collection: "wizards" },
-  { file: "1bis-4-1024x1024.png",  collection: "wizards" },
-  { file: "1bis-1024x1024.png",    collection: "wizards" },
-  { file: "5-1-1024x1024.png",     collection: "wizards" },
-  { file: "5-2-1024x1024.png",     collection: "wizards" },
-  { file: "5-3-1024x1024.png",     collection: "wizards" },
-  { file: "5-4-1024x1024.png",     collection: "wizards" },
-  { file: "5-5-1024x1024.png",     collection: "wizards" },
-  { file: "5-7-1024x1024.png",     collection: "wizards" },
-  { file: "5-8-1024x1024.png",     collection: "wizards" },
-  { file: "5-9-1024x1024.png",     collection: "wizards" },
-  { file: "6-1-1024x1024.png",     collection: "wizards" },
-  { file: "6-2-1024x1024.png",     collection: "wizards" },
-  { file: "6-3-1024x1024.png",     collection: "wizards" },
-  { file: "6-4-1024x1024.png",     collection: "wizards" },
-  { file: "6-5-1024x1024.png",     collection: "wizards" },
-  { file: "6-7-1024x1024.png",     collection: "wizards" },
-  { file: "6-8-1024x1024.png",     collection: "wizards" },
-  { file: "6-9-1024x1024.png",     collection: "wizards" },
-  { file: "7-1024x1024.png",       collection: "wizards" },
-  { file: "7-2-1024x1024.png",     collection: "wizards" },
-  { file: "7-3-1024x1024.png",     collection: "wizards" },
-  { file: "7-4-1024x1024.png",     collection: "wizards" },
-  { file: "7-5-1024x1024.png",     collection: "wizards" },
-  { file: "7-6-1024x1024.png",     collection: "wizards" },
-  { file: "8-1024x1024.png",       collection: "wizards" },
-  { file: "8-2-1024x1024.png",     collection: "wizards" },
-  { file: "8-3-1024x1024.png",     collection: "wizards" },
-  { file: "8-4-1024x1024.png",     collection: "wizards" },
-  { file: "15-1-1024x1024.png",    collection: "wizards" },
-  { file: "15-2-1024x1024.png",    collection: "wizards" },
-  { file: "15-3-1024x1024.png",    collection: "wizards" },
-  { file: "15-1024x1024.png",      collection: "wizards" },
-  { file: "16-1-1024x1024.png",    collection: "wizards" },
-  { file: "16-1024x1024.png",      collection: "wizards" },
-
-  // Cyphers — encoded, tech, dark
-  { file: "0006.0-Satoshi-I-dont-have-time-1024x1024.png", collection: "cyphers" },
-  { file: "2-1-1024x1024.png",    collection: "cyphers" },
-  { file: "2-1024x1024.png",      collection: "cyphers" },
-  { file: "2-2-1024x1024.png",    collection: "cyphers" },
-  { file: "2-4-1024x1024.png",    collection: "cyphers" },
-  { file: "2-5-1024x1024.png",    collection: "cyphers" },
-  { file: "2-6-1024x1024.png",    collection: "cyphers" },
-  { file: "2-7-1024x1024.png",    collection: "cyphers" },
-  { file: "3-1-1024x1024.png",    collection: "cyphers" },
-  { file: "3-2-1024x1024.png",    collection: "cyphers" },
-  { file: "3-3-1024x1024.png",    collection: "cyphers" },
-  { file: "3-4-1024x1024.png",    collection: "cyphers" },
-  { file: "3-6-1024x1024.png",    collection: "cyphers" },
-  { file: "3-7-1024x1024.png",    collection: "cyphers" },
-  { file: "3-8-1024x1024.png",    collection: "cyphers" },
-  { file: "3bis-1-1024x1024.png", collection: "cyphers" },
-  { file: "3bis-1024x1024.png",   collection: "cyphers" },
-  { file: "4-1-1024x1024.png",    collection: "cyphers" },
-  { file: "4-1024x1024.png",      collection: "cyphers" },
-  { file: "4-2-1024x1024.png",    collection: "cyphers" },
-  { file: "4-3-1024x1024.png",    collection: "cyphers" },
-  { file: "4-5-1024x1024.png",    collection: "cyphers" },
-  { file: "4-6-1024x1024.png",    collection: "cyphers" },
-  { file: "4-7-1024x1024.png",    collection: "cyphers" },
-  { file: "4-8-1024x1024.png",    collection: "cyphers" },
-  { file: "4-9-1024x1024.png",    collection: "cyphers" },
-  { file: "9-1024x1024.png",      collection: "cyphers" },
-  { file: "9-2-1024x1024.png",    collection: "cyphers" },
-  { file: "9-3-1024x1024.png",    collection: "cyphers" },
-  { file: "9-4-1024x1024.png",    collection: "cyphers" },
-  { file: "9-5-1024x1024.png",    collection: "cyphers" },
-  { file: "9-6-1024x1024.png",    collection: "cyphers" },
-  { file: "9-7-1024x1024.png",    collection: "cyphers" },
-  { file: "9bis-1024x1024.png",   collection: "cyphers" },
-  { file: "10-1024x1024.png",     collection: "cyphers" },
-  { file: "10-1-1024x1024.png",   collection: "cyphers" },
-  { file: "10-2-1024x1024.png",   collection: "cyphers" },
-  { file: "10-3-1024x1024.png",   collection: "cyphers" },
-  { file: "10-4-1024x1024.png",   collection: "cyphers" },
-  { file: "10-5-1024x1024.png",   collection: "cyphers" },
-  { file: "10-6-1024x1024.png",   collection: "cyphers" },
-  { file: "10-7-1024x1024.png",   collection: "cyphers" },
-  { file: "11-1024x1024.png",     collection: "cyphers" },
-  { file: "11-1-1024x1024.png",   collection: "cyphers" },
-  { file: "11-2-1024x1024.png",   collection: "cyphers" },
-  { file: "11-3-1024x1024.png",   collection: "cyphers" },
-  { file: "11-4-1024x1024.png",   collection: "cyphers" },
-  { file: "11-5-1024x1024.png",   collection: "cyphers" },
-  { file: "11-6-1024x1024.png",   collection: "cyphers" },
-  { file: "11-7-1024x1024.png",   collection: "cyphers" },
-  { file: "12-1024x1024.png",     collection: "cyphers" },
-  { file: "12-1-1024x1024.png",   collection: "cyphers" },
-  { file: "12-2-1024x1024.png",   collection: "cyphers" },
-  { file: "12-3-1024x1024.png",   collection: "cyphers" },
-  { file: "12-4-1024x1024.png",   collection: "cyphers" },
-  { file: "12-5-1024x1024.png",   collection: "cyphers" },
-  { file: "12-6-1024x1024.png",   collection: "cyphers" },
-  { file: "12-7-1024x1024.png",   collection: "cyphers" },
-  { file: "12-8-1024x1024.png",   collection: "cyphers" },
-  { file: "12bis-1024x1024.png",  collection: "cyphers" },
-];
-
-const CAROUSEL_FILES = [
-  "13-7-1024x1024.png",
-  "1bis-3-1024x1024.png",
-  "14-8-1024x1024.png",
-  "0006.0-Satoshi-I-dont-have-time-1024x1024.png",
-  "9-7-1024x1024.png",
-  "5-1-1024x1024.png",
-  "1-1-1024x1024.png",
-  "12-4-1024x1024.png",
-];
+const CAROUSEL_FILES = DESIGN_DATA.map((d) => d.file).slice(0, 8);
 
 const FILTERS: { label: string; value: Collection }[] = [
   { label: "All", value: "all" },
@@ -228,7 +86,7 @@ export default function DesignsPage() {
       </section>
 
       {/* ── Carousel — fond blanc, frame brand identity ── */}
-      <section
+      {CAROUSEL_FILES.length > 0 && <section
         className="relative bg-white flex items-center justify-center py-12 overflow-hidden"
         style={{ minHeight: "520px" }}
         onMouseEnter={() => setPaused(true)}
@@ -286,7 +144,7 @@ export default function DesignsPage() {
             />
           ))}
         </div>
-      </section>
+      </section>}
 
       {/* ── Filter Tabs ── */}
       <section className="bg-white pt-12 pb-0 px-6 border-b border-black/10">

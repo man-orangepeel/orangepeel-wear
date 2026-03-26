@@ -43,6 +43,7 @@ export default function WarriorsPage() {
   const [genre, setGenre] = useState<"all" | ProductGenre>("all");
 
   const filtered = PRODUCTS.filter((p) => {
+    if (!p.published) return false;
     if (p.collection !== "warriors") return false;
     if (type !== "all" && p.type !== type) return false;
     if (genre !== "all" && p.genre !== genre) return false;
