@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Bitcoin-only premium apparel. Wear your values — Provocative, Subtle, Cryptic.",
+  openGraph: { url: "https://orangepeel.fr" },
+};
+
 import Link from "next/link";
 import Image from "next/image";
 import ParallaxHero from "@/components/ParallaxHero";

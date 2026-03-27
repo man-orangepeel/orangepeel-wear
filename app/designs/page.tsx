@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect, useCallback, useRef } from "react";
 import designsData from "../../data/designs.json";
+import ShareButton from "@/components/ShareButton";
 
 type Collection = "all" | "warriors" | "wizards" | "cyphers";
 
@@ -301,8 +302,21 @@ export default function DesignsPage() {
             </button>
           </div>
 
+          {/* Share buttons */}
+          <div
+            className="mt-3 md:absolute md:bottom-14 md:left-1/2 md:-translate-x-1/2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ShareButton
+              url="https://orangepeel.fr/designs"
+              text="Bitcoin designs by Orange Peel — provocative, subtle, cryptic."
+              variant="dark"
+              inline
+            />
+          </div>
+
           {/* Compteur */}
-          <p className="mt-3 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-1/2 text-white/40 text-xs tracking-widest" onClick={(e) => e.stopPropagation()}>
+          <p className="mt-2 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-1/2 text-white/40 text-xs tracking-widest" onClick={(e) => e.stopPropagation()}>
             {lightboxIdx + 1} / {filtered.length}
           </p>
 

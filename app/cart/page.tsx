@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cart",
+  description: "Your Orange Peel cart — Bitcoin apparel ready to wear.",
+};
+
 import Link from "next/link";
 
 export default function CartPage() {

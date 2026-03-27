@@ -33,8 +33,22 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Orange Peel — Wear your Values",
+  metadataBase: new URL("https://orangepeel.fr"),
+  title: {
+    default: "Orange Peel — Wear your Values",
+    template: "%s | Orange Peel",
+  },
   description: "Bitcoin-only premium apparel. Provocative, Subtle, Cryptic — your style is yours.",
+  openGraph: {
+    siteName: "Orange Peel",
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630 }],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/hero-bg.jpg"],
+  },
 };
 
 export default function RootLayout({
