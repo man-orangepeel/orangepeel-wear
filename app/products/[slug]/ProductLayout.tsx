@@ -5,7 +5,6 @@ import { useState } from "react";
 import type { Product, ProductColor } from "@/lib/products";
 import AddToCart from "./AddToCart";
 import SatPrice from "@/components/SatPrice";
-import ShareButton from "@/components/ShareButton";
 import { COLLECTION_LABELS, COLLECTION_COLORS } from "@/lib/products";
 import Link from "next/link";
 
@@ -150,23 +149,18 @@ export default function ProductLayout({ product }: { product: Product }) {
             productName={product.name}
             selectedColor={selectedColor}
             onColorChange={handleColorChange}
+            shareSlug={product.slug}
           />
 
-          <div className="pt-1 flex items-center gap-2">
-            <ShareButton
-              slug={product.slug}
-              text={`${product.name} — Bitcoin apparel by Orange Peel`}
-            />
-            <Link
-              href="/products"
-              className="flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-sm border border-black/20 text-[#6b7280] hover:text-[#111518] hover:border-black/40 transition-colors"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-              </svg>
-              All products
-            </Link>
-          </div>
+          <Link
+            href="/products"
+            className="self-start flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-sm border border-black/20 text-[#6b7280] hover:text-[#111518] hover:border-black/40 transition-colors"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+            All products
+          </Link>
         </div>
       </div>
 

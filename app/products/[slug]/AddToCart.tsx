@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import type { ProductColor } from "@/lib/products";
+import ShareButton from "@/components/ShareButton";
 
 const SIZES = ["XS", "S", "M", "L", "XL", "XXL"];
 
@@ -11,11 +12,13 @@ export default function AddToCart({
   productName,
   selectedColor,
   onColorChange,
+  shareSlug,
 }: {
   colors: ProductColor[];
   productName: string;
   selectedColor?: ProductColor;
   onColorChange?: (color: ProductColor) => void;
+  shareSlug?: string;
 }) {
   const router = useRouter();
   const [internalColor, setInternalColor] = useState<ProductColor>(colors[0]);
@@ -95,14 +98,26 @@ export default function AddToCart({
         </div>
       </div>
 
-      {/* Add to Cart */}
-      <button
-        className="bg-[#ed760a] text-black font-bold px-10 py-4 text-sm hover:bg-[#efa813] transition-colors duration-200 rounded-sm w-full disabled:opacity-60"
-        onClick={handleAdd}
-        disabled={added}
-      >
-        {added ? "Added!" : "Add to Cart"}
-      </button>
+      {/* Add to Cart + Share */}
+      <div className="flex gap-2">
+        <button
+          className="flex-[3] bg-[#ed760a] text-black font-bold py-4 text-sm hover:bg-[#efa813] transition-colors duration-200 rounded-sm disabled:opacity-60"
+          onClick={handleAdd}
+          disabled={added}
+        >
+          {added ? "Added!" : "Add to Cart"}
+        </button>
+        {shareSlug && (
+          <div className="flex-[1]">
+            <ShareButton
+              slug={shareSlug}
+              text={`${productName} — Bitcoin apparel by Orange Peel`}
+              compact
+              alignRight
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -70,6 +70,10 @@ interface ShareButtonProps {
   variant?: "light" | "dark";
   /** true = affiche les boutons directement sans toggle (ex: lightbox) */
   inline?: boolean;
+  /** true = bouton pleine largeur, icône seule, style solid dark (mode inline AddToCart) */
+  compact?: boolean;
+  /** true = dropdown aligné à droite du bouton */
+  alignRight?: boolean;
 }
 
 export default function ShareButton({
@@ -78,6 +82,8 @@ export default function ShareButton({
   text,
   variant = "light",
   inline = false,
+  compact = false,
+  alignRight = false,
 }: ShareButtonProps) {
   const shareUrl = slug ? `${SITE_URL}/products/${slug}` : (url ?? SITE_URL);
   const [open, setOpen] = useState(false);
@@ -189,27 +195,37 @@ export default function ShareButton({
   }
 
   // Mode dropdown
+  const shareIcon = (
+    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.935-2.186 2.25 2.25 0 0 0-3.935 2.186Z" />
+    </svg>
+  );
+
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative h-full">
       <button
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-label="Partager ce produit"
-        className={`flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-sm border transition-colors ${
-          isDark
-            ? "border-white/20 text-white/70 hover:text-white hover:border-white/40"
-            : "border-black/20 text-[#6b7280] hover:text-[#111518] hover:border-black/40"
-        }`}
+        className={
+          compact
+            ? "w-full h-full flex items-center justify-center gap-2 bg-[#111518] text-white text-sm font-bold rounded-sm hover:bg-[#222] transition-colors duration-200"
+            : `flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-sm border transition-colors ${
+                isDark
+                  ? "border-white/20 text-white/70 hover:text-white hover:border-white/40"
+                  : "border-black/20 text-[#6b7280] hover:text-[#111518] hover:border-black/40"
+              }`
+        }
       >
-        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.935-2.186 2.25 2.25 0 0 0-3.935 2.186Z" />
-        </svg>
-        Share
+        {shareIcon}
+        {!compact && "Share"}
       </button>
 
       {open && (
         <div
-          className={`absolute left-0 top-full mt-2 z-20 p-2 rounded-sm border shadow-xl ${
+          className={`absolute top-full mt-2 z-20 p-2 rounded-sm border shadow-xl ${
+            alignRight ? "right-0" : "left-0"
+          } ${
             isDark
               ? "bg-[#1c1c1c] border-white/10"
               : "bg-white border-black/10"
