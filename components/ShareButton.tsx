@@ -209,7 +209,7 @@ export default function ShareButton({
         aria-label="Partager ce produit"
         className={
           compact
-            ? "w-full h-full flex items-center justify-center gap-2 bg-[#111518] text-white text-sm font-bold rounded-sm hover:bg-[#222] transition-colors duration-200"
+            ? "flex items-center justify-center bg-[#111518] text-white rounded-sm hover:bg-[#222] transition-colors duration-200 py-4 px-4"
             : `flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-sm border transition-colors ${
                 isDark
                   ? "border-white/20 text-white/70 hover:text-white hover:border-white/40"

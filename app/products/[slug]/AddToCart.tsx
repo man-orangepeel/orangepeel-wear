@@ -101,14 +101,14 @@ export default function AddToCart({
       {/* Add to Cart + Share */}
       <div className="flex gap-2">
         <button
-          className="flex-[3] bg-[#ed760a] text-black font-bold py-4 text-sm hover:bg-[#efa813] transition-colors duration-200 rounded-sm disabled:opacity-60"
+          className="flex-1 bg-[#ed760a] text-black font-bold py-4 text-sm hover:bg-[#efa813] transition-colors duration-200 rounded-sm disabled:opacity-60"
           onClick={handleAdd}
           disabled={added}
         >
           {added ? "Added!" : "Add to Cart"}
         </button>
         {shareSlug && (
-          <div className="flex-[1]">
+          <div className="shrink-0">
             <ShareButton
               slug={shareSlug}
               text={`${productName} — Bitcoin apparel by Orange Peel`}
