@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Orange We Are",
+  description: "Born from Bitcoin conviction — who we are, why we create, and what we stand for.",
+  openGraph: { url: "https://orangepeel.fr/about" },
+};
+
 import Link from "next/link";
 import Image from "next/image";
 

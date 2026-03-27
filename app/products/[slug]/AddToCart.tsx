@@ -46,30 +46,6 @@ export default function AddToCart({
         </div>
       )}
 
-      {/* Couleur */}
-      <div className="flex flex-col gap-2">
-        <p className="text-sm font-semibold text-[#111518]">
-          Color{" "}
-          <span className="font-normal text-[#6b7280]">— {activeColor.name}</span>
-        </p>
-        <div className="flex gap-2">
-          {colors.map((color) => (
-            <button
-              key={color.name}
-              onClick={() => handleColorChange(color)}
-              title={color.name}
-              aria-label={color.name}
-              className={`w-9 h-9 rounded-full border-2 transition-all duration-150 ${
-                activeColor.name === color.name
-                  ? "border-[#ed760a] scale-110 shadow-md"
-                  : "border-black/15 hover:border-black/40"
-              }`}
-              style={{ backgroundColor: color.hex }}
-            />
-          ))}
-        </div>
-      </div>
-
       {/* Taille */}
       <div className="flex flex-col gap-2">
         <p className="text-sm font-semibold text-[#111518]">
@@ -91,6 +67,30 @@ export default function AddToCart({
             >
               {s}
             </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Couleur */}
+      <div className="flex flex-col gap-2">
+        <p className="text-sm font-semibold text-[#111518]">
+          Color{" "}
+          <span className="font-normal text-[#6b7280]">— {activeColor.name}</span>
+        </p>
+        <div className="flex gap-2">
+          {colors.map((color) => (
+            <button
+              key={color.name}
+              onClick={() => handleColorChange(color)}
+              title={color.name}
+              aria-label={color.name}
+              className={`w-9 h-9 rounded-full border-2 transition-all duration-150 ${
+                activeColor.name === color.name
+                  ? "border-[#ed760a] scale-110 shadow-md"
+                  : "border-black/15 hover:border-black/40"
+              }`}
+              style={{ backgroundColor: color.hex }}
+            />
           ))}
         </div>
       </div>

@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bitcoin Library",
+  description: "A curated library of Bitcoin books, articles and resources to go down the rabbit hole.",
+  openGraph: { url: "https://orangepeel.fr/learn/library" },
+};
+
 interface GitHubItem {
   name: string;
   type: string;

@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "From Newbie to Maxi",
+  description: "A guided learning path — from Bitcoin basics to sovereign Maxi, step by step.",
+  openGraph: { url: "https://orangepeel.fr/learn/courses" },
+};
+
 import coursesData from "@/public/courses.json";
 
 interface CourseEntry {

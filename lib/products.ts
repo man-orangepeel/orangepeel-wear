@@ -38,3 +38,9 @@ export const COLLECTION_COLORS: Record<ProductCollection, string> = {
   wizards: "bg-[#482B5F] text-white",
   cyphers: "bg-[#222] text-white",
 };
+
+export const COLLECTION_ACCENT: Record<ProductCollection, string> = {
+  warriors: "#ed760a",
+  wizards:  "#8b5cf6",
+  cyphers:  "#6b7280",
+};
