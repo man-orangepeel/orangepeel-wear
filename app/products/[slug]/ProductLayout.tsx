@@ -120,13 +120,6 @@ export default function ProductLayout({ product }: { product: Product }) {
         <div className="flex flex-col gap-5 py-2">
 
           <Link
-            href="/products"
-            className="self-start text-xs text-[#9ca3af] hover:text-[#ed760a] transition-colors"
-          >
-            ← All products
-          </Link>
-
-          <Link
             href={`/collections/${product.collection}`}
             className={`self-start text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-sm hover:opacity-80 transition-opacity ${COLLECTION_COLORS[product.collection]}`}
           >
@@ -159,11 +152,18 @@ export default function ProductLayout({ product }: { product: Product }) {
             onColorChange={handleColorChange}
           />
 
-          <div className="pt-1">
+          <div className="pt-1 flex items-center gap-3">
             <ShareButton
               slug={product.slug}
               text={`${product.name} — Bitcoin apparel by Orange Peel`}
             />
+            <span className="text-black/15 select-none">|</span>
+            <Link
+              href="/products"
+              className="text-xs text-[#9ca3af] hover:text-[#ed760a] transition-colors"
+            >
+              ← All products
+            </Link>
           </div>
         </div>
       </div>
