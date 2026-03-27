@@ -258,42 +258,41 @@ export default function DesignsPage() {
       {/* ── Lightbox ── */}
       {lightboxIdx !== null && (
         <div
-          className="fixed inset-0 bg-black/92 z-50 flex flex-col items-center justify-center"
+          className="fixed inset-0 bg-black/92 z-50 flex flex-col items-center"
           onClick={() => setLightboxIdx(null)}
           ref={lightboxRef}
         >
-          {/* Image — full width on mobile, fixed size on desktop */}
+          {/* Zone image — flex-1 garantit qu'elle ne déborde jamais sur les contrôles */}
           <div
-            className="relative w-full aspect-square md:aspect-auto md:w-[min(700px,90vw)] md:h-[min(700px,85vh)]"
+            className="flex-1 flex items-center justify-center w-full relative"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
-              src={`/images/designs/${filtered[lightboxIdx].file}`}
-              alt={`Design ${lightboxIdx + 1}`}
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 100vw, 700px"
-              priority
-            />
-          </div>
+            <div className="relative w-full aspect-square md:aspect-auto md:w-[min(700px,90vw)] md:h-[min(620px,75vh)]">
+              <Image
+                src={`/images/designs/${filtered[lightboxIdx].file}`}
+                alt={`Design ${lightboxIdx + 1}`}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 700px"
+                priority
+              />
+            </div>
 
-          {/* Flèches mobile — en dessous de l'image */}
-          <div
-            className="flex md:hidden justify-between w-full px-6 mt-4"
-            onClick={(e) => e.stopPropagation()}
-          >
+            {/* Précédent — desktop, ancré sur la zone image */}
             <button
-              onClick={() => setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null)}
-              className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+              onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null); }}
+              className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
               aria-label="Précédent"
             >
               <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
             </button>
+
+            {/* Suivant — desktop, ancré sur la zone image */}
             <button
-              onClick={() => setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null)}
-              className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+              onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null); }}
+              className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
               aria-label="Suivant"
             >
               <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -302,23 +301,46 @@ export default function DesignsPage() {
             </button>
           </div>
 
-          {/* Share buttons */}
+          {/* Barre du bas — toujours visible, jamais superposée à l'image */}
           <div
-            className="mt-3 md:absolute md:bottom-14 md:left-1/2 md:-translate-x-1/2"
+            className="flex flex-col items-center gap-3 pt-4 pb-6 w-full"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Flèches mobile */}
+            <div className="flex md:hidden justify-between w-full px-6">
+              <button
+                onClick={() => setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null)}
+                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+                aria-label="Précédent"
+              >
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button
+                onClick={() => setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null)}
+                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 transition-colors"
+                aria-label="Suivant"
+              >
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Partage — URL directe de l'image (WhatsApp/Telegram l'affichent en aperçu) */}
             <ShareButton
-              url="https://orangepeel.fr/designs"
-              text="Bitcoin designs by Orange Peel — provocative, subtle, cryptic."
+              url={`https://orangepeel.fr/images/designs/${filtered[lightboxIdx].file}`}
+              text="Bitcoin design by Orange Peel — orangepeel.fr/designs"
               variant="dark"
               inline
             />
-          </div>
 
-          {/* Compteur */}
-          <p className="mt-2 md:absolute md:bottom-5 md:left-1/2 md:-translate-x-1/2 text-white/40 text-xs tracking-widest" onClick={(e) => e.stopPropagation()}>
-            {lightboxIdx + 1} / {filtered.length}
-          </p>
+            {/* Compteur */}
+            <p className="text-white/40 text-xs tracking-widest">
+              {lightboxIdx + 1} / {filtered.length}
+            </p>
+          </div>
 
           {/* Fermer */}
           <button
@@ -328,28 +350,6 @@ export default function DesignsPage() {
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          {/* Précédent — desktop uniquement */}
-          <button
-            onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i - 1 + filtered.length) % filtered.length : null); }}
-            className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
-            aria-label="Précédent"
-          >
-            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>
-          </button>
-
-          {/* Suivant — desktop uniquement */}
-          <button
-            onClick={(e) => { e.stopPropagation(); setLightboxIdx((i) => i !== null ? (i + 1) % filtered.length : null); }}
-            className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 items-center justify-center hover:bg-white/25 transition-colors"
-            aria-label="Suivant"
-          >
-            <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
           </button>
         </div>
