@@ -8,19 +8,36 @@ export default function ParallaxHero() {
   const bgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Désactivé sur mobile/tactile : effet peu visible + impact perf
+    const mq = window.matchMedia("(min-width: 768px) and (hover: hover)");
+    if (!mq.matches) return;
+
+    let rafId: number;
     const onScroll = () => {
-      if (bgRef.current) {
-        bgRef.current.style.transform = `translateY(${window.scrollY * 0.4}px)`;
-      }
+      rafId = requestAnimationFrame(() => {
+        if (bgRef.current) {
+          bgRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
+        }
+      });
     };
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
-    <section className="relative overflow-hidden flex flex-col items-center justify-center text-center px-6" style={{ height: "85vh" }}>
-      {/* Background — parallax layer */}
-      <div ref={bgRef} className="absolute inset-0 will-change-transform">
+    <section
+      className="relative overflow-hidden flex flex-col items-center justify-center text-center px-6"
+      style={{ height: "85vh" }}
+    >
+      {/* Background — s'étend au-delà de la section pour éviter le gap au scroll */}
+      <div
+        ref={bgRef}
+        className="absolute will-change-transform"
+        style={{ top: "-25%", bottom: "-25%", left: 0, right: 0 }}
+      >
         <Image
           src="/images/hero-bg.jpg"
           alt=""

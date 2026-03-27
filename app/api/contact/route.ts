@@ -18,7 +18,12 @@ function isRateLimited(req: Request): boolean {
   return false;
 }
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const EMAIL_RE = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+
+function sanitize(str: string): string {
+  // Supprime les caractères de contrôle (sauf \n, \t) pour prévenir l'injection email
+  return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "").trim();
+}
 
 export async function POST(req: Request) {
   try {
@@ -26,10 +31,17 @@ export async function POST(req: Request) {
       return Response.json({ error: "Too many requests" }, { status: 429 });
     }
 
-    const { name, email, subject, message } = await req.json();
+    const body = await req.json();
+    const name    = sanitize(String(body.name    ?? ""));
+    const email   = sanitize(String(body.email   ?? ""));
+    const subject = sanitize(String(body.subject ?? ""));
+    const message = sanitize(String(body.message ?? ""));
 
     if (!name || !email || !message) {
       return Response.json({ error: "Missing required fields" }, { status: 400 });
+    }
+    if (name.length > 100) {
+      return Response.json({ error: "Name too long" }, { status: 400 });
     }
     if (!EMAIL_RE.test(email)) {
       return Response.json({ error: "Invalid email address" }, { status: 400 });
