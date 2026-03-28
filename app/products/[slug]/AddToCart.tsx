@@ -108,7 +108,7 @@ export default function AddToCart({
           {added ? "Added!" : "Add to Cart"}
         </button>
         {shareSlug && (
-          <div className="shrink-0">
+          <div className="shrink-0 self-stretch">
             <ShareButton
               slug={shareSlug}
               text={`${productName} — Bitcoin apparel by Orange Peel`}
