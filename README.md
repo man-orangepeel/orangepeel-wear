@@ -124,26 +124,12 @@ Deployment is handled automatically via Vercel on push to `main`.
 
 ---
 
-## 🗺️ Roadmap
-
-- [x] Custom Next.js site — migrated from WordPress/WooCommerce
-- [x] Three collections deployed (Warriors, Wizards, Cyphers)
-- [x] Design gallery & product pages
-- [x] Deployed to Vercel
-- [ ] E-commerce checkout integration
-- [ ] Bitcoin payments — Onchain
-- [ ] Bitcoin payments — Lightning Network
-
----
-
 ## 🧱 Why a Custom Build?
 
 Orange Peel moved away from WordPress for two reasons:
 
 1. **Full ownership** — No platform dependency, complete control over code and data.
 2. **Bitcoin-native readiness** — A custom stack is the only viable path to integrating Bitcoin payments properly.
-
-This project is also a deliberate exercise in building technical credibility within the Bitcoin ecosystem.
 
 ---
 
