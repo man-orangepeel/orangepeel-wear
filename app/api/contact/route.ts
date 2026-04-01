@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
-// Simple in-memory rate limiting (5 requests / minute per IP)
+// In-memory rate limiting (5 req/min per IP).
+// Note: on serverless (Vercel), the Map resets on cold starts.
+// For stronger protection, consider Upstash Redis (@upstash/ratelimit).
 const _rateMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 5;
 const WINDOW_MS = 60_000;
@@ -48,6 +50,11 @@ export async function POST(req: Request) {
     }
     if (message.length > 5000) {
       return Response.json({ error: "Message too long (max 5000 characters)" }, { status: 400 });
+    }
+
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not configured");
+      return Response.json({ error: "Service temporarily unavailable" }, { status: 503 });
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
