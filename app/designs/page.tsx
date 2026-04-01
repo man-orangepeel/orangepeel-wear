@@ -1,15 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import designsData from "../../data/designs.json";
 import ShareButton from "@/components/ShareButton";
 
 type Collection = "all" | "warriors" | "wizards" | "cyphers";
 
 const DESIGN_DATA = designsData.designs as { file: string; collection: Omit<Collection, "all"> }[];
-
-const CAROUSEL_FILES = DESIGN_DATA.map((d) => d.file).slice(0, 8);
 
 const FILTERS: { label: string; value: Collection }[] = [
   { label: "All", value: "all" },
@@ -22,22 +20,9 @@ const PER_PAGE = 24;
 
 export default function DesignsPage() {
   const [active, setActive] = useState<Collection>("all");
-  const [current, setCurrent] = useState(0);
-  const [paused, setPaused] = useState(false);
   const [page, setPage] = useState(0);
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
   const lightboxRef = useRef<HTMLDivElement>(null);
-
-  const total = CAROUSEL_FILES.length;
-
-  const prev = useCallback(() => setCurrent((c) => (c - 1 + total) % total), [total]);
-  const next = useCallback(() => setCurrent((c) => (c + 1) % total), [total]);
-
-  useEffect(() => {
-    if (paused) return;
-    const interval = setInterval(next, 5000);
-    return () => clearInterval(interval);
-  }, [paused, next]);
 
   useEffect(() => { setPage(0); }, [active]);
 
@@ -85,67 +70,6 @@ export default function DesignsPage() {
           </p>
         </div>
       </section>
-
-      {/* ── Carousel — fond blanc, frame brand identity ── */}
-      {CAROUSEL_FILES.length > 0 && <section
-        className="relative bg-white flex items-center justify-center py-12 overflow-hidden"
-        style={{ minHeight: "520px" }}
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-      >
-        {/* Frame brand + image */}
-        <div className="relative" style={{ width: "min(480px, 80vw)", aspectRatio: "1" }}>
-          {/* Corner brackets orange */}
-          <span className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-[#ed760a]" />
-          <span className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-[#ed760a]" />
-          <span className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-[#ed760a]" />
-          <span className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-[#ed760a]" />
-          <Image
-            src={`/images/designs/${CAROUSEL_FILES[current]}`}
-            alt={`Design ${current + 1}`}
-            fill
-            className="object-contain p-8 transition-opacity duration-500"
-            sizes="480px"
-            priority={current === 0}
-          />
-        </div>
-
-        {/* Flèche gauche */}
-        <button
-          onClick={prev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/8 flex items-center justify-center hover:bg-[#ed760a]/15 transition-colors"
-          aria-label="Previous"
-        >
-          <svg className="w-5 h-5 text-[#111518]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-
-        {/* Flèche droite */}
-        <button
-          onClick={next}
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/8 flex items-center justify-center hover:bg-[#ed760a]/15 transition-colors"
-          aria-label="Next"
-        >
-          <svg className="w-5 h-5 text-[#111518]" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
-        </button>
-
-        {/* Dots */}
-        <div className="absolute bottom-4 flex gap-2">
-          {CAROUSEL_FILES.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              className={`h-1.5 rounded-full transition-all duration-200 ${
-                i === current ? "bg-[#ed760a] w-5" : "bg-black/20 w-1.5 hover:bg-black/40"
-              }`}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
-        </div>
-      </section>}
 
       {/* ── Filter Tabs ── */}
       <section className="bg-white pt-12 pb-0 px-6 border-b border-black/10">
