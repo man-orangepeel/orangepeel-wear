@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
   description: "Bitcoin-only premium apparel. Wear your values — Provocative, Subtle, Cryptic.",
   openGraph: { url: "https://orangepeel.fr" },
 };
