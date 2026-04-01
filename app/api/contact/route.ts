@@ -59,12 +59,17 @@ export async function POST(req: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: "Orange Peel <contact@orangepeel.fr>",
       to: ["orangepeel.btc@gmail.com"],
       subject: `[Orange Peel Contact] ${subject || "New message"}`,
       text: `From: ${name} <${email}>\nSubject: ${subject}\n\n${message}`,
     });
+
+    if (sendError) {
+      console.error("Resend error:", sendError);
+      return Response.json({ error: "Failed to send message" }, { status: 500 });
+    }
 
     return Response.json({ ok: true });
   } catch (error) {
