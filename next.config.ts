@@ -25,6 +25,16 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1"],
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'orangepeel-sappes.vercel.app' }],
+        destination: 'https://wear.orangepeel.fr/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
