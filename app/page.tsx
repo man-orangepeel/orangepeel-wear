@@ -247,7 +247,7 @@ export default function Home() {
                   <Link
                     key={i}
                     href="/designs"
-                    className="relative aspect-square overflow-hidden block group"
+                    className="relative aspect-square overflow-hidden block group border-2 border-white/80"
                   >
                     <Image
                       src={`/images/designs/${d.file}`}
