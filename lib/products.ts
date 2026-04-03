@@ -23,6 +23,7 @@ export interface Product {
   longDescription: string;
   colors: ProductColor[];
   published: boolean;
+  trendingPosition: number | null;
 }
 
 export const PRODUCTS: Product[] = productsData as Product[];

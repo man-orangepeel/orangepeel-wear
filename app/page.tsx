@@ -15,7 +15,10 @@ import designsData from "@/data/designs.json";
 type Design = { file: string; title: string; collection: string; published: boolean; homePosition: number | null };
 
 /* ── Données dynamiques — filtrées par published ── */
-const TRENDING = PRODUCTS.filter((p) => p.published).slice(0, 6);
+const TRENDING = PRODUCTS
+  .filter((p) => p.published && p.trendingPosition != null)
+  .sort((a, b) => a.trendingPosition! - b.trendingPosition!)
+  .slice(0, 6);
 const DESIGNS = (designsData.designs as Design[])
   .filter((d) => d.homePosition != null)
   .sort((a, b) => a.homePosition! - b.homePosition!)
