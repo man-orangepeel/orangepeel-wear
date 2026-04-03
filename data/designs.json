@@ -1,18 +1,130 @@
 {
-  "carousel": [
-    "1bis-4-1024x1024.png",
-    "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png",
-    "1bis-3-1024x1024.png"
-  ],
   "designs": [
-    { "file": "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png", "collection": "warriors" },
-    { "file": "0004.0-Percept-vs.-Real-1-1024x1024.png",                "collection": "warriors" },
-    { "file": "0006.0-Satoshi-I-dont-have-time-1024x1024.png",          "collection": "wizards"  },
-    { "file": "3bis-1-1024x1024.png",                                   "collection": "wizards"  },
-    { "file": "3bis-1024x1024.png",                                     "collection": "wizards"  },
-    { "file": "1bis-1-1024x1024.png",                                   "collection": "wizards"  },
-    { "file": "1bis-2-1024x1024.png",                                   "collection": "wizards"  },
-    { "file": "1bis-3-1024x1024.png",                                   "collection": "wizards"  },
-    { "file": "1bis-4-1024x1024.png",                                   "collection": "warriors" }
+    {
+      "file": "1.png",
+      "title": "I Don't Have Time",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": 1
+    },
+    {
+      "file": "2.png",
+      "title": "Chad On The Front",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": 3
+    },
+    {
+      "file": "3.png",
+      "title": "Chad On The Back",
+      "collection": "warriors",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "4.png",
+      "title": "Chad Laser Eyes",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "5.png",
+      "title": "Bitcoin Is For Women",
+      "collection": "warriors",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "6.png",
+      "title": "Meijin Maxi",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": 2
+    },
+    {
+      "file": "7.png",
+      "title": "Meijin Maximalist",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "8.png",
+      "title": "Goku - 4 Stars",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": 4
+    },
+    {
+      "file": "9.png",
+      "title": "Goku - Shenron",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "10.png",
+      "title": "Goku - The Young Hodler",
+      "collection": "warriors",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "11.png",
+      "title": "Matrix - Knock Knock",
+      "collection": "warriors",
+      "published": true,
+      "homePosition": 5
+    },
+    {
+      "file": "12.png",
+      "title": "Matrix - Behind The Rabbit",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "13.png",
+      "title": "Matrix - Rabbit On The Top",
+      "collection": "warriors",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "14.png",
+      "title": "Be The Change",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": 6
+    },
+    {
+      "file": "15.png",
+      "title": "Satoshi - Freedom",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "16.png",
+      "title": "Sex Is Cool",
+      "collection": "wizards",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "17.png",
+      "title": "MemPool - Chess",
+      "collection": "cyphers",
+      "published": true,
+      "homePosition": null
+    },
+    {
+      "file": "18.png",
+      "title": "MemPool - Back",
+      "collection": "cyphers",
+      "published": true,
+      "homePosition": null
+    }
   ]
 }
