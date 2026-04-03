@@ -12,9 +12,14 @@ import SatPrice from "@/components/SatPrice";
 import { PRODUCTS } from "@/lib/products";
 import designsData from "@/data/designs.json";
 
+type Design = { file: string; title: string; collection: string; published: boolean; homePosition: number | null };
+
 /* ── Données dynamiques — filtrées par published ── */
 const TRENDING = PRODUCTS.filter((p) => p.published).slice(0, 6);
-const DESIGNS = designsData.designs.slice(0, 6);
+const DESIGNS = (designsData.designs as Design[])
+  .filter((d) => d.homePosition != null)
+  .sort((a, b) => a.homePosition! - b.homePosition!)
+  .slice(0, 6);
 
 const BADGES = [
   {

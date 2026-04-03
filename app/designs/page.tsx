@@ -7,7 +7,8 @@ import ShareButton from "@/components/ShareButton";
 
 type Collection = "all" | "warriors" | "wizards" | "cyphers";
 
-const DESIGN_DATA = designsData.designs as { file: string; collection: Omit<Collection, "all"> }[];
+const DESIGN_DATA = (designsData.designs as { file: string; title: string; collection: Omit<Collection, "all">; published: boolean }[])
+  .filter((d) => d.published !== false);
 
 const FILTERS: { label: string; value: Collection }[] = [
   { label: "All", value: "all" },
@@ -108,16 +109,21 @@ export default function DesignsPage() {
                   key={`${d.file}-${i}`}
                   onClick={() => setLightboxIdx(globalIdx)}
                   className="relative aspect-square overflow-hidden bg-[#f5f5f5] group block cursor-pointer"
-                  aria-label={`Voir design ${globalIdx + 1}`}
+                  aria-label={d.title || `Voir design ${globalIdx + 1}`}
                 >
                   <Image
                     src={`/images/designs/${d.file}`}
-                    alt={`Design ${globalIdx + 1}`}
+                    alt={d.title || `Design ${globalIdx + 1}`}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                     sizes="(max-width: 768px) 50vw, 33vw"
                   />
-                  <span className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-200" />
+                  <span className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-200" />
+                  {d.title && (
+                    <span className="absolute bottom-0 left-0 right-0 p-3 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-gradient-to-t from-black/60 to-transparent">
+                      {d.title}
+                    </span>
+                  )}
                 </button>
               );
             })}
@@ -230,6 +236,12 @@ export default function DesignsPage() {
             className="flex flex-col items-center gap-3 pt-4 pb-6 w-full"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Titre du design */}
+            {filtered[lightboxIdx].title && (
+              <p className="text-white text-lg font-semibold text-center px-6" style={{ fontFamily: "var(--font-heading)" }}>
+                {filtered[lightboxIdx].title}
+              </p>
+            )}
             {/* Flèches mobile */}
             <div className="flex md:hidden justify-between w-full px-6">
               <button
