@@ -18,7 +18,6 @@ export interface Product {
   genre: ProductGenre;
   price: number;
   src: string;
-  designSrc: string;
   description: string;
   longDescription: string;
   colors: ProductColor[];

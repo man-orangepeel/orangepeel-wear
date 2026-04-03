@@ -299,7 +299,7 @@ export default function Home() {
                       alt={p.name}
                       fill
                       quality={90}
-                      className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
+                      className="object-contain transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
                       sizes="300px"
                     />
                   </div>

@@ -138,7 +138,7 @@ export default function ProductsPage() {
                         src={`/images/products/${p.src}`}
                         alt={p.name}
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                        className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                         sizes="(max-width: 768px) 50vw, 33vw"
                       />
                     </div>
