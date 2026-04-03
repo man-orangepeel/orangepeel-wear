@@ -1,361 +1,11 @@
 [
   {
-    "slug": "i-dont-have-time-hoodie",
-    "name": "I Don't Have Time",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "1. I Don't Have Time - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "",
-        "hex": "",
-        "src": "1. I Don't Have Time - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "i-dont-have-time-tshirt",
-    "name": "I Don't Have Time",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "1. I Don't Have Time - Tshirt - princ.png",
-    "designSrc": "0006.0-Satoshi-I-dont-have-time-1024x1024.png",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-young-holder-hoodie",
-    "name": "Goku Young Holder",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "10. Goku Young Holder - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-young-holder-tshirt",
-    "name": "Goku Young Holder",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "10. Goku Young Holder - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "knock-know-neo-hoodie",
-    "name": "Knock Know Neo",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "11. Knock Know Neo - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 6,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Hoodie - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "knock-know-neo-tshirt",
-    "name": "Knock Know Neo",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "11. Knock Know Neo - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Tshirt - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "down-the-rabbit-hole-hoodie",
-    "name": "Down The Rabbit Hole",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "12. Down The Rabbit Hole - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 4,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Hoodie - var2.png"
-      }
-    ]
-  },
-  {
-    "slug": "down-the-rabbit-hole-tshirt",
-    "name": "Down The Rabbit Hole",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "12. Down The Rabbit Hole - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "12. Down The Rabbit Hole - Tshirt - var2.png"
-      }
-    ]
-  },
-  {
-    "slug": "follow-the-rabbit-hoodie",
-    "name": "Follow The Rabbit",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "13. Follow The Rabbit - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "13. Follow The Rabbit - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "13. Follow The Rabbit - Hoodie - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "follow-the-rabbit-tshirt",
-    "name": "Follow The Rabbit",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "13. Follow The Rabbit - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "13. Follow The Rabbit - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "13. Follow The Rabbit - Tshirt - var1.png"
-      }
-    ]
-  },
-  {
     "slug": "be-the-change-hoodie",
     "name": "Be The Change",
     "collection": "wizards",
     "type": "hoodie",
     "genre": "unisex",
-    "price": 70,
+    "price": 60,
     "src": "14. Be The Change - Hoodie - princ.png",
     "designSrc": "",
     "description": "Test description courte",
@@ -381,7 +31,7 @@
     "collection": "wizards",
     "type": "tshirt",
     "genre": "men",
-    "price": 24,
+    "price": 21,
     "src": "14. Be The Change - Tshirt - princ.png",
     "designSrc": "",
     "description": "",
@@ -402,432 +52,12 @@
     ]
   },
   {
-    "slug": "professional-salesman-hoodie",
-    "name": "Professional Salesman",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "15. Professional Salesman - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "15. Professional Salesman - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "15. Professional Salesman - Hoodie - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "professional-salesman-tshirt",
-    "name": "Professional Salesman",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "15. Professional Salesman - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "15. Professional Salesman - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "15. Professional Salesman - Tshirt - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "sex-is-cool-hoodie",
-    "name": "Sex Is Cool",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "16. Sex Is Cool - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "sex-is-cool-tshirt",
-    "name": "Sex Is Cool",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "16. Sex Is Cool - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-front-hoodie",
-    "name": "Chad On The Front",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "2. Chad On The Front - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-front-tshirt",
-    "name": "Chad On The Front",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "2. Chad On The Front - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-back-hoodie",
-    "name": "Chad On The Back",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "3. Chad On The Back - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-back-tshirt",
-    "name": "Chad On The Back",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "3. Chad On The Back - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-laser-eyes-hoodie",
-    "name": "Chad Laser Eyes",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 70,
-    "src": "4. Chad Laser Eyes - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 3,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-laser-eyes-tshirt",
-    "name": "Chad Laser Eyes",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "4. Chad Laser Eyes - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
     "slug": "bitcoin-is-for-women-hoodie",
     "name": "Bitcoin Is For Women",
     "collection": "warriors",
     "type": "hoodie",
     "genre": "unisex",
-    "price": 70,
+    "price": 60,
     "src": "5. Bitcoin Is For Women - Hoodie - princ.png",
     "designSrc": "",
     "description": "",
@@ -873,9 +103,9 @@
     "collection": "warriors",
     "type": "tshirt",
     "genre": "women",
-    "price": 24,
+    "price": 21,
     "src": "5. Bitcoin Is For Women - Tshirt - princ.png",
-    "designSrc": "0003.0-Barbie-for-Girls-Bitcoin-for-Women-1024x1024.png",
+    "designSrc": "",
     "description": "",
     "longDescription": "",
     "published": true,
@@ -914,12 +144,720 @@
     ]
   },
   {
+    "slug": "chad-laser-eyes-hoodie",
+    "name": "Chad Laser Eyes",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "4. Chad Laser Eyes - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 3,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-laser-eyes-tshirt",
+    "name": "Chad Laser Eyes",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "4. Chad Laser Eyes - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "4. Chad Laser Eyes - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-back-hoodie",
+    "name": "Chad On The Back",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "3. Chad On The Back - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-back-tshirt",
+    "name": "Chad On The Back",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "3. Chad On The Back - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-front-hoodie",
+    "name": "Chad On The Front",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "2. Chad On The Front - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-front-tshirt",
+    "name": "Chad On The Front",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "2. Chad On The Front - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "2. Chad On The Front - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "down-the-rabbit-hole-hoodie",
+    "name": "Down The Rabbit Hole",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "12. Down The Rabbit Hole - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 4,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Hoodie - var2.png"
+      }
+    ]
+  },
+  {
+    "slug": "down-the-rabbit-hole-tshirt",
+    "name": "Down The Rabbit Hole",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "12. Down The Rabbit Hole - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "12. Down The Rabbit Hole - Tshirt - var2.png"
+      }
+    ]
+  },
+  {
+    "slug": "follow-the-rabbit-hoodie",
+    "name": "Follow The Rabbit",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "13. Follow The Rabbit - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "13. Follow The Rabbit - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "13. Follow The Rabbit - Hoodie - var1.png"
+      }
+    ]
+  },
+  {
+    "slug": "follow-the-rabbit-tshirt",
+    "name": "Follow The Rabbit",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "13. Follow The Rabbit - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "13. Follow The Rabbit - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "13. Follow The Rabbit - Tshirt - var1.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-four-stars-hoodie",
+    "name": "Goku Four Stars",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "8. Goku Four Stars - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 5,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Hoodie - var4.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-four-stars-tshirt",
+    "name": "Goku Four Stars",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "8. Goku Four Stars - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "8. Goku Four Stars - Tshirt - var4.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-young-holder-hoodie",
+    "name": "Goku Young Holder",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "10. Goku Young Holder - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-young-holder-tshirt",
+    "name": "Goku Young Holder",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "10. Goku Young Holder - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "10. Goku Young Holder - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "i-dont-have-time-hoodie",
+    "name": "I Don't Have Time",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "1. I Don't Have Time - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "",
+        "hex": "",
+        "src": "1. I Don't Have Time - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Hoodie - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "i-dont-have-time-tshirt",
+    "name": "I Don't Have Time",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "1. I Don't Have Time - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "1. I Don't Have Time - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "knock-know-neo-hoodie",
+    "name": "Knock Know Neo",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "11. Knock Know Neo - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 6,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "11. Knock Know Neo - Hoodie - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "11. Knock Know Neo - Hoodie - var1.png"
+      }
+    ]
+  },
+  {
+    "slug": "knock-know-neo-tshirt",
+    "name": "Knock Know Neo",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "11. Knock Know Neo - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "11. Knock Know Neo - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "11. Knock Know Neo - Tshirt - var1.png"
+      }
+    ]
+  },
+  {
     "slug": "meijin-maximalist-hoodie",
     "name": "Meijin Maximalist",
     "collection": "wizards",
     "type": "hoodie",
     "genre": "unisex",
-    "price": 70,
+    "price": 60,
     "src": "7. Meijin Maximalist - Hoodie - princ.png",
     "designSrc": "",
     "description": "",
@@ -965,7 +903,7 @@
     "collection": "wizards",
     "type": "tshirt",
     "genre": "men",
-    "price": 24,
+    "price": 21,
     "src": "7. Meijin Maximalist - Tshirt - princ.png",
     "designSrc": "",
     "description": "",
@@ -1006,54 +944,13 @@
     ]
   },
   {
-    "slug": "goku-four-stars-hoodie",
-    "name": "Goku Four Stars",
-    "collection": "warriors",
+    "slug": "professional-salesman-hoodie",
+    "name": "Professional Salesman",
+    "collection": "wizards",
     "type": "hoodie",
     "genre": "unisex",
-    "price": 70,
-    "src": "8. Goku Four Stars - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 5,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var4.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-four-stars-tshirt",
-    "name": "Goku Four Stars",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 24,
-    "src": "8. Goku Four Stars - Tshirt - princ.png",
+    "price": 60,
+    "src": "15. Professional Salesman - Hoodie - princ.png",
     "designSrc": "",
     "description": "",
     "longDescription": "",
@@ -1063,27 +960,130 @@
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - princ.png"
+        "src": "15. Professional Salesman - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var1.png"
+        "src": "15. Professional Salesman - Hoodie - var1.png"
+      }
+    ]
+  },
+  {
+    "slug": "professional-salesman-tshirt",
+    "name": "Professional Salesman",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "15. Professional Salesman - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "15. Professional Salesman - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var2.png"
+        "src": "15. Professional Salesman - Tshirt - var1.png"
+      }
+    ]
+  },
+  {
+    "slug": "sex-is-cool-hoodie",
+    "name": "Sex Is Cool",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "16. Sex Is Cool - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var3.png"
+        "src": "16. Sex Is Cool - Hoodie - var1.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var4.png"
+        "src": "16. Sex Is Cool - Hoodie - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Hoodie - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "sex-is-cool-tshirt",
+    "name": "Sex Is Cool",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "16. Sex Is Cool - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - princ.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - var1.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - var2.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - var3.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "16. Sex Is Cool - Tshirt - var5.png"
       }
     ]
   }
