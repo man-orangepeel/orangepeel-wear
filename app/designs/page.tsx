@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import designsData from "../../data/designs.json";
 import ShareButton from "@/components/ShareButton";
 
@@ -19,6 +19,20 @@ const FILTERS: { label: string; value: Collection }[] = [
 
 const PER_PAGE = 24;
 
+/** Hash déterministe d'une string — même fichier = même valeur à chaque visite */
+function hashStr(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+  }
+  return h;
+}
+
+/** Shuffle déterministe basé sur un seed fixe (hash des noms de fichiers) */
+function deterministicShuffle<T extends { file: string }>(arr: T[]): T[] {
+  return [...arr].sort((a, b) => hashStr(a.file) - hashStr(b.file));
+}
+
 export default function DesignsPage() {
   const [active, setActive] = useState<Collection>("all");
   const [page, setPage] = useState(0);
@@ -27,10 +41,12 @@ export default function DesignsPage() {
 
   useEffect(() => { setPage(0); }, [active]);
 
-  const filtered =
-    active === "all"
+  const filtered = useMemo(() => {
+    const base = active === "all"
       ? DESIGN_DATA
       : DESIGN_DATA.filter((d) => d.collection === active);
+    return deterministicShuffle(base);
+  }, [active]);
 
   // Keyboard navigation for lightbox (après la déclaration de filtered)
   useEffect(() => {
