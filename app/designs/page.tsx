@@ -28,9 +28,9 @@ function hashStr(s: string): number {
   return h;
 }
 
-/** Shuffle déterministe basé sur un seed fixe (hash des noms de fichiers) */
-function deterministicShuffle<T extends { file: string }>(arr: T[]): T[] {
-  return [...arr].sort((a, b) => hashStr(a.file) - hashStr(b.file));
+/** Shuffle déterministe basé sur un seed fixe (hash des titres) */
+function deterministicShuffle<T extends { file: string; title: string }>(arr: T[]): T[] {
+  return [...arr].sort((a, b) => hashStr(a.title) - hashStr(b.title));
 }
 
 export default function DesignsPage() {
