@@ -1,112 +1,106 @@
 [
   {
-    "slug": "be-the-change-hoodie",
-    "name": "Be The Change",
+    "slug": "i-dont-have-time-hoodie",
+    "name": "I Don't Have Time",
     "collection": "wizards",
     "type": "hoodie",
     "genre": "unisex",
     "price": 60,
-    "src": "14. Be The Change - Hoodie - princ.png",
+    "src": "1. I Don't Have Time - Hoodie - princ.png",
     "designSrc": "",
-    "description": "Test description courte",
-    "longDescription": "Test description longue",
+    "description": "\"I don't have time to convince you.\" Satoshi's words weren't just a brush-off — they were a stance. A reminder to walk your path, with or without applause. Conviction without compromise. Creation without permission. You believe. You build. And with Orange Peel, you wear it.",
+    "longDescription": "",
     "published": true,
-    "trendingPosition": 1,
+    "trendingPosition": null,
     "colors": [
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "14. Be The Change - Hoodie - princ.png"
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "1. I Don't Have Time - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "14. Be The Change - Hoodie - var1.png"
+        "src": "1. I Don't Have Time - Hoodie - var1.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "1. I Don't Have Time - Hoodie - var2.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "1. I Don't Have Time - Hoodie - var3.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "1. I Don't Have Time - Hoodie - var4.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "1. I Don't Have Time - Hoodie - var5.png"
       }
     ]
   },
   {
-    "slug": "be-the-change-tshirt",
-    "name": "Be The Change",
+    "slug": "i-dont-have-time-tshirt",
+    "name": "I Don't Have Time",
     "collection": "wizards",
     "type": "tshirt",
     "genre": "men",
     "price": 21,
-    "src": "14. Be The Change - Tshirt - princ.png",
+    "src": "1. I Don't Have Time - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"I don't have time to convince you.\" Satoshi's words weren't just a brush-off — they were a stance. A reminder to walk your path, with or without applause. Conviction without compromise. Creation without permission. You believe. You build. And with Orange Peel, you wear it.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
     "colors": [
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "14. Be The Change - Tshirt - princ.png"
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "1. I Don't Have Time - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "14. Be The Change - Tshirt - var1.png"
+        "src": "1. I Don't Have Time - Tshirt - var1.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "1. I Don't Have Time - Tshirt - var2.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "1. I Don't Have Time - Tshirt - var3.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "1. I Don't Have Time - Tshirt - var4.png"
+      },
+      {
+        "name": "Cloudy Blue Heather",
+        "hex": "#70a5c5",
+        "src": "1. I Don't Have Time - Tshirt - var5.png"
       }
     ]
   },
   {
-    "slug": "bitcoin-is-for-women-hoodie",
-    "name": "Bitcoin Is For Women",
+    "slug": "goku-young-holder-hoodie",
+    "name": "Goku Young Holder",
     "collection": "warriors",
     "type": "hoodie",
     "genre": "unisex",
     "price": 60,
-    "src": "5. Bitcoin Is For Women - Hoodie - princ.png",
+    "src": "10. Goku Young Holder - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 2,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "bitcoin-is-for-women-tshirt",
-    "name": "Bitcoin Is For Women",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "women",
-    "price": 21,
-    "src": "5. Bitcoin Is For Women - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
+    "description": "Little Goku stands tall on the Bitcoin symbol, power pole in hand, ready for whatever comes next. Innocence meets conviction. He doesn't need to understand the whole system — he just knows it's worth defending. For the young at heart who hold the line with a smile.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -114,275 +108,117 @@
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - princ.png"
+        "src": "10. Goku Young Holder - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - var1.png"
+        "src": "10. Goku Young Holder - Hoodie - var1.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - var2.png"
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "10. Goku Young Holder - Hoodie - var2.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - var3.png"
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "10. Goku Young Holder - Hoodie - var3.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - var4.png"
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "10. Goku Young Holder - Hoodie - var4.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "5. Bitcoin Is For Women - Tshirt - var5.png"
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "10. Goku Young Holder - Hoodie - var5.png"
       }
     ]
   },
   {
-    "slug": "chad-laser-eyes-hoodie",
-    "name": "Chad Laser Eyes",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "4. Chad Laser Eyes - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 3,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-laser-eyes-tshirt",
-    "name": "Chad Laser Eyes",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 21,
-    "src": "4. Chad Laser Eyes - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "4. Chad Laser Eyes - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-back-hoodie",
-    "name": "Chad On The Back",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "3. Chad On The Back - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "chad-on-the-back-tshirt",
-    "name": "Chad On The Back",
+    "slug": "goku-young-holder-tshirt",
+    "name": "Goku Young Holder",
     "collection": "warriors",
     "type": "tshirt",
     "genre": "men",
     "price": 21,
-    "src": "3. Chad On The Back - Tshirt - princ.png",
+    "src": "10. Goku Young Holder - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "Little Goku stands tall on the Bitcoin symbol, power pole in hand, ready for whatever comes next. Innocence meets conviction. He doesn't need to understand the whole system — he just knows it's worth defending. For the young at heart who hold the line with a smile.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
     "colors": [
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - princ.png"
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "10. Goku Young Holder - Tshirt - princ.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "10. Goku Young Holder - Tshirt - var1.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "10. Goku Young Holder - Tshirt - var2.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "10. Goku Young Holder - Tshirt - var3.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var1.png"
+        "src": "10. Goku Young Holder - Tshirt - var4.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "3. Chad On The Back - Tshirt - var5.png"
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "10. Goku Young Holder - Tshirt - var5.png"
       }
     ]
   },
   {
-    "slug": "chad-on-the-front-hoodie",
-    "name": "Chad On The Front",
-    "collection": "wizards",
+    "slug": "knock-know-neo-hoodie",
+    "name": "Knock Know Neo",
+    "collection": "warriors",
     "type": "hoodie",
     "genre": "unisex",
     "price": 60,
-    "src": "2. Chad On The Front - Hoodie - princ.png",
+    "src": "11. Knock Know Neo - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Knock, knock, Neo.\" The screen flickers. The message appears. The choice is made. Bitcoin is the red pill — visible, undeniable, unapologetic. This design doesn't whisper. It declares. For those who chose to wake up and aren't afraid to show it.",
     "longDescription": "",
     "published": true,
-    "trendingPosition": null,
+    "trendingPosition": 6,
     "colors": [
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - princ.png"
+        "src": "11. Knock Know Neo - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Hoodie - var5.png"
+        "src": "11. Knock Know Neo - Hoodie - var1.png"
       }
     ]
   },
   {
-    "slug": "chad-on-the-front-tshirt",
-    "name": "Chad On The Front",
-    "collection": "wizards",
+    "slug": "knock-know-neo-tshirt",
+    "name": "Knock Know Neo",
+    "collection": "warriors",
     "type": "tshirt",
     "genre": "men",
     "price": 21,
-    "src": "2. Chad On The Front - Tshirt - princ.png",
+    "src": "11. Knock Know Neo - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Knock, knock, Neo.\" The screen flickers. The message appears. The choice is made. Bitcoin is the red pill — visible, undeniable, unapologetic. This design doesn't whisper. It declares. For those who chose to wake up and aren't afraid to show it.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -390,32 +226,12 @@
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - princ.png"
+        "src": "11. Knock Know Neo - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "2. Chad On The Front - Tshirt - var5.png"
+        "src": "11. Knock Know Neo - Tshirt - var1.png"
       }
     ]
   },
@@ -428,7 +244,7 @@
     "price": 60,
     "src": "12. Down The Rabbit Hole - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "Follow the white rabbit. Take the red pill. Once you see it, you can't unsee it — money was broken all along. This design is for those who went down the rabbit hole and never came back. No logo, no label — just a nod to the awakening. If you know, you know.",
     "longDescription": "",
     "published": true,
     "trendingPosition": 4,
@@ -459,7 +275,7 @@
     "price": 21,
     "src": "12. Down The Rabbit Hole - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "Follow the white rabbit. Take the red pill. Once you see it, you can't unsee it — money was broken all along. This design is for those who went down the rabbit hole and never came back. No logo, no label — just a nod to the awakening. If you know, you know.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -490,7 +306,7 @@
     "price": 60,
     "src": "13. Follow The Rabbit - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "The white rabbit doesn't wait. It runs. You follow. Through the looking glass, past the noise, beyond the veil of fiat illusion. Bitcoin is the rabbit hole — and this design is your badge of passage. Bold, visible, unmistakable. You followed the rabbit. You found the truth.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -516,7 +332,7 @@
     "price": 21,
     "src": "13. Follow The Rabbit - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "The white rabbit doesn't wait. It runs. You follow. Through the looking glass, past the noise, beyond the veil of fiat illusion. Bitcoin is the rabbit hole — and this design is your badge of passage. Bold, visible, unmistakable. You followed the rabbit. You found the truth.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -534,235 +350,41 @@
     ]
   },
   {
-    "slug": "goku-four-stars-hoodie",
-    "name": "Goku Four Stars",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "8. Goku Four Stars - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 5,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Hoodie - var4.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-four-stars-tshirt",
-    "name": "Goku Four Stars",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 21,
-    "src": "8. Goku Four Stars - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "8. Goku Four Stars - Tshirt - var4.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-young-holder-hoodie",
-    "name": "Goku Young Holder",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "10. Goku Young Holder - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "goku-young-holder-tshirt",
-    "name": "Goku Young Holder",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 21,
-    "src": "10. Goku Young Holder - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "10. Goku Young Holder - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "i-dont-have-time-hoodie",
-    "name": "I Don't Have Time",
+    "slug": "be-the-change-hoodie",
+    "name": "Be The Change",
     "collection": "wizards",
     "type": "hoodie",
     "genre": "unisex",
     "price": 60,
-    "src": "1. I Don't Have Time - Hoodie - princ.png",
+    "src": "14. Be The Change - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Be the change you want to see in the world.\" Gandhi's words, reborn through the lens of Bitcoin. A quiet face. Laser eyes that see further than fiat promises. No logo, no slogan — just a message for those who recognize the signal. The revolution doesn't need to shout. It just needs to begin.",
     "longDescription": "",
     "published": true,
-    "trendingPosition": null,
+    "trendingPosition": 1,
     "colors": [
       {
-        "name": "",
-        "hex": "",
-        "src": "1. I Don't Have Time - Hoodie - princ.png"
+        "name": "Black",
+        "hex": "#000000",
+        "src": "14. Be The Change - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Hoodie - var5.png"
+        "src": "14. Be The Change - Hoodie - var1.png"
       }
     ]
   },
   {
-    "slug": "i-dont-have-time-tshirt",
-    "name": "I Don't Have Time",
+    "slug": "be-the-change-tshirt",
+    "name": "Be The Change",
     "collection": "wizards",
     "type": "tshirt",
     "genre": "men",
     "price": 21,
-    "src": "1. I Don't Have Time - Tshirt - princ.png",
+    "src": "14. Be The Change - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Be the change you want to see in the world.\" Gandhi's words, reborn through the lens of Bitcoin. A quiet face. Laser eyes that see further than fiat promises. No logo, no slogan — just a message for those who recognize the signal. The revolution doesn't need to shout. It just needs to begin.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -770,176 +392,12 @@
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - princ.png"
+        "src": "14. Be The Change - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "1. I Don't Have Time - Tshirt - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "knock-know-neo-hoodie",
-    "name": "Knock Know Neo",
-    "collection": "warriors",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "11. Knock Know Neo - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": 6,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Hoodie - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "knock-know-neo-tshirt",
-    "name": "Knock Know Neo",
-    "collection": "warriors",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 21,
-    "src": "11. Knock Know Neo - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "11. Knock Know Neo - Tshirt - var1.png"
-      }
-    ]
-  },
-  {
-    "slug": "meijin-maximalist-hoodie",
-    "name": "Meijin Maximalist",
-    "collection": "wizards",
-    "type": "hoodie",
-    "genre": "unisex",
-    "price": 60,
-    "src": "7. Meijin Maximalist - Hoodie - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Hoodie - var5.png"
-      }
-    ]
-  },
-  {
-    "slug": "meijin-maximalist-tshirt",
-    "name": "Meijin Maximalist",
-    "collection": "wizards",
-    "type": "tshirt",
-    "genre": "men",
-    "price": 21,
-    "src": "7. Meijin Maximalist - Tshirt - princ.png",
-    "designSrc": "",
-    "description": "",
-    "longDescription": "",
-    "published": true,
-    "trendingPosition": null,
-    "colors": [
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - princ.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - var1.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - var2.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - var3.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - var4.png"
-      },
-      {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "7. Meijin Maximalist - Tshirt - var5.png"
+        "src": "14. Be The Change - Tshirt - var1.png"
       }
     ]
   },
@@ -952,7 +410,7 @@
     "price": 60,
     "src": "15. Professional Salesman - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "A pencil-drawn portrait of Satoshi Nakamoto — the man who became famous against his will. Laser eyes on. Titled \"Professional FREEDOM Salesman.\" No pitch. No hype. Just the greatest invention of our generation, offered quietly to anyone willing to look. This is a tribute to the anonymous architect of financial sovereignty.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -978,7 +436,7 @@
     "price": 21,
     "src": "15. Professional Salesman - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "A pencil-drawn portrait of Satoshi Nakamoto — the man who became famous against his will. Laser eyes on. Titled \"Professional FREEDOM Salesman.\" No pitch. No hype. Just the greatest invention of our generation, offered quietly to anyone willing to look. This is a tribute to the anonymous architect of financial sovereignty.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -1004,39 +462,39 @@
     "price": 60,
     "src": "16. Sex Is Cool - Hoodie - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Sex is cool, but have you ever f*cked the system?\" Provocative? Absolutely. That's the point. With the sat symbol in the background, this design speaks to Bitcoin's uncensorable nature and individual monetary sovereignty. For those who don't just question authority — they opt out entirely.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
     "colors": [
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Light Orange",
+        "hex": "#e2753c",
         "src": "16. Sex Is Cool - Hoodie - princ.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Light Orange",
+        "hex": "#e2753c",
         "src": "16. Sex Is Cool - Hoodie - var1.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Terracota Red",
+        "hex": "#80323d",
         "src": "16. Sex Is Cool - Hoodie - var2.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
         "src": "16. Sex Is Cool - Hoodie - var3.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Forest Green",
+        "hex": "#263d2d",
         "src": "16. Sex Is Cool - Hoodie - var4.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
         "src": "16. Sex Is Cool - Hoodie - var5.png"
       }
     ]
@@ -1050,7 +508,191 @@
     "price": 21,
     "src": "16. Sex Is Cool - Tshirt - princ.png",
     "designSrc": "",
-    "description": "",
+    "description": "\"Sex is cool, but have you ever f*cked the system?\" Provocative? Absolutely. That's the point. With the sat symbol in the background, this design speaks to Bitcoin's uncensorable nature and individual monetary sovereignty. For those who don't just question authority — they opt out entirely.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "16. Sex Is Cool - Tshirt - princ.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "16. Sex Is Cool - Tshirt - var1.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "16. Sex Is Cool - Tshirt - var2.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "16. Sex Is Cool - Tshirt - var3.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "16. Sex Is Cool - Tshirt - var4.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "16. Sex Is Cool - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-front-hoodie",
+    "name": "Chad On The Front",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "2. Chad On The Front - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Laser-focused. You are a Bitcoin Chad.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Snow Grey",
+        "hex": "#aeafb1",
+        "src": "2. Chad On The Front - Hoodie - princ.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "2. Chad On The Front - Hoodie - var1.png"
+      },
+      {
+        "name": "Light Sand",
+        "hex": "#c0af9f",
+        "src": "2. Chad On The Front - Hoodie - var2.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "2. Chad On The Front - Hoodie - var3.png"
+      },
+      {
+        "name": "Snow Grey",
+        "hex": "#aeafb1",
+        "src": "2. Chad On The Front - Hoodie - var4.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "2. Chad On The Front - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-front-tshirt",
+    "name": "Chad On The Front",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "2. Chad On The Front - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Laser-focused. You are a Bitcoin Chad.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "2. Chad On The Front - Tshirt - princ.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "2. Chad On The Front - Tshirt - var1.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "2. Chad On The Front - Tshirt - var2.png"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff",
+        "src": "2. Chad On The Front - Tshirt - var3.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "2. Chad On The Front - Tshirt - var4.png"
+      },
+      {
+        "name": "Light Sand",
+        "hex": "#c0af9f",
+        "src": "2. Chad On The Front - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-back-hoodie",
+    "name": "Chad On The Back",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "3. Chad On The Back - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Ungovernable. One of the Bitcoin Chads.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "3. Chad On The Back - Hoodie - princ.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "3. Chad On The Back - Hoodie - var1.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "3. Chad On The Back - Hoodie - var2.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "3. Chad On The Back - Hoodie - var3.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "3. Chad On The Back - Hoodie - var4.png"
+      },
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "3. Chad On The Back - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-on-the-back-tshirt",
+    "name": "Chad On The Back",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "3. Chad On The Back - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Ungovernable. One of the Bitcoin Chads.",
     "longDescription": "",
     "published": true,
     "trendingPosition": null,
@@ -1058,32 +700,390 @@
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - princ.png"
+        "src": "3. Chad On The Back - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var1.png"
+        "src": "3. Chad On The Back - Tshirt - var1.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "3. Chad On The Back - Tshirt - var2.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "3. Chad On The Back - Tshirt - var3.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "3. Chad On The Back - Tshirt - var4.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "3. Chad On The Back - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-laser-eyes-hoodie",
+    "name": "Chad Laser Eyes",
+    "collection": "wizards",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "4. Chad Laser Eyes - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Laser-focused. You are a Bitcoin Chad.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 3,
+    "colors": [
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "4. Chad Laser Eyes - Hoodie - princ.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "4. Chad Laser Eyes - Hoodie - var1.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "4. Chad Laser Eyes - Hoodie - var2.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "4. Chad Laser Eyes - Hoodie - var3.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "4. Chad Laser Eyes - Hoodie - var4.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "4. Chad Laser Eyes - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "chad-laser-eyes-tshirt",
+    "name": "Chad Laser Eyes",
+    "collection": "wizards",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "4. Chad Laser Eyes - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "This isn't just a meme. It's your unfailing mindset. You've done the work. You didn't trust — you verified. Unshaken by FUD. Immune to hype. Locked on the long game. Laser-focused. You are a Bitcoin Chad.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "4. Chad Laser Eyes - Tshirt - princ.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "4. Chad Laser Eyes - Tshirt - var1.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "4. Chad Laser Eyes - Tshirt - var2.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "4. Chad Laser Eyes - Tshirt - var3.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "4. Chad Laser Eyes - Tshirt - var4.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "4. Chad Laser Eyes - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "bitcoin-is-for-women-hoodie",
+    "name": "Bitcoin Is For Women",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "women",
+    "price": 60,
+    "src": "5. Bitcoin Is For Women - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "Barbie was for girls. Bitcoin is for women. This design marks the shift from fantasy to financial sovereignty. It's a call to grow out of the roles we were handed — and into the power we choose.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 2,
+    "colors": [
+      {
+        "name": "Pale Pink",
+        "hex": "#ecc8d0",
+        "src": "5. Bitcoin Is For Women - Hoodie - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var2.png"
+        "src": "5. Bitcoin Is For Women - Hoodie - var1.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "5. Bitcoin Is For Women - Hoodie - var2.png"
+      },
+      {
+        "name": "Pale Pink",
+        "hex": "#ecc8d0",
+        "src": "5. Bitcoin Is For Women - Hoodie - var3.png"
+      },
+      {
+        "name": "Forest Green",
+        "hex": "#263d2d",
+        "src": "5. Bitcoin Is For Women - Hoodie - var4.png"
+      },
+      {
+        "name": "Light Royal Blue",
+        "hex": "#3c5f92",
+        "src": "5. Bitcoin Is For Women - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "bitcoin-is-for-women-tshirt",
+    "name": "Bitcoin Is For Women",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "women",
+    "price": 21,
+    "src": "5. Bitcoin Is For Women - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "Barbie was for girls. Bitcoin is for women. This design marks the shift from fantasy to financial sovereignty. It's a call to grow out of the roles we were handed — and into the power we choose.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#000000",
+        "src": "5. Bitcoin Is For Women - Tshirt - princ.png"
       },
       {
         "name": "Black",
         "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var3.png"
+        "src": "5. Bitcoin Is For Women - Tshirt - var1.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var4.png"
+        "name": "White",
+        "hex": "#ffffff",
+        "src": "5. Bitcoin Is For Women - Tshirt - var2.png"
       },
       {
-        "name": "Black",
-        "hex": "#000000",
-        "src": "16. Sex Is Cool - Tshirt - var5.png"
+        "name": "Ivory",
+        "hex": "#f1e1d4",
+        "src": "5. Bitcoin Is For Women - Tshirt - var3.png"
+      },
+      {
+        "name": "Sea Blue",
+        "hex": "#0d4d81",
+        "src": "5. Bitcoin Is For Women - Tshirt - var4.png"
+      },
+      {
+        "name": "Dark Cherry",
+        "hex": "#480a21",
+        "src": "5. Bitcoin Is For Women - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "majin-maximalist-hoodie",
+    "name": "Majin Maximalist",
+    "collection": "",
+    "type": "hoodie",
+    "genre": "",
+    "price": 0,
+    "src": "7. Majin Maximalist - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "You embrace your convictions — your maxi side. Some might even call you toxic. As if that were an insult! Like the Majin mark — stripped of fake kindness and hollow consensus — it unleashes. You're not here to educate. Not here to please. You're here to defend Bitcoin's integrity. Against dilution. Against co-option. Against noise. Toxic? Maxi? Yes please. Wear the Majin. Unleash the Maxi.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - princ.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - var1.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - var2.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - var3.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - var4.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Hoodie - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "majin-maximalist-tshirt",
+    "name": "Majin Maximalist",
+    "collection": "",
+    "type": "tshirt",
+    "genre": "",
+    "price": 0,
+    "src": "7. Majin Maximalist - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "You embrace your convictions — your maxi side. Some might even call you toxic. As if that were an insult! Like the Majin mark — stripped of fake kindness and hollow consensus — it unleashes. You're not here to educate. Not here to please. You're here to defend Bitcoin's integrity. Against dilution. Against co-option. Against noise. Toxic? Maxi? Yes please. Wear the Majin. Unleash the Maxi.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - princ.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - var1.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - var2.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - var3.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - var4.png"
+      },
+      {
+        "name": "",
+        "hex": "",
+        "src": "7. Majin Maximalist - Tshirt - var5.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-four-stars-hoodie",
+    "name": "Goku Four Stars",
+    "collection": "warriors",
+    "type": "hoodie",
+    "genre": "unisex",
+    "price": 60,
+    "src": "8. Goku Four Stars - Hoodie - princ.png",
+    "designSrc": "",
+    "description": "Young Goku on his Nimbus cloud, the four-star Dragon Ball in hand, Shenron rising behind him. A childhood icon meets generational conviction. Pure-hearted, unstoppable, ready to change the world — sound familiar? For the ones who grew up dreaming and found their fight in Bitcoin.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": 5,
+    "colors": [
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "8. Goku Four Stars - Hoodie - princ.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "8. Goku Four Stars - Hoodie - var1.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "8. Goku Four Stars - Hoodie - var2.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "8. Goku Four Stars - Hoodie - var3.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "8. Goku Four Stars - Hoodie - var4.png"
+      }
+    ]
+  },
+  {
+    "slug": "goku-four-stars-tshirt",
+    "name": "Goku Four Stars",
+    "collection": "warriors",
+    "type": "tshirt",
+    "genre": "men",
+    "price": 21,
+    "src": "8. Goku Four Stars - Tshirt - princ.png",
+    "designSrc": "",
+    "description": "Young Goku on his Nimbus cloud, the four-star Dragon Ball in hand, Shenron rising behind him. A childhood icon meets generational conviction. Pure-hearted, unstoppable, ready to change the world — sound familiar? For the ones who grew up dreaming and found their fight in Bitcoin.",
+    "longDescription": "",
+    "published": true,
+    "trendingPosition": null,
+    "colors": [
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "8. Goku Four Stars - Tshirt - princ.png"
+      },
+      {
+        "name": "Light Orange",
+        "hex": "#e2753c",
+        "src": "8. Goku Four Stars - Tshirt - var1.png"
+      },
+      {
+        "name": "Terracota Red",
+        "hex": "#80323d",
+        "src": "8. Goku Four Stars - Tshirt - var2.png"
+      },
+      {
+        "name": "Sage",
+        "hex": "#98a9a3",
+        "src": "8. Goku Four Stars - Tshirt - var3.png"
+      },
+      {
+        "name": "Dark Grey",
+        "hex": "#3b3b3b",
+        "src": "8. Goku Four Stars - Tshirt - var4.png"
       }
     ]
   }
