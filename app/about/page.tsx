@@ -403,7 +403,7 @@ export default function AboutPage() {
               <p className="text-[#687279] text-xs italic">I run this meetup — see you there.</p>
               <div className="flex gap-3 mt-auto flex-wrap">
                 <a
-                  href="https://meetupbitcoinnantes.notion.site/Le-MeetUp-Bitcoin-Nantes-21d4c9884c20802c8a94fd2357024bf1"
+                  href="https://meetup.orangepeel.fr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-[#111518] text-white font-bold px-5 py-2.5 text-sm hover:bg-[#222] transition-colors rounded-sm"

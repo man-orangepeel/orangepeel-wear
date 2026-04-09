@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="flex items-center gap-6">
           {/* GitHub */}
           <a
-            href="https://github.com/man-orangepeel/orangepeel-sappes"
+            href="https://github.com/man-orangepeel/orangepeel-wear"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

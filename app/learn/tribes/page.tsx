@@ -153,7 +153,7 @@ export default function TribesPage() {
           </div>
           <div className="flex flex-col gap-3 shrink-0">
             <a
-              href="https://meetupbitcoinnantes.notion.site/Le-MeetUp-Bitcoin-Nantes-21d4c9884c20802c8a94fd2357024bf1"
+              href="https://meetup.orangepeel.fr"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#ed760a] text-black font-bold px-6 py-3 text-sm hover:bg-[#efa813] transition-colors rounded-sm"
